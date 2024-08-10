@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    n1:shape="line"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <stroke
+        n1:width="@dimen/fpv_horizon_height"
+        n1:color="@android:color/white"
+        n1:dashWidth="@dimen/fpv_horizon_dash_width"
+        n1:dashGap="@dimen/fpv_horizon_dash_gap" />
+</shape>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <LinearLayout
+        n1:layout_gravity="center"
+        n1:orientation="vertical"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content">
+            <ImageView
+                n1:id="@id/myparrot_profile_avatar"
+                n1:layout_width="@dimen/myparrot_profile_avatar_size"
+                n1:layout_height="@dimen/myparrot_profile_avatar_size"
+                n1:src="@drawable/circular_button_background"
+                n1:layout_centerVertical="true" />
+            <ProgressBar
+                n1:id="@id/myparrot_profile_avatar_progress"
+                n1:visibility="gone"
+                n1:layout_width="@dimen/profile_avatar_size"
+                n1:layout_height="@dimen/profile_avatar_size"
+                n1:layout_alignTop="@id/myparrot_profile_avatar"
+                n1:layout_alignBottom="@id/myparrot_profile_avatar"
+                n1:layout_alignStart="@id/myparrot_profile_avatar"
+                n1:layout_alignEnd="@id/myparrot_profile_avatar" />
+            <TextView
+                n1:textSize="@dimen/myparrot_profile_edit_avatar_size"
+                n1:id="@id/myparrot_profile_editphoto_button"
+                n1:background="@null"
+                n1:padding="5.0dip"
+                n1:layout_width="181.0dip"
+                n1:layout_height="wrap_content"
+                n1:foreground="?android:selectableItemBackground"
+                n1:text="@string/myparrot_edit_photo"
+                n1:layout_centerVertical="true"
+                n1:layout_toEndOf="@id/myparrot_profile_avatar" />
+        </RelativeLayout>
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/myparrot_profile_margin_top">
+            <TextView
+                n1:textSize="@dimen/myparrot_profile_label_size"
+                n1:id="@id/myparrot_profile_firstname_label"
+                n1:visibility="visible"
+                n1:layout_width="@dimen/myparrot_profile_label_width"
+                n1:layout_height="wrap_content"
+                n1:text="@string/profile_first_name" />
+            <EditText
+                n1:enabled="false"
+                n1:textSize="@dimen/myparrot_profile_edit_text_size"
+                n1:id="@id/myparrot_profile_firstname_text"
+                n1:background="@drawable/myparrot_profile_edit_text_background"
+                n1:visibility="visible"
+                n1:layout_width="@dimen/myparrot_profile_edit_text_width"
+                n1:layout_height="@dimen/myparrot_profile_edit_text_height"
+                n1:inputType="textPersonName"
+                n1:paddingStart="@dimen/myparrot_profile_edit_text_padding_start"
+                n1:layout_marginStart="@dimen/myparrot_profile_edit_text_margin_start" />
+        </LinearLayout>
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/myparrot_profile_margin_top">
+            <TextView
+                n1:textSize="@dimen/myparrot_profile_label_size"
+                n1:id="@id/myparrot_profile_lastname_label"
+                n1:visibility="visible"
+                n1:layout_width="@dimen/myparrot_profile_label_width"
+                n1:layout_height="wrap_content"
+                n1:text="@string/profile_last_name" />
+            <EditText
+                n1:enabled="false"
+                n1:textSize="@dimen/myparrot_profile_edit_text_size"
+                n1:id="@id/myparrot_profile_lastname_text"
+                n1:background="@drawable/myparrot_profile_edit_text_background"
+                n1:visibility="visible"
+                n1:layout_width="@dimen/myparrot_profile_edit_text_width"
+                n1:layout_height="@dimen/myparrot_profile_edit_text_height"
+                n1:inputType="textPersonName"
+                n1:paddingStart="@dimen/myparrot_profile_edit_text_padding_start"
+                n1:layout_marginStart="@dimen/myparrot_profile_edit_text_margin_start" />
+        </LinearLayout>
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/myparrot_profile_margin_top">
+            <TextView
+                n1:textSize="@dimen/myparrot_profile_label_size"
+                n1:id="@id/myparrot_profile_mail_label"
+                n1:layout_width="@dimen/myparrot_profile_label_width"
+                n1:layout_height="wrap_content"
+                n1:text="@string/profile_email" />
+            <EditText
+                n1:enabled="false"
+                n1:textSize="@dimen/myparrot_profile_edit_text_size"
+                n1:id="@id/myparrot_profile_mail_text"
+                n1:background="@drawable/myparrot_profile_edit_text_background"
+                n1:layout_width="@dimen/myparrot_profile_edit_text_width"
+                n1:layout_height="@dimen/myparrot_profile_edit_text_height"
+                n1:inputType="textEmailAddress"
+                n1:paddingStart="@dimen/myparrot_profile_edit_text_padding_start"
+                n1:layout_marginStart="@dimen/myparrot_profile_edit_text_margin_start" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

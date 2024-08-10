@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        n1:id="@id/frame_registration_page_media"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_centerVertical="true"
+        n1:layout_marginStart="@dimen/registration_page_horizontal_margin"
+        n1:layout_alignParentStart="true"
+        n2:layout_widthPercent="@fraction/registration_page_image_width"
+        xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView
+            n1:id="@id/image_registration_description"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:scaleType="fitCenter"
+            n1:adjustViewBounds="true" />
+    </FrameLayout>
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_alignTop="@id/frame_registration_page_media"
+        n1:layout_alignBottom="@id/frame_registration_page_media"
+        n1:layout_marginStart="@dimen/registration_page_horizontal_margin"
+        n1:layout_marginEnd="@dimen/registration_page_horizontal_margin"
+        n1:layout_toEndOf="@id/frame_registration_page_media"
+        n1:layout_alignParentEnd="true">
+        <TextView
+            n1:textSize="@dimen/registration_page_title_text_size"
+            n1:textColor="@color/white"
+            n1:gravity="start"
+            n1:id="@id/text_registration_page_title"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content" />
+        <TextView
+            n1:textSize="@dimen/registration_page_content_text_size"
+            n1:gravity="start|center"
+            n1:id="@id/text_registration_page_description"
+            n1:scrollbars="vertical"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_above="@id/text_registration_page_note"
+            n1:layout_below="@id/text_registration_page_title" />
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

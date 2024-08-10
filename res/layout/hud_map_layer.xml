@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/buttonRelativeLayout"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include
+        n1:id="@id/flightplan_toolbar_view"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/flightplan_round_button_size"
+        n1:layout_toRightOf="@id/button_settings"
+        n1:layout_marginStart="120.0dip"
+        n1:layout_alignParentEnd="true"
+        layout="@layout/flightplan_toolbar_view" />
+    <TextView
+        n1:textSize="@dimen/flightplan_layer_product_size"
+        n1:textColor="@color/white"
+        n1:gravity="center"
+        n1:id="@id/text_product"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:shadowColor="@color/black"
+        n1:shadowDx="0.0"
+        n1:shadowDy="0.0"
+        n1:shadowRadius="1.0"
+        n1:layout_centerHorizontal="true"
+        n1:layout_toStartOf="@id/button_user_location" />
+    <FrameLayout
+        n1:id="@id/layout_sliders"
+        n1:visibility="visible"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_marginTop="@dimen/flightplan_round_button_spacing"
+        n1:layout_marginBottom="@dimen/flightplan_round_button_border_margin"
+        n1:layout_below="@id/flightplan_toolbar_view"
+        n1:layout_marginStart="6.0dip"
+        n1:layout_marginEnd="@dimen/flightplan_round_button_border_margin"
+        n1:layout_alignParentEnd="true">
+        <RelativeLayout
+            n1:id="@id/layout_slider_altitude"
+            n1:background="@drawable/flightplan_slider_background"
+            n1:visibility="gone"
+            n1:layout_width="@dimen/flightplan_round_button_size"
+            n1:layout_height="fill_parent">
+            <TextView
+                n1:textColor="@color/white"
+                n1:id="@id/slider_altitude_value"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="@dimen/flightplan_round_button_spacing"
+                n1:layout_centerHorizontal="true" />
+            <com.parrot.freeflight.view.VerticalSlider
+                n1:id="@id/slider_altitude"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:maxHeight="@dimen/flightplan_round_button_size"
+                n1:progressDrawable="@drawable/progress_bar_selector"
+                n1:minHeight="@dimen/flightplan_round_button_size"
+                n1:thumb="@drawable/slider_thumb_selector"
+                n1:layout_above="@id/slider_altitude_icn"
+                n1:layout_below="@id/slider_altitude_value"
+                n1:layout_centerHorizontal="true"
+                n1:paddingStart="@dimen/settings_padding_row"
+                n1:paddingEnd="@dimen/settings_padding_row"
+                style="?android:progressBarStyleHorizontal" />
+            <ImageView
+                n1:id="@id/slider_altitude_icn"
+                n1:layout_width="@dimen/flightplan_slider_icn_size"
+                n1:layout_height="@dimen/flightplan_slider_icn_size"
+                n1:layout_marginBottom="@dimen/flightplan_round_button_spacing"
+                n1:src="@drawable/drawable_flightplan_altitude"
+                n1:layout_alignParentBottom="true"
+                n1:layout_alignStart="@id/slider_altitude"
+                n1:layout_alignEnd="@id/slider_altitude" />
+        </RelativeLayout>
+        <RelativeLayout
+            n1:id="@id/layout_slider_speed"
+            n1:background="@drawable/flightplan_slider_background"
+            n1:visibility="gone"
+            n1:layout_width="@dimen/flightplan_round_button_size"
+            n1:layout_height="fill_parent">
+            <TextView
+                n1:textColor="@color/white"
+                n1:id="@id/slider_speed_value"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="@dimen/flightplan_round_button_spacing"
+                n1:layout_centerHorizontal="true" />
+            <com.parrot.freeflight.view.VerticalSlider
+                n1:id="@id/slider_speed"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:maxHeight="@dimen/flightplan_round_button_size"
+                n1:progressDrawable="@drawable/progress_bar_selector"
+                n1:minHeight="@dimen/flightplan_round_button_size"
+                n1:thumb="@drawable/slider_thumb_selector"
+                n1:layout_above="@id/slider_speed_icn"
+                n1:layout_below="@id/slider_speed_value"
+                n1:layout_centerHorizontal="true"
+                n1:paddingStart="@dimen/settings_padding_row"
+                n1:paddingEnd="@dimen/settings_padding_row"
+                style="?android:progressBarStyleHorizontal" />
+            <ImageView
+                n1:id="@id/slider_speed_icn"
+                n1:layout_width="@dimen/flightplan_slider_icn_size"
+                n1:layout_height="@dimen/flightplan_slider_icn_size"
+                n1:layout_marginBottom="@dimen/flightplan_round_button_spacing"
+                n1:src="@drawable/drawable_flightplan_speed"
+                n1:layout_alignParentBottom="true"
+                n1:layout_alignStart="@id/slider_speed"
+                n1:layout_alignEnd="@id/slider_speed" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ImageButton
+        n1:id="@id/button_map_type"
+        n1:background="@drawable/circular_button_background"
+        n1:visibility="gone"
+        n1:layout_width="@dimen/flightplan_round_button_size"
+        n1:layout_height="@dimen/flightplan_round_button_size"
+        n1:layout_marginTop="@dimen/flightplan_round_button_border_margin"
+        n1:src="@drawable/map_type_button_background"
+        n1:layout_alignParentTop="true"
+        n1:contentDescription="@string/Plan_cd_switch_view_type"
+        n1:layout_marginEnd="@dimen/flightplan_round_button_border_margin" />
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/layout_bottom_bar"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginBottom="@dimen/flightplan_round_button_border_margin"
+        n1:layout_alignParentBottom="true"
+        n1:layout_marginStart="@dimen/flightplan_round_button_border_margin"
+        n1:layout_toStartOf="@id/layout_sliders">
+        <ImageButton
+            n1:id="@id/button_undo"
+            n1:background="@drawable/circular_button_flightplan_undo_redo_background"
+            n1:layout_width="@dimen/flightplan_round_button_size"
+            n1:layout_height="@dimen/flightplan_round_button_size"
+            n1:src="@drawable/drawable_flightplan_undo"
+            n1:contentDescription="@string/Plan_cd_undo"
+            n1:layout_marginStart="@dimen/flightplan_round_button_spacing" />
+        <ImageButton
+            n1:id="@id/button_redo"
+            n1:background="@drawable/circular_button_flightplan_undo_redo_background"
+            n1:layout_width="@dimen/flightplan_round_button_size"
+            n1:layout_height="@dimen/flightplan_round_button_size"
+            n1:src="@drawable/drawable_flightplan_redo"
+            n1:layout_marginStart="@dimen/flightplan_round_button_spacing" />
+    </LinearLayout>
+</RelativeLayout>

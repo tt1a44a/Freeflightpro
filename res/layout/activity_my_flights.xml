@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:orientation="vertical"
+    n1:id="@id/layout_root_my_flights"
+    n1:background="@drawable/background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:id="@id/layout_my_flights_title"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentTop="true">
+        <ImageButton
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/button_my_flights_back"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_margin="@dimen/piloting_buttons_margin"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside" />
+        <TextView
+            n1:textSize="@dimen/home_title_text_size"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:id="@id/textview_my_flights_title"
+            n1:layout_width="fill_parent"
+            n1:layout_height="@dimen/my_flights_title_height"
+            n1:text="@string/my_flights_title"
+            n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.parrot.freeflight.piloting.widget.RoundedCornerLayout
+        n1:id="@id/layout_my_flights_header"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_margin="@dimen/piloting_buttons_small_margin"
+        n1:layout_below="@id/layout_my_flights_title"
+        n2:outerBackgroundColor="?android:colorBackground"
+        xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            n1:id="@id/layout_status_bar_my_flight"
+            n1:background="@color/transparent_light_grey"
+            n1:duplicateParentState="true"
+            n1:layout_width="fill_parent"
+            n1:layout_height="@dimen/homepage_status_bar_height">
+            <View
+                n1:background="@drawable/ripple_effect"
+                n1:duplicateParentState="true"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent" />
+            <ImageView
+                n1:id="@id/imageview_my_flights_avatar"
+                n1:layout_width="@dimen/my_flights_header_avatar_size"
+                n1:layout_height="@dimen/my_flights_header_avatar_size"
+                n1:layout_centerVertical="true"
+                n1:layout_marginStart="@dimen/activity_horizontal_margin"
+                n1:layout_alignParentStart="true" />
+            <TextView
+                n1:id="@id/textview_my_flights_username_or_login"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="@dimen/activity_horizontal_margin"
+                n1:layout_marginRight="@dimen/activity_horizontal_margin"
+                n1:layout_centerVertical="true"
+                n1:layout_toEndOf="@id/imageview_my_flights_avatar" />
+            <ImageView
+                n1:id="@id/imageview_my_flights_time"
+                n1:layout_width="@dimen/my_flights_header_image_size"
+                n1:layout_height="@dimen/my_flights_header_image_size"
+                n1:src="@drawable/common_icn_duration"
+                n1:layout_centerVertical="true"
+                n1:layout_marginStart="@dimen/activity_horizontal_margin"
+                n1:layout_marginEnd="@dimen/my_flights_pilot_info_horizontal_space"
+                n1:layout_toStartOf="@id/textview_my_flights_time" />
+            <TextView
+                n1:id="@id/textview_my_flights_time"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_centerVertical="true"
+                n1:layout_marginEnd="@dimen/my_flights_pilot_info_horizontal_space"
+                n1:layout_toStartOf="@id/imageview_my_flights_number_of_crashes" />
+            <ImageView
+                n1:id="@id/imageview_my_flights_number_of_crashes"
+                n1:layout_width="@dimen/my_flights_header_image_size"
+                n1:layout_height="@dimen/my_flights_header_image_size"
+                n1:src="@drawable/academy_icn_crash"
+                n1:layout_centerVertical="true"
+                n1:layout_marginStart="@dimen/activity_horizontal_margin"
+                n1:layout_marginEnd="@dimen/my_flights_pilot_info_horizontal_space"
+                n1:layout_toStartOf="@id/textview_my_flights_number_of_crashes" />
+            <TextView
+                n1:id="@id/textview_my_flights_number_of_crashes"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_centerVertical="true"
+                n1:layout_marginEnd="@dimen/activity_horizontal_margin"
+                n1:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </com.parrot.freeflight.piloting.widget.RoundedCornerLayout>
+    <com.parrot.freeflight.academy.widget.SwipeListView
+        n1:id="@id/listview_my_flights"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:listSelector="@drawable/list_selector"
+        n1:cacheColorHint="@color/white"
+        n1:divider="@color/transparent_light_grey"
+        n1:dividerHeight="1.0dip"
+        n1:layout_below="@id/layout_my_flights_header" />
+</RelativeLayout>

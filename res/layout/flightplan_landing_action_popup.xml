@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:id="@id/layout_popup"
+    style="@style/FlightplanActionPopup"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <Button
+        n1:id="@id/button_delete"
+        style="@style/FlightplanActionPopupButton" />
+    <Button
+        n1:id="@id/button_edit"
+        style="@style/FlightplanActionPopupButton" />
+    <Button
+        n1:id="@id/button_waypoint"
+        style="@style/FlightplanActionPopupButton" />
+    <Button
+        n1:id="@id/button_spiral_landing"
+        style="@style/FlightplanActionPopupButton" />
+    <Button
+        n1:id="@id/button_linear_landing"
+        style="@style/FlightplanActionPopupButton" />
+</LinearLayout>

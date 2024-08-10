@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    n1:background="@drawable/circular_button_mode_background"
+    n1:layout_width="@dimen/piloting_button_size"
+    n1:layout_height="@dimen/piloting_button_size"
+    n1:layout_marginBottom="@dimen/flip_menu_dropdown_margin_between"
+    n1:scaleType="centerInside"
+    xmlns:n1="http://schemas.android.com/apk/res/android" />

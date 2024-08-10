@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    n1:shape="rectangle"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <solid
+        n1:color="#00000000" />
+    <stroke
+        n1:width="1.0dip"
+        n1:color="@color/colorAccent" />
+    <corners
+        n1:topLeftRadius="@dimen/joystick_sensibility_radio_button_radius"
+        n1:topRightRadius="@dimen/joystick_sensibility_radio_button_no_radius"
+        n1:bottomLeftRadius="@dimen/joystick_sensibility_radio_button_radius"
+        n1:bottomRightRadius="@dimen/joystick_sensibility_radio_button_no_radius" />
+</shape>

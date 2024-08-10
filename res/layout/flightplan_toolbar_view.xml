@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.parrot.freeflight.flightplan.FlightPlanToolbarView
+    n1:id="@id/layout_flightplan_toolbar"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.parrot.freeflight.view.CheckableImageButton
+        n1:id="@id/button_flightplan"
+        n1:background="@drawable/drawable_flightplan_toolbar_left_background"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:src="@drawable/drawable_flightplan"
+        n1:contentDescription="@string/Plan_cd_play"
+        n1:paddingStart="16.0dip"
+        n1:paddingEnd="16.0dip" />
+    <RelativeLayout
+        n1:id="@id/button_flightplan_flights"
+        n1:background="@drawable/drawable_flightplan_toolbar_background"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:paddingStart="@dimen/flightplan_round_button_spacing"
+        n1:paddingEnd="@dimen/flightplan_round_button_spacing"
+        n1:layout_toStartOf="@id/flightplan_timeline"
+        n1:layout_toEndOf="@id/button_flightplan">
+        <TextView
+            n1:textSize="@dimen/flightplan_layer_title_size"
+            n1:textColor="@color/white"
+            n1:id="@id/text_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/new_"
+            n1:singleLine="true"
+            n1:shadowColor="@color/black"
+            n1:shadowDx="0.0"
+            n1:shadowDy="0.0"
+            n1:shadowRadius="2.0"
+            n1:layout_alignParentLeft="true"
+            n1:layout_centerVertical="true"
+            n1:layout_toStartOf="@id/flightplan_duration" />
+        <TextView
+            n1:textSize="10.0sp"
+            n1:textColor="@color/white"
+            n1:id="@id/text_product"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:singleLine="true"
+            n1:layout_below="@id/text_title"
+            n1:layout_alignParentLeft="true"
+            n1:layout_centerVertical="true"
+            n1:layout_toStartOf="@id/flightplan_duration" />
+        <TextView
+            n1:textColor="@color/white"
+            n1:id="@id/flightplan_duration"
+            n1:paddingLeft="4.0dip"
+            n1:paddingTop="2.0dip"
+            n1:paddingRight="4.0dip"
+            n1:paddingBottom="2.0dip"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="2.0dip"
+            n1:drawableLeft="@drawable/drawable_flightplan_duration"
+            n1:drawablePadding="6.0dip"
+            n1:layout_centerVertical="true"
+            n1:layout_toStartOf="@id/flightplan_arrow" />
+        <ImageView
+            n1:id="@id/flightplan_arrow"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/drawable_flightplan_arrow"
+            n1:layout_alignParentRight="true"
+            n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageButton
+        n1:id="@id/flightplan_timeline"
+        n1:background="@drawable/drawable_flightplan_toolbar_background"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:src="@drawable/drawable_flightplan_timeline_new"
+        n1:contentDescription="@string/Plan_cd_play"
+        n1:paddingStart="16.0dip"
+        n1:paddingEnd="16.0dip"
+        n1:layout_toStartOf="@id/flightplan_options" />
+    <ImageButton
+        n1:id="@id/flightplan_options"
+        n1:background="@drawable/drawable_flightplan_toolbar_background"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:src="@drawable/drawable_flightplan_options"
+        n1:contentDescription="@string/Plan_cd_play"
+        n1:paddingStart="16.0dip"
+        n1:paddingEnd="16.0dip"
+        n1:layout_toStartOf="@id/button_play" />
+    <ImageButton
+        n1:id="@id/button_play"
+        n1:background="@drawable/drawable_flightplan_toolbar_play_background"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:src="@drawable/drawable_flightplan_play"
+        n1:layout_alignParentRight="true"
+        n1:contentDescription="@string/Plan_cd_play"
+        n1:paddingStart="16.0dip"
+        n1:paddingEnd="24.0dip" />
+</com.parrot.freeflight.flightplan.FlightPlanToolbarView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family>
+    <font
+        n1:font="@font/rajdhani_regular"
+        n1:fontStyle="normal"
+        n1:fontWeight="400"
+        xmlns:n1="http://schemas.android.com/apk/res-auto" />
+    <font
+        n2:font="@font/rajdhani_medium"
+        n2:fontStyle="normal"
+        n2:fontWeight="500"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <font
+        n3:font="@font/rajdhani_semibold"
+        n3:fontStyle="normal"
+        n3:fontWeight="600"
+        xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <font
+        n4:font="@font/rajdhani_bold"
+        n4:fontStyle="normal"
+        n4:fontWeight="700"
+        xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</font-family>

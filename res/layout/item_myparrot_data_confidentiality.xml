@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.parrot.freeflight.myparrot.personaldata.DataConfidentialityView
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="15.0sp"
+        n1:id="@id/data_confidentiality_title"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n2:layout_constraintStart_toStartOf="parent"
+        n2:layout_constraintTop_toTopOf="parent"
+        style="@style/Text.SemiBold"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView
+        n1:textSize="13.0sp"
+        n1:textColor="@color/white_80"
+        n1:id="@id/data_confidentiality_subtitle"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="8.0dip"
+        n1:lineSpacingExtra="4.0dip"
+        n3:layout_constraintEnd_toEndOf="parent"
+        n3:layout_constraintStart_toStartOf="@id/data_confidentiality_title"
+        n3:layout_constraintTop_toBottomOf="@id/data_confidentiality_title"
+        style="@style/Text.Regular"
+        xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <TextView
+        n1:textSize="14.0sp"
+        n1:textColor="@color/white_80"
+        n1:id="@id/data_confidentiality_desc"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="8.0dip"
+        n1:lineSpacingExtra="4.0dip"
+        n4:layout_constraintEnd_toEndOf="parent"
+        n4:layout_constraintStart_toStartOf="@id/data_confidentiality_title"
+        n4:layout_constraintTop_toBottomOf="@id/data_confidentiality_subtitle"
+        style="@style/Text.Medium"
+        xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <TextView
+        n1:textSize="13.0sp"
+        n1:id="@id/data_confidentiality_learn_more"
+        n1:background="@null"
+        n1:paddingTop="5.0dip"
+        n1:paddingBottom="5.0dip"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:foreground="?android:selectableItemBackground"
+        n1:text="@string/myparrot_data_confidentiality_learn_more"
+        n1:paddingEnd="5.0dip"
+        n5:layout_constraintBottom_toBottomOf="@id/data_confidentiality_radiogroup"
+        n5:layout_constraintStart_toStartOf="@id/data_confidentiality_title"
+        n5:layout_constraintTop_toTopOf="@id/data_confidentiality_radiogroup"
+        style="@style/Text.Medium"
+        xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <RadioGroup
+        n1:layout_gravity="center_horizontal"
+        n1:orientation="horizontal"
+        n1:id="@id/data_confidentiality_radiogroup"
+        n1:layout_width="150.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/about_item_vertical_margin"
+        n6:layout_constraintEnd_toEndOf="parent"
+        n6:layout_constraintTop_toBottomOf="@id/data_confidentiality_desc"
+        xmlns:n6="http://schemas.android.com/apk/res-auto">
+        <RadioButton
+            n1:textColor="@drawable/text_color_selector"
+            n1:gravity="center"
+            n1:id="@id/data_confidentiality_no_radiobutton"
+            n1:background="@drawable/radio_button_left_selector"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:button="@android:color/transparent"
+            n1:text="@string/no"
+            n1:layout_weight="1.0" />
+        <RadioButton
+            n1:textColor="@drawable/text_color_selector"
+            n1:gravity="center"
+            n1:id="@id/data_confidentiality_yes_radiobutton"
+            n1:background="@drawable/radio_button_right_selector"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:button="@android:color/transparent"
+            n1:text="@string/yes"
+            n1:layout_weight="1.0" />
+    </RadioGroup>
+</com.parrot.freeflight.myparrot.personaldata.DataConfidentialityView>

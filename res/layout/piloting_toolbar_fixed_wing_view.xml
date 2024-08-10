@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.parrot.freeflight.piloting.widget.PilotingToolbarView
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.parrot.freeflight.piloting.widget.SwitchButton
+        n1:id="@id/switch_button_loiter"
+        n1:visibility="visible"
+        n1:layout_width="@dimen/switch_button_default_width"
+        n1:layout_height="@dimen/switch_button_default_height"
+        n1:layout_toLeftOf="@id/recording_buttons_container"
+        n1:layout_alignParentTop="true"
+        n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+        n1:layout_toStartOf="@id/button_photo"
+        n2:arrowDrawableLeft="@drawable/product_090e_loiter_arrow_left"
+        n2:arrowDrawableRight="@drawable/product_090e_loiter_arrow_right"
+        n2:drawableLeft="@drawable/loiter_anticlockwise"
+        n2:drawableRight="@drawable/loiter_clockwise"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout
+        n1:id="@id/recording_buttons_container"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentTop="true"
+        n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentEnd="true">
+        <include
+            n1:id="@id/recording_picture_button"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            layout="@layout/hud_progress_button_view" />
+        <include
+            n1:id="@id/recording_video_button"
+            n1:visibility="visible"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            layout="@layout/recording_video_button_view" />
+    </FrameLayout>
+</com.parrot.freeflight.piloting.widget.PilotingToolbarView>

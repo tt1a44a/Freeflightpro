@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:background="@drawable/background_animation"
+    n1:clickable="true"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.parrot.freeflight.view.VerticalTextView
+        n1:textSize="14.0sp"
+        n1:gravity="bottom|center"
+        n1:id="@id/animation_stop"
+        n1:background="@drawable/background_animation_stop_left"
+        n1:padding="@dimen/animations_button_stop_padding"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/animations_button_size"
+        n1:text="STOP" />
+    <ProgressBar
+        n1:id="@id/animation_progress_bar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:progressDrawable="@drawable/slider_animation_left"
+        n1:layout_alignLeft="@id/animation_title_layout"
+        n1:layout_alignTop="@id/animation_title_layout"
+        n1:layout_alignRight="@id/animation_title_layout"
+        n1:layout_alignBottom="@id/animation_title_layout"
+        style="?android:progressBarStyleHorizontal" />
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:id="@id/animation_title_layout"
+        n1:layout_width="@dimen/animations_button_size"
+        n1:layout_height="@dimen/animations_button_size"
+        n1:layout_toRightOf="@id/animation_stop">
+        <ImageView
+            n1:id="@id/animation_icon"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="8.0dip" />
+        <TextView
+            n1:textColor="@color/white"
+            n1:id="@id/animation_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

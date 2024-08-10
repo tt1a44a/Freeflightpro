@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_legal_mentions_root"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:id="@id/legal_mentions_top_bar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/legal_mentions_top_bar_height"
+        n1:layout_alignParentTop="true">
+        <ImageButton
+            n1:id="@id/image_legal_mentions_button_back"
+            n1:background="@drawable/circular_button_background"
+            n1:visibility="gone"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside"
+            n1:layout_centerVertical="true"
+            n1:layout_marginStart="@dimen/piloting_buttons_margin" />
+        <TextView
+            n1:textSize="@dimen/legal_mentions_buttons_text_size"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:id="@id/text_legal_mentions_refuse"
+            n1:background="@drawable/ripple_effect"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/about_legal_mentions_refuse"
+            n1:layout_centerVertical="true"
+            n1:paddingStart="@dimen/legal_mentions_buttons_padding"
+            n1:paddingEnd="@dimen/legal_mentions_buttons_padding"
+            n1:layout_alignParentStart="true" />
+        <TextView
+            n1:textSize="@dimen/legal_mentions_buttons_text_size"
+            n1:textStyle="bold"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/about_legal_mentions"
+            n1:layout_alignParentTop="true"
+            n1:layout_centerInParent="true"
+            n1:contentDescription="@string/legal_mentions_title_cd" />
+        <TextView
+            n1:textSize="@dimen/legal_mentions_buttons_text_size"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:id="@id/text_legal_mentions_accept"
+            n1:background="@drawable/ripple_effect"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/about_legal_mentions_accept"
+            n1:layout_centerVertical="true"
+            n1:paddingStart="@dimen/legal_mentions_buttons_padding"
+            n1:paddingEnd="@dimen/legal_mentions_buttons_padding"
+            n1:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <WebView
+        n1:id="@id/legalMentionsWebView"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_below="@id/legal_mentions_top_bar" />
+</RelativeLayout>

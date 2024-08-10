@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item
+        n1:state_focused="true"
+        n1:state_enabled="false"
+        n1:drawable="@drawable/button_filled_and_bold"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item
+        n2:state_enabled="false"
+        n2:drawable="@drawable/button"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item
+        n3:state_checked="true"
+        n3:state_pressed="true"
+        n3:drawable="@drawable/button_filled"
+        xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item
+        n4:state_pressed="true"
+        n4:drawable="@drawable/button_filled"
+        xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item
+        n5:state_checked="true"
+        n5:state_selected="true"
+        n5:drawable="@drawable/button_filled_and_bold"
+        xmlns:n5="http://schemas.android.com/apk/res/android" />
+    <item
+        n6:state_checked="true"
+        n6:drawable="@drawable/button_filled"
+        xmlns:n6="http://schemas.android.com/apk/res/android" />
+    <item
+        n7:state_selected="true"
+        n7:drawable="@drawable/button_filled"
+        xmlns:n7="http://schemas.android.com/apk/res/android" />
+    <item
+        n8:state_focused="false"
+        n8:state_checked="true"
+        n8:drawable="@drawable/button_bold"
+        xmlns:n8="http://schemas.android.com/apk/res/android" />
+    <item
+        n9:state_focused="true"
+        n9:state_checked="true"
+        n9:drawable="@drawable/button_filled_and_bold"
+        xmlns:n9="http://schemas.android.com/apk/res/android" />
+    <item
+        n10:state_focused="true"
+        n10:drawable="@drawable/button_bold"
+        xmlns:n10="http://schemas.android.com/apk/res/android" />
+    <item
+        n11:drawable="@drawable/button"
+        xmlns:n11="http://schemas.android.com/apk/res/android" />
+</selector>

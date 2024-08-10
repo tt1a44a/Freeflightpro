@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="horizontal"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.percent.PercentRelativeLayout
+        n1:focusable="false"
+        n1:focusableInTouchMode="false"
+        n1:clickable="false"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_weight="1.0">
+        <ImageView
+            n1:id="@id/image_mapped_remote"
+            n1:layout_width="wrap_content"
+            n1:layout_height="0.0dip"
+            n1:src="@drawable/gamepad_rc"
+            n1:layout_alignParentTop="true"
+            n1:layout_centerHorizontal="true"
+            n2:layout_heightPercent="@fraction/gamepad_mapping_image_height"
+            xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <Button
+            n1:id="@id/button_main_calibration"
+            n1:background="@drawable/button_selector"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/gamepad_mapping_button_margin"
+            n1:text="@string/gamepad_mapping_main_calib"
+            n1:layout_below="@id/image_mapped_remote"
+            n1:layout_centerHorizontal="true"
+            n1:paddingStart="@dimen/gamepad_mapping_button_padding"
+            n1:paddingEnd="@dimen/gamepad_mapping_button_padding"
+            style="@style/SettingsButton" />
+        <Button
+            n1:id="@id/button_cancel_main_calibration"
+            n1:background="@drawable/button_selector"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/gamepad_mapping_button_margin"
+            n1:text="@string/cancel"
+            n1:layout_below="@id/image_mapped_remote"
+            n1:layout_centerHorizontal="true"
+            n1:paddingStart="@dimen/gamepad_mapping_button_padding"
+            n1:paddingEnd="@dimen/gamepad_mapping_button_padding"
+            style="@style/SettingsButton" />
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        n1:id="@id/recycler_view_mapping"
+        n1:scrollbars="vertical"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_weight="1.0" />
+    <RelativeLayout
+        n1:layout_gravity="center_vertical"
+        n1:id="@id/layout_main_calibration_validation"
+        n1:padding="@dimen/gamepad_mapping_margin"
+        n1:visibility="gone"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_weight="1.0">
+        <TextView
+            n1:gravity="center"
+            n1:id="@id/text_calibration_validation"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:text="@string/gamepad_mapping_main_calib_info" />
+        <Button
+            n1:id="@id/button_start_main_calibraton"
+            n1:background="@drawable/button_selector"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/gamepad_mapping_button_margin"
+            n1:text="@string/gamepad_mapping_main_calib_ready"
+            n1:layout_below="@id/text_calibration_validation"
+            n1:layout_centerHorizontal="true"
+            n1:paddingStart="@dimen/gamepad_mapping_button_padding"
+            n1:paddingEnd="@dimen/gamepad_mapping_button_padding"
+            style="@style/SettingsButton" />
+    </RelativeLayout>
+    <RelativeLayout
+        n1:id="@id/layout_main_calibration_progress"
+        n1:visibility="gone"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_weight="1.0">
+        <ProgressBar
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:indeterminate="false"
+            n1:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+.class public interface abstract Lcom/parrot/arsdk/arcommands/ARCommandMiniDronePilotingSettingsPreferredPilotingModeListener;
+.super Ljava/lang/Object;
+.source "ARCommandMiniDronePilotingSettingsPreferredPilotingModeListener.java"
+
+
+# virtual methods
+.method public abstract onMiniDronePilotingSettingsPreferredPilotingModeUpdate(Lcom/parrot/arsdk/arcommands/ARCOMMANDS_MINIDRONE_PILOTINGSETTINGS_PREFERREDPILOTINGMODE_MODE_ENUM;)V
+.end method

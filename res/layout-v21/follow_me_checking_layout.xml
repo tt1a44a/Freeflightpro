@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageButton
+        n1:id="@id/fm_checking_close_button"
+        n1:background="@drawable/circular_button_background"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:layout_marginLeft="@dimen/piloting_buttons_margin"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:src="@drawable/drawable_hud_back"
+        n1:scaleType="centerInside" />
+    <TextView
+        n1:textSize="22.0sp"
+        n1:textColor="@color/white"
+        n1:id="@id/checking_title"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:text="@string/follow_me_checklist"
+        n1:layout_centerHorizontal="true"
+        n1:textAllCaps="true" />
+    <ImageView
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:src="@drawable/icn_followme_small"
+        n1:tint="@color/white"
+        n1:layout_alignTop="@id/checking_title"
+        n1:layout_alignBottom="@id/checking_title"
+        n1:layout_marginEnd="@dimen/follow_me_icon_drawable_margin"
+        n1:layout_toStartOf="@id/checking_title" />
+    <Button
+        n1:textColor="@color/colorAccent"
+        n1:id="@id/button_buy_follow_me"
+        n1:background="@drawable/rounded_corners_button_selector"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/follow_me_free_trial_buttons_height"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:text="@string/buy"
+        n1:layout_alignParentTop="true"
+        n1:paddingStart="@dimen/follow_me_free_trial_buttons_horizontal_padding"
+        n1:paddingEnd="@dimen/follow_me_free_trial_buttons_horizontal_padding"
+        n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentEnd="true"
+        n1:backgroundTint="@color/colorAccent" />
+    <TextView
+        n1:textColor="@color/colorAccent"
+        n1:gravity="center"
+        n1:id="@id/text_time_left"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:layout_below="@id/button_buy_follow_me"
+        n1:layout_alignStart="@id/button_buy_follow_me"
+        n1:layout_alignEnd="@id/button_buy_follow_me" />
+    <android.support.percent.PercentRelativeLayout
+        n1:id="@id/checking_layout"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_centerVertical="true"
+        n1:layout_marginStart="@dimen/follow_me_checking_margin"
+        n1:layout_marginEnd="@dimen/follow_me_checking_margin"
+        n1:layout_alignParentStart="true">
+        <RelativeLayout
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n2:layout_widthPercent="50.0%"
+            xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <TextView
+                n1:textSize="@dimen/follow_me_checking_text"
+                n1:id="@id/checking_drone_gps_text"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginBottom="@dimen/follow_me_checking_line_space"
+                n1:text="@string/follow_me_drone_gps_signal"
+                n1:drawablePadding="@dimen/follow_me_checking_padding"
+                n1:drawableStart="@drawable/status_icon_level_list" />
+            <TextView
+                n1:textSize="@dimen/follow_me_checking_text"
+                n1:id="@id/checking_phone_gps_text"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginBottom="@dimen/follow_me_checking_line_space"
+                n1:text="@string/follow_me_device_gps_signal"
+                n1:drawablePadding="@dimen/follow_me_checking_padding"
+                n1:layout_below="@id/checking_drone_gps_text"
+                n1:drawableStart="@drawable/status_icon_level_list" />
+            <ImageView
+                n1:id="@id/checking_barometer_status_image"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/status_icon_level_list"
+                n1:layout_below="@id/checking_phone_gps_text"
+                n1:layout_alignBottom="@id/checking_barometer_text" />
+            <TextView
+                n1:textSize="@dimen/follow_me_checking_text"
+                n1:id="@id/checking_barometer_text"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/follow_me_option_barometer"
+                n1:layout_below="@id/checking_phone_gps_text"
+                n1:layout_marginStart="@dimen/follow_me_checking_padding"
+                n1:layout_toEndOf="@id/checking_barometer_status_image" />
+            <TextView
+                n1:id="@id/checking_barometer_subtext"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/follow_me_device_barometer_subtitle"
+                n1:layout_below="@id/checking_barometer_text"
+                n1:layout_alignStart="@id/checking_barometer_text" />
+        </RelativeLayout>
+        <RelativeLayout
+            n1:orientation="vertical"
+            n1:id="@id/layout_follow_me"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentEnd="true">
+            <RelativeLayout
+                n1:id="@id/checking_status_layout"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_alignTop="@id/checking_status_button"
+                n1:layout_alignBottom="@id/checking_status_button"
+                n1:layout_alignStart="@id/checking_status_button"
+                n1:layout_alignEnd="@id/checking_status_button">
+                <ImageView
+                    n1:id="@id/checking_status_image"
+                    n1:layout_width="@dimen/follow_me_checking_status_width"
+                    n1:layout_height="wrap_content"
+                    n1:src="@drawable/helice"
+                    n1:layout_above="@id/checking_status_text"
+                    n1:layout_centerHorizontal="true" />
+                <TextView
+                    n1:gravity="center"
+                    n1:id="@id/checking_status_text"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="@dimen/follow_me_checking_status_margin"
+                    n1:layout_marginBottom="@dimen/follow_me_checking_status_margin"
+                    n1:text="@string/follow_me_check_status_checking"
+                    n1:layout_alignParentBottom="true"
+                    n1:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <ImageButton
+                n1:id="@id/checking_status_button"
+                n1:background="@drawable/follow_me_check_error"
+                n1:visibility="invisible"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+    <CheckBox
+        n1:id="@id/checking_show_once_checkbox"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/follow_me_show_missing"
+        n1:layout_below="@id/checking_layout"
+        n1:layout_alignParentBottom="true"
+        n1:layout_centerInParent="true" />
+</RelativeLayout>

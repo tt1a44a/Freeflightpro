@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="horizontal"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:weightSum="6.0"
+    n1:divider="@drawable/ic_bottom_bar_separator"
+    n1:showDividers="middle"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        n1:id="@id/bottom_bar_duration_layout"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_weight="1.0"
+        style="@style/BottomBarTab">
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/flight_director_duration_tab_title"
+            n1:drawableTop="@drawable/ic_best_of_duration"
+            style="@style/BottomBarText" />
+    </FrameLayout>
+    <FrameLayout
+        n1:id="@id/bottom_bar_style_layout"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_weight="1.0"
+        style="@style/BottomBarTab">
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/flight_director_style_tab_title"
+            n1:drawableTop="@drawable/ic_best_of_style"
+            style="@style/BottomBarText" />
+    </FrameLayout>
+    <FrameLayout
+        n1:id="@id/bottom_bar_music_layout"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_weight="1.0"
+        style="@style/BottomBarTab">
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/flight_director_music_tab_title"
+            n1:drawableTop="@drawable/ic_best_of_music"
+            style="@style/BottomBarText" />
+    </FrameLayout>
+    <FrameLayout
+        n1:id="@id/bottom_bar_moments_layout"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_weight="1.0"
+        style="@style/BottomBarTab">
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/flight_director_moments_tab_title"
+            n1:drawableTop="@drawable/ic_best_of_moments"
+            style="@style/BottomBarText" />
+    </FrameLayout>
+    <FrameLayout
+        n1:id="@id/bottom_bar_data_layout"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_weight="1.0"
+        style="@style/BottomBarTab">
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/flight_director_data_tab_title"
+            n1:drawableTop="@drawable/ic_best_of_data"
+            style="@style/BottomBarText" />
+    </FrameLayout>
+    <FrameLayout
+        n1:id="@id/bottom_bar_preview_layout"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_weight="1.0"
+        style="@style/BottomBarTab">
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/flight_director_preview_tab_title"
+            n1:drawableTop="@drawable/ic_best_of_preview"
+            style="@style/BottomBarText" />
+    </FrameLayout>
+</LinearLayout>

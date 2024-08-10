@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:gravity="center_vertical"
+    n1:clickable="true"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.parrot.freeflight.view.LeftAnimationButton
+        n1:id="@id/anim_button_top_left"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n2:icon="@drawable/ic_animation_orbit"
+        n2:leftOptionIcon="@drawable/ic_animation_orbit_left"
+        n2:leftOptionText="Left"
+        n2:rightOptionIcon="@drawable/ic_animation_orbit_right"
+        n2:rightOptionText="Right"
+        n2:tintColor="@color/animation_blue"
+        n2:titleText="@string/follow_me_anim_orbit"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <com.parrot.freeflight.view.LeftAnimationButton
+        n1:id="@id/anim_button_bottom_left"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="16.0dip"
+        n1:layout_below="@id/anim_button_top_left"
+        n3:icon="@drawable/ic_animation_boomerang"
+        n3:leftOptionIcon="@drawable/ic_animation_boomerang_30"
+        n3:leftOptionText="30m"
+        n3:rightOptionIcon="@drawable/ic_animation_boomerang_60"
+        n3:rightOptionText="60m"
+        n3:tintColor="@color/animation_yellow"
+        n3:titleText="@string/follow_me_anim_boomerang"
+        xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.parrot.freeflight.view.RightAnimationButton
+        n1:id="@id/anim_button_top_right"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentRight="true"
+        n4:icon="@drawable/ic_animation_parabola"
+        n4:leftOptionIcon="@drawable/ic_animation_parabola"
+        n4:leftOptionText="10m"
+        n4:rightOptionIcon="@drawable/ic_animation_parabola"
+        n4:rightOptionText="30m"
+        n4:tintColor="@color/animation_cyan"
+        n4:titleText="@string/follow_me_anim_parabola"
+        xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <com.parrot.freeflight.view.RightAnimationButton
+        n1:id="@id/anim_button_bottom_right"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="16.0dip"
+        n1:layout_below="@id/anim_button_top_right"
+        n1:layout_alignParentRight="true"
+        n5:icon="@drawable/ic_animation_tornado"
+        n5:leftOptionIcon="@drawable/ic_animation_tornado_10"
+        n5:leftOptionText="10m"
+        n5:rightOptionIcon="@drawable/ic_animation_tornado_30"
+        n5:rightOptionText="30m"
+        n5:tintColor="@color/animation_red"
+        n5:titleText="@string/follow_me_anim_tornado"
+        xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:gravity="center_horizontal"
+    n1:orientation="horizontal"
+    n1:id="@id/layout_sky_calibration_bottom"
+    n1:background="@android:color/transparent"
+    n1:visibility="visible"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    n1:layout_marginTop="@dimen/activity_vertical_margin"
+    n1:layout_marginBottom="@dimen/activity_horizontal_margin"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:id="@id/layout_calibration_x_axis"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginEnd="@dimen/calibration_axis_margin">
+        <ImageView
+            n1:id="@id/icon_x_axis"
+            n1:layout_width="@dimen/settings_checkbox_size"
+            n1:layout_height="@dimen/settings_checkbox_size"
+            n1:src="@drawable/calibration_checkbox"
+            n1:layout_marginEnd="@dimen/calibration_checkbox_margin" />
+        <TextView
+            n1:textSize="@dimen/settings_text_size"
+            n1:layout_gravity="center_vertical"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/calibration_x_axis_mpp2"
+            n1:textAllCaps="true" />
+    </LinearLayout>
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:id="@id/layout_calibration_y_axis"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginEnd="@dimen/calibration_axis_margin">
+        <ImageView
+            n1:id="@id/icon_y_axis"
+            n1:layout_width="@dimen/settings_checkbox_size"
+            n1:layout_height="@dimen/settings_checkbox_size"
+            n1:src="@drawable/calibration_checkbox"
+            n1:layout_marginEnd="@dimen/calibration_checkbox_margin" />
+        <TextView
+            n1:textSize="@dimen/settings_text_size"
+            n1:layout_gravity="center_vertical"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/calibration_y_axis_mpp2"
+            n1:textAllCaps="true" />
+    </LinearLayout>
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:id="@id/layout_calibration_z_axis"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content">
+        <ImageView
+            n1:id="@id/icon_z_axis"
+            n1:layout_width="@dimen/settings_checkbox_size"
+            n1:layout_height="@dimen/settings_checkbox_size"
+            n1:src="@drawable/calibration_checkbox"
+            n1:layout_marginEnd="@dimen/calibration_checkbox_margin" />
+        <TextView
+            n1:textSize="@dimen/settings_text_size"
+            n1:layout_gravity="center_vertical"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/calibration_z_axis_mpp2"
+            n1:textAllCaps="true" />
+    </LinearLayout>
+</LinearLayout>

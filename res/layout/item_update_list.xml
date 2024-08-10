@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_gravity="center_vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="@dimen/update_list_item_height"
+    n1:paddingStart="@dimen/update_list_side_padding"
+    n1:paddingEnd="@dimen/update_list_side_padding"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:id="@id/image_view_product"
+        n1:layout_width="@dimen/update_list_item_image_size"
+        n1:layout_height="@dimen/update_list_item_image_size"
+        n1:layout_centerVertical="true" />
+    <TextView
+        n1:textSize="@dimen/update_list_text_size"
+        n1:textColor="@color/white"
+        n1:id="@id/text_product_name"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerVertical="true"
+        n1:layout_marginStart="@dimen/update_list_item_image_margin"
+        n1:layout_toEndOf="@id/image_view_product" />
+    <TextView
+        n1:textSize="@dimen/update_list_text_size"
+        n1:textColor="@color/light_gray"
+        n1:id="@id/text_product_version"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerVertical="true"
+        n1:layout_marginStart="@dimen/update_list_item_text_margin"
+        n1:layout_toEndOf="@id/text_product_name" />
+    <ProgressBar
+        n1:id="@id/progress_server_update_check"
+        n1:visibility="gone"
+        n1:layout_width="@dimen/update_list_item_image_size"
+        n1:layout_height="@dimen/update_list_item_image_size"
+        n1:layout_centerVertical="true"
+        n1:layout_alignParentEnd="true" />
+    <TextView
+        n1:textSize="@dimen/update_list_text_size"
+        n1:textColor="@color/white"
+        n1:id="@id/text_product_action_description"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerVertical="true"
+        n1:layout_alignParentEnd="true" />
+    <Button
+        n1:textSize="@dimen/update_list_text_size"
+        n1:id="@id/button_product_action"
+        n1:background="@drawable/button_selector"
+        n1:visibility="visible"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/update_list_item_image_size"
+        n1:layout_centerVertical="true"
+        n1:paddingStart="10.0dip"
+        n1:paddingEnd="10.0dip"
+        n1:layout_alignParentEnd="true" />
+</RelativeLayout>

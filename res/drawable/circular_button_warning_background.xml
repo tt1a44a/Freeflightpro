@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item
+        n1:state_enabled="false"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape
+            n1:shape="oval">
+            <solid
+                n1:color="@color/piloting_button_disabled_color" />
+            <stroke
+                n1:width="1.0dip"
+                n1:color="@color/piloting_button_outline_color" />
+        </shape>
+    </item>
+    <item
+        n2:state_pressed="true"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <layer-list>
+            <item>
+                <shape
+                    n2:shape="oval">
+                    <solid
+                        n2:color="@color/piloting_button_bg_color" />
+                    <stroke
+                        n2:width="1.0dip"
+                        n2:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item>
+                <shape
+                    n2:shape="oval">
+                    <solid
+                        n2:color="@color/warning_secondary_color" />
+                    <stroke
+                        n2:width="1.0dip"
+                        n2:color="@color/green" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape
+            n3:shape="oval"
+            xmlns:n3="http://schemas.android.com/apk/res/android">
+            <solid
+                n3:color="@color/warning_secondary_color" />
+            <stroke
+                n3:width="1.0dip"
+                n3:color="@color/warning_main_color" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="20.0sp"
+        n1:id="@id/myparrot_delete_account_title"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginBottom="32.0dip"
+        n1:text="@string/profile_edit_delete_account_question"
+        n2:layout_constraintBottom_toTopOf="@id/linearLayout"
+        n2:layout_constraintEnd_toEndOf="parent"
+        n2:layout_constraintStart_toStartOf="parent"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:id="@id/linearLayout"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n3:layout_constraintBottom_toBottomOf="parent"
+        n3:layout_constraintEnd_toEndOf="parent"
+        n3:layout_constraintStart_toStartOf="parent"
+        n3:layout_constraintTop_toTopOf="parent"
+        n3:layout_constraintWidth_percent="0.7"
+        xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <TextView
+            n1:textSize="15.0sp"
+            n1:id="@id/myparrot_delete_account_description_1"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/profile_edit_delete_account_description"
+            n1:lineSpacingExtra="4.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        n1:gravity="center"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n4:layout_constraintBottom_toBottomOf="parent"
+        n4:layout_constraintEnd_toEndOf="parent"
+        n4:layout_constraintStart_toStartOf="parent"
+        n4:layout_constraintTop_toBottomOf="@id/linearLayout"
+        xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <Button
+            n1:layout_gravity="center_horizontal"
+            n1:id="@id/myparrot_delete_account_cancel_button"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/cancel"
+            n1:layout_marginStart="15.0dip"
+            n1:layout_marginEnd="15.0dip"
+            style="@style/Button.Rounded.Grey" />
+        <Button
+            n1:layout_gravity="center_horizontal"
+            n1:id="@id/myparrot_delete_account_delete_button"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/profile_edit_delete_account_button"
+            n1:paddingStart="15.0dip"
+            n1:paddingEnd="15.0dip"
+            n1:layout_marginStart="15.0dip"
+            n1:layout_marginEnd="15.0dip"
+            style="@style/Button.Rounded.Red" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

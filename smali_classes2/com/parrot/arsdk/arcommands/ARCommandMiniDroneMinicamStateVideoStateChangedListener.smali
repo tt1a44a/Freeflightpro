@@ -1,0 +1,8 @@
+.class public interface abstract Lcom/parrot/arsdk/arcommands/ARCommandMiniDroneMinicamStateVideoStateChangedListener;
+.super Ljava/lang/Object;
+.source "ARCommandMiniDroneMinicamStateVideoStateChangedListener.java"
+
+
+# virtual methods
+.method public abstract onMiniDroneMinicamStateVideoStateChangedUpdate(Lcom/parrot/arsdk/arcommands/ARCOMMANDS_MINIDRONE_MINICAMSTATE_VIDEOSTATECHANGED_STATE_ENUM;Lcom/parrot/arsdk/arcommands/ARCOMMANDS_MINIDRONE_MINICAMSTATE_VIDEOSTATECHANGED_ERROR_ENUM;)V
+.end method

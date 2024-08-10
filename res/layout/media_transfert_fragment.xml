@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    n1:background="@drawable/background"
+    n1:clickable="true"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        n1:id="@id/toolbar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?actionBarSize">
+        <RelativeLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+            <TextView
+                n1:textSize="@dimen/home_title_text_size"
+                n1:textColor="@color/white"
+                n1:id="@id/text_toolbar_title"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/media_transfer"
+                n1:layout_centerInParent="true" />
+            <Button
+                n1:textColor="@color/white"
+                n1:id="@id/button_cancel"
+                n1:background="?selectableItemBackground"
+                n1:visibility="visible"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent"
+                n1:text="@string/cancel"
+                n1:layout_alignParentEnd="true"
+                style="@style/ToolbarButton" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="horizontal"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_marginTop="@dimen/drone_memory_transfer_link_margin_top"
+        n1:layout_above="@id/text_status"
+        n1:layout_centerHorizontal="true">
+        <ImageView
+            n1:id="@id/image_drone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/sidebar_icn_product_0900"
+            n1:tint="@color/white" />
+        <com.parrot.freeflight.view.MultiDotsView
+            n1:layout_width="@dimen/drone_memory_multidots_width"
+            n1:layout_height="@dimen/drone_memory_multidots_height"
+            n1:layout_marginStart="@dimen/drone_memory_multidots_margin"
+            n1:layout_marginEnd="@dimen/drone_memory_multidots_margin" />
+        <ImageView
+            n1:id="@id/image_device"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/phone" />
+    </LinearLayout>
+    <TextView
+        n1:id="@id/text_status"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/media_transfer_transferring"
+        n1:layout_centerInParent="true"
+        n1:textAllCaps="true" />
+    <TableLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:padding="@dimen/drone_memory_transfer_dialog_spacing"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:stretchColumns="1"
+        n1:layout_below="@id/text_status"
+        n1:layout_centerHorizontal="true"
+        n2:layout_widthPercent="79.99999%"
+        xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <TableRow>
+            <TextView
+                n1:id="@id/label1"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginEnd="@dimen/drone_memory_transfer_dialog_spacing" />
+            <ProgressBar
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/progressBar1"
+                n1:layout_width="fill_parent"
+                n1:layout_height="@dimen/drone_memory_progress_bar_height"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+        </TableRow>
+        <TableRow
+            n1:id="@id/transfer_row_2"
+            n1:layout_marginTop="@dimen/drone_memory_transfer_progress_spacing">
+            <TextView
+                n1:id="@id/label2"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/total"
+                n1:layout_marginEnd="@dimen/drone_memory_transfer_dialog_spacing" />
+            <ProgressBar
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/progressBar2"
+                n1:layout_width="fill_parent"
+                n1:layout_height="@dimen/drone_memory_progress_bar_height"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+        </TableRow>
+    </TableLayout>
+</android.support.percent.PercentRelativeLayout>

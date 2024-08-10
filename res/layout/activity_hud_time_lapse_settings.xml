@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageButton
+        n1:id="@id/button_back"
+        n1:background="@drawable/circular_button_background"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:src="@drawable/drawable_hud_back"
+        n1:scaleType="centerInside"
+        n1:layout_alignParentTop="true"
+        n1:contentDescription="@string/piloting_cd_go_back"
+        n1:layout_marginStart="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentStart="true" />
+    <com.parrot.freeflight.piloting.ui.util.HudMenuImageView
+        n1:id="@id/menu_mode"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentTop="true"
+        n1:contentDescription="@string/camera_settings_cd_mode"
+        n1:layout_marginStart="@dimen/piloting_buttons_lateral_margin"
+        n1:layout_toEndOf="@id/button_back"
+        n2:itemLayout="@layout/item_hud_menu_mode"
+        n2:menuButtonSelected="true"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <ImageButton
+        n1:id="@id/button_settings"
+        n1:background="@drawable/circular_button_background"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:src="@drawable/drawable_hud_settings"
+        n1:scaleType="centerInside"
+        n1:layout_alignParentTop="true"
+        n1:contentDescription="@string/piloting_cd_settings"
+        n1:layout_marginStart="@dimen/piloting_buttons_lateral_margin"
+        n1:layout_toEndOf="@id/menu_mode" />
+    <com.parrot.freeflight.piloting.ui.util.HudMenuImageView
+        n1:id="@id/menu_picture_format"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentTop="true"
+        n1:layout_centerHorizontal="true"
+        n1:contentDescription="@string/camera_settings_cd_picture_format"
+        n1:layout_marginStart="@dimen/piloting_buttons_lateral_margin" />
+    <com.parrot.freeflight.piloting.ui.util.HudMenuTextView
+        n1:id="@id/menu_anti_flickering"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentTop="true"
+        n1:contentDescription="@string/camera_settings_cd_anti_flickering"
+        n1:layout_marginEnd="@dimen/piloting_buttons_lateral_margin"
+        n1:layout_toStartOf="@id/menu_white_balance"
+        n3:unitText="@string/camera_settings_unit_hz"
+        xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <com.parrot.freeflight.piloting.ui.util.HudMenuImageView
+        n1:id="@id/menu_white_balance"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentTop="true"
+        n1:contentDescription="@string/camera_settings_cd_white_balance"
+        n1:layout_marginEnd="@dimen/piloting_buttons_lateral_margin"
+        n1:layout_toStartOf="@id/button_interval" />
+    <include
+        n1:id="@id/button_interval"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentTop="true"
+        n1:contentDescription="@string/piloting_cd_photo"
+        n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentEnd="true"
+        layout="@layout/item_hud_menu_text" />
+    <com.parrot.freeflight.view.VerticalSlider
+        n1:id="@id/slider_interval"
+        n1:background="@drawable/hud_slider_background"
+        n1:visibility="gone"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="fill_parent"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:layout_marginBottom="@dimen/piloting_buttons_margin"
+        n1:maxHeight="@dimen/piloting_button_size"
+        n1:progressDrawable="@drawable/progress_bar_selector"
+        n1:minHeight="@dimen/piloting_button_size"
+        n1:thumb="@drawable/slider_thumb_selector"
+        n1:layout_above="@id/layout_bottom_bar"
+        n1:layout_below="@id/button_interval"
+        n1:paddingStart="@dimen/settings_padding_row"
+        n1:paddingEnd="@dimen/settings_padding_row"
+        n1:layout_alignStart="@id/button_interval" />
+    <ImageButton
+        n1:id="@id/button_record"
+        n1:background="@android:color/transparent"
+        n1:padding="@dimen/piloting_buttons_margin"
+        n1:layout_width="@dimen/piloting_record_button_size"
+        n1:layout_height="@dimen/piloting_record_button_size"
+        n1:src="@drawable/btn_rec_play"
+        n1:scaleType="centerInside"
+        n1:layout_above="@id/layout_bottom_bar"
+        n1:layout_centerHorizontal="true" />
+    <include
+        layout="@layout/layout_bottom_bar_photo_settings" />
+</RelativeLayout>

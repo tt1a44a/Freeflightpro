@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/fpv_layout"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include
+        layout="@layout/fpv_hud_layout" />
+    <com.parrot.freeflight.piloting.ui.fpv.FpvGLSurfaceView
+        n1:id="@id/surface_view_content"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+    <com.parrot.freeflight.piloting.ui.fpv.FpvGLSurfaceView
+        n1:id="@id/surface_view_video"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+    <View
+        n1:background="@color/white"
+        n1:layout_width="@dimen/fpv_center_bar_width"
+        n1:layout_height="fill_parent"
+        n1:layout_centerHorizontal="true" />
+</RelativeLayout>

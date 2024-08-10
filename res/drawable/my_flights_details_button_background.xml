@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item
+        n1:state_enabled="false"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape
+            n1:shape="rectangle">
+            <solid
+                n1:color="@color/tranparent_product_main_color" />
+        </shape>
+    </item>
+    <item
+        n2:state_pressed="true"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape
+            n2:shape="rectangle">
+            <solid
+                n2:color="@color/tranparent_light_product_main_color" />
+        </shape>
+    </item>
+    <item
+        n3:state_focused="true"
+        xmlns:n3="http://schemas.android.com/apk/res/android">
+        <shape
+            n3:shape="rectangle">
+            <solid
+                n3:color="@color/product_main_color" />
+        </shape>
+    </item>
+    <item
+        n4:state_selected="true"
+        xmlns:n4="http://schemas.android.com/apk/res/android">
+        <shape
+            n4:shape="rectangle">
+            <solid
+                n4:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            n5:shape="rectangle"
+            xmlns:n5="http://schemas.android.com/apk/res/android">
+            <solid
+                n5:color="@color/tranparent_product_main_color" />
+        </shape>
+    </item>
+</selector>

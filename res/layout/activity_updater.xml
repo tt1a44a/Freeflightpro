@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_updater_root"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:keepScreenOn="true"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <ImageButton
+            n1:layout_gravity="center|left"
+            n1:id="@id/button_back"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_margin="@dimen/piloting_buttons_margin"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside"
+            n1:contentDescription="@string/cd_back" />
+        <TextView
+            n1:textSize="@dimen/home_title_text_size"
+            n1:textColor="@color/white"
+            n1:layout_gravity="center"
+            n1:id="@id/text_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/check_for_updates" />
+    </FrameLayout>
+    <com.parrot.freeflight.update.view.CircularSlider
+        n1:id="@id/slider_update_progress"
+        n1:layout_width="@dimen/update_circular_progress_size"
+        n1:layout_height="@dimen/update_circular_progress_size"
+        n1:layout_centerInParent="true"
+        n2:filledColor="@color/green"
+        n2:innerTextCaps="true"
+        n2:innerValueTextColor="@color/white"
+        n2:ringThickness="@dimen/update_circular_progress_thickness"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout
+        n1:gravity="center"
+        n1:id="@id/checkbox_layout"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_below="@id/slider_update_progress">
+        <CheckBox
+            n1:id="@id/checkbox_progress_1"
+            n1:clickable="false"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="@dimen/piloting_buttons_margin" />
+        <TextView
+            n1:id="@id/text_sending_version"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/sending_step"
+            n1:textAllCaps="true" />
+        <CheckBox
+            n1:id="@id/checkbox_progress_2"
+            n1:clickable="false"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="@dimen/piloting_buttons_margin" />
+        <TextView
+            n1:id="@id/text_product_reset"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/drone_reset"
+            n1:textAllCaps="true" />
+        <CheckBox
+            n1:id="@id/checkbox_progress_3"
+            n1:clickable="false"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="@dimen/piloting_buttons_margin" />
+        <TextView
+            n1:id="@id/text_firmware_install"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/install_button"
+            n1:textAllCaps="true" />
+    </LinearLayout>
+</RelativeLayout>

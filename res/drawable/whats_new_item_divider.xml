@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+    n1:insetLeft="8.0dip"
+    n1:insetRight="8.0dip"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <shape
+        n1:shape="rectangle">
+        <solid
+            n1:color="@color/transparent_white" />
+        <size
+            n1:height="0.5dip"
+            n1:width="0.5dip" />
+    </shape>
+</inset>

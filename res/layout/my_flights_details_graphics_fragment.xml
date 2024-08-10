@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:background="@color/white"
+    n1:paddingLeft="@dimen/my_flights_details_graphics_horizontal_padding"
+    n1:paddingRight="@dimen/my_flights_details_graphics_horizontal_padding"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.parrot.freeflight.academy.widget.RunDetailsGraphicsView
+        n1:gravity="center"
+        n1:id="@id/graphicsview_my_flights_details_graphics"
+        n1:background="@color/white"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n2:altitudeColor="@color/my_flights_details_graphics_altitude_color"
+        n2:batteryColor="@color/my_flights_details_graphics_battery_color"
+        n2:gridColor="@color/light_gray"
+        n2:gridHorizontalMargin="@dimen/my_flights_details_graphics_horizontal_margin"
+        n2:gridLineWidth="@dimen/my_flights_details_graphics_grid_line_width"
+        n2:gridVerticalMargin="@dimen/my_flights_details_graphics_vertical_margin"
+        n2:jumpColor="@color/my_flights_details_graphics_jump_color"
+        n2:speedColor="@color/my_flights_details_graphics_speed_color"
+        n2:strokeWidth="@dimen/my_flights_details_graphics_stroke_width"
+        n2:textSize="@dimen/my_flights_details_graphics_text_size"
+        n2:titleTextSize="@dimen/my_flights_details_graphics_title_text_size"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

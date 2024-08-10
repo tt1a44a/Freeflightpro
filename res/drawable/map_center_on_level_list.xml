@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list>
+    <item
+        n1:drawable="@drawable/hud_piloting_map_center_drone"
+        n1:maxLevel="1"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item
+        n2:drawable="@drawable/hud_piloting_map_center_user"
+        n2:maxLevel="2"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+</level-list>

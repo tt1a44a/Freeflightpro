@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    n1:orientation="vertical"
+    n1:paddingTop="@dimen/director_toolbar_height"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView
+        n1:id="@id/music_recycler_view"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+    <ImageButton
+        n1:layout_gravity="end|bottom|center"
+        n1:id="@id/music_add_button"
+        n1:background="@null"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_margin="16.0dip"
+        n1:src="@drawable/btn_floating_action_selector" />
+    <FrameLayout
+        n1:gravity="center"
+        n1:id="@id/music_loader_layout"
+        n1:focusable="true"
+        n1:visibility="visible"
+        n1:clickable="true"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <ProgressBar
+            n1:layout_gravity="center"
+            n1:id="@id/preview_loader_progress_bar"
+            n1:background="@android:color/transparent"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

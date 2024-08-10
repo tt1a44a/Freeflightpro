@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="horizontal"
+    n1:background="@drawable/hud_alert_background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="@dimen/alert_view_item_height"
+    n1:layout_marginTop="@dimen/alert_view_margin"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_margin="@dimen/alert_view_margin"
+        n1:src="@drawable/academy_icn_crash"
+        n1:adjustViewBounds="true"
+        n1:tint="@color/white" />
+    <TextView
+        n1:textSize="@dimen/alert_view_text_size"
+        n1:textColor="@color/white"
+        n1:gravity="center"
+        n1:layout_gravity="center"
+        n1:id="@id/text_alert"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:singleLine="true"
+        n1:textAllCaps="true" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    n1:id="@id/drawer_layout"
+    n1:fitsSystemWindows="true"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        layout="@layout/activity_home" />
+    <include
+        layout="@layout/activity_home_navigation_view" />
+</android.support.v4.widget.DrawerLayout>

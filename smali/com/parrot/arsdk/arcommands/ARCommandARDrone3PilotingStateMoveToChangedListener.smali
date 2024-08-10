@@ -1,0 +1,8 @@
+.class public interface abstract Lcom/parrot/arsdk/arcommands/ARCommandARDrone3PilotingStateMoveToChangedListener;
+.super Ljava/lang/Object;
+.source "ARCommandARDrone3PilotingStateMoveToChangedListener.java"
+
+
+# virtual methods
+.method public abstract onARDrone3PilotingStateMoveToChangedUpdate(DDDLcom/parrot/arsdk/arcommands/ARCOMMANDS_ARDRONE3_PILOTINGSTATE_MOVETOCHANGED_ORIENTATION_MODE_ENUM;FLcom/parrot/arsdk/arcommands/ARCOMMANDS_ARDRONE3_PILOTINGSTATE_MOVETOCHANGED_STATUS_ENUM;)V
+.end method

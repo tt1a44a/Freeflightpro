@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_root"
+    n1:background="@color/calibration_background_color"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_above="@id/calibration_sky_bottom"
+        layout="@layout/calibration_common" />
+    <include
+        n1:id="@id/calibration_sky_bottom"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_margin="@dimen/activity_horizontal_margin"
+        n1:layout_alignParentBottom="true"
+        layout="@layout/calibration_sky_2p_bottom" />
+</RelativeLayout>

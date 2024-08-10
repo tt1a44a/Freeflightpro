@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView
+        n1:id="@id/bestof_recycler_view"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_alignParentTop="true"
+        n1:paddingStart="@dimen/gallery_media_padding"
+        n1:paddingEnd="@dimen/gallery_media_padding" />
+    <FrameLayout
+        n1:id="@id/bestof_loader_layout"
+        n1:focusable="true"
+        n1:visibility="gone"
+        n1:clickable="true"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <ProgressBar
+            n1:layout_gravity="center"
+            n1:id="@id/bestof_loader_progress_bar"
+            n1:background="@android:color/transparent"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/director_music_height">
+        <RelativeLayout
+            n1:id="@id/music_description_layout"
+            n1:padding="@dimen/director_music_horizontal_padding"
+            n1:layout_width="@dimen/director_music_info_width"
+            n1:layout_height="fill_parent">
+            <TextView
+                n1:textSize="@dimen/director_music_title_size"
+                n1:textColor="@color/white"
+                n1:ellipsize="end"
+                n1:id="@id/music_title"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:maxLines="2" />
+            <TextView
+                n1:textSize="@dimen/director_music_duration_size"
+                n1:textColor="@color/white"
+                n1:gravity="bottom"
+                n1:id="@id/music_duration"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_below="@id/music_title"
+                n1:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            n1:id="@id/music_data_layout"
+            n1:focusable="true"
+            n1:clickable="true"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_toEndOf="@id/music_description_layout">
+            <com.parrot.freeflight.flightdirector.view.AudioWaveformView
+                n1:id="@id/music_waveform_view"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent" />
+            <com.parrot.freeflight.flightdirector.view.SampleSelectorView
+                n1:id="@id/music_sample_editor_layout"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent" />
+            <TextView
+                n1:textSize="@dimen/director_music_bounds_size"
+                n1:textColor="@color/green"
+                n1:id="@id/music_start_view"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_alignStart="@id/music_sample_editor_layout" />
+            <TextView
+                n1:textSize="@dimen/director_music_bounds_size"
+                n1:textColor="@color/green"
+                n1:id="@id/music_end_view"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_alignParentBottom="true"
+                n1:layout_alignEnd="@id/music_sample_editor_layout" />
+        </RelativeLayout>
+        <View
+            n1:background="@null"
+            n1:layout_width="fill_parent"
+            n1:layout_height="@dimen/director_music_separator_height"
+            n1:layout_alignParentBottom="true" />
+        <FrameLayout
+            n1:id="@id/music_sample_selector"
+            n1:background="@color/transparent_lighter_green"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+            <View
+                n1:background="@color/green"
+                n1:layout_width="@dimen/director_music_selector_width"
+                n1:layout_height="fill_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

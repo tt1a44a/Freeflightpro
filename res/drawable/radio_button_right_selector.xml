@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item
+        n1:state_focused="true"
+        n1:state_checked="true"
+        n1:drawable="@drawable/radio_button_right_checked_and_focused"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item
+        n2:state_focused="true"
+        n2:drawable="@drawable/radio_button_right_focused"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item
+        n3:state_checked="false"
+        n3:state_pressed="true"
+        n3:drawable="@drawable/radio_button_right_pressed"
+        xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item
+        n4:state_checked="true"
+        n4:drawable="@drawable/radio_button_right_checked"
+        xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item
+        n5:drawable="@drawable/radio_button_right"
+        xmlns:n5="http://schemas.android.com/apk/res/android" />
+</selector>

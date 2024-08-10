@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:id="@id/layout_force_update"
+    n1:padding="@dimen/force_update_layout_padding"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="@dimen/force_update_title_size"
+        n1:gravity="center"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/update" />
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <ImageView
+            n1:id="@id/image_force_update"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/force_update_view_margin"
+            n1:layout_marginBottom="@dimen/force_update_view_margin"
+            n1:src="@drawable/icn_force_update" />
+        <TextView
+            n1:textSize="@dimen/force_update_title_size"
+            n1:gravity="center"
+            n1:id="@id/text_update_required"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:text="@string/update_required"
+            n1:textAllCaps="true" />
+        <TextView
+            n1:textSize="@dimen/force_update_text_size"
+            n1:gravity="center"
+            n1:id="@id/text_update_message"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/force_update_view_half_margin" />
+        <Button
+            n1:textSize="@dimen/force_update_text_size"
+            n1:gravity="center"
+            n1:id="@id/button_update_ok"
+            n1:background="@drawable/button_selector"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/force_update_view_margin"
+            n1:layout_marginBottom="@dimen/force_update_view_margin"
+            n1:text="@string/ok"
+            n1:textAllCaps="true"
+            n1:paddingStart="@dimen/force_update_button_padding"
+            n1:paddingEnd="@dimen/force_update_button_padding"
+            style="@style/SettingsButton" />
+    </LinearLayout>
+</LinearLayout>

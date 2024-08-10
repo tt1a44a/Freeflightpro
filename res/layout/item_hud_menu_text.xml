@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:gravity="center"
+    n1:orientation="vertical"
+    n1:background="@drawable/circular_button_background"
+    n1:layout_width="@dimen/piloting_button_size"
+    n1:layout_height="@dimen/piloting_button_size"
+    n1:layout_marginBottom="@dimen/flip_menu_dropdown_margin_between"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="@dimen/hud_menu_value_text_size"
+        n1:textColor="@color/circular_button_image_color_state_list"
+        n1:id="@id/text_value"
+        n1:duplicateParentState="true"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content" />
+    <TextView
+        n1:textSize="@dimen/hud_menu_unit_text_size"
+        n1:textColor="@color/circular_button_image_color_state_list"
+        n1:id="@id/text_unit"
+        n1:duplicateParentState="true"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/hud_menu_text_space" />
+</LinearLayout>

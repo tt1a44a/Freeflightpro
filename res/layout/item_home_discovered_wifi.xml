@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:background="@drawable/background_home_discovered_drone_item"
+    n1:layout_width="fill_parent"
+    n1:layout_height="@dimen/homepage_status_bar_height"
+    n1:layout_marginTop="@dimen/discovered_item_marginTop"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="@dimen/home_tile_text_size"
+        n1:textColor="@android:color/white"
+        n1:gravity="center_vertical"
+        n1:id="@id/text_drone_name"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_marginStart="@dimen/home_icon_margin_left"
+        n1:layout_toStartOf="@id/image_drone_wifi_signal" />
+    <TextView
+        n1:textColor="@color/colorText"
+        n1:gravity="center"
+        n1:id="@id/text_no_drones"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:text="@string/no_drones"
+        n1:textAllCaps="true"
+        n1:layout_marginStart="@dimen/discovered_item_name_marginStart" />
+    <ImageView
+        n1:id="@id/image_drone_loading_progress"
+        n1:visibility="visible"
+        n1:layout_width="@dimen/homepage_status_bar_drone_icon_height"
+        n1:layout_height="@dimen/homepage_status_bar_drone_icon_height"
+        n1:src="@drawable/helice"
+        n1:layout_centerInParent="true" />
+    <com.parrot.freeflight.home.widget.WifiSignalView
+        n1:id="@id/image_drone_wifi_signal"
+        n1:visibility="gone"
+        n1:layout_width="@dimen/homepage_status_bar_drone_icon_height"
+        n1:layout_height="@dimen/homepage_status_bar_drone_icon_height"
+        n1:layout_centerVertical="true"
+        n1:layout_marginStart="@dimen/home_icon_margin_left"
+        n1:layout_marginEnd="@dimen/home_icon_margin_left"
+        n1:layout_alignParentEnd="true" />
+    <ImageView
+        n1:id="@id/image_drone_wifi_lock"
+        n1:layout_width="@dimen/homepage_status_bar_drone_sub_icon_height"
+        n1:layout_height="@dimen/homepage_status_bar_drone_sub_icon_height"
+        n1:layout_marginTop="@dimen/homepage_status_bar_drone_sub_icon_margin"
+        n1:src="@drawable/flightplan_icn_lock"
+        n1:tint="@color/white"
+        n1:layout_alignTop="@id/image_drone_wifi_signal"
+        n1:layout_marginStart="@dimen/homepage_status_bar_drone_sub_icon_margin"
+        n1:layout_alignStart="@id/image_drone_wifi_signal" />
+    <ImageView
+        n1:id="@id/image_drone_progress"
+        n1:visibility="gone"
+        n1:layout_width="@dimen/homepage_status_bar_drone_icon_height"
+        n1:layout_height="@dimen/homepage_status_bar_drone_icon_height"
+        n1:src="@drawable/helice"
+        n1:layout_centerVertical="true"
+        n1:layout_marginStart="@dimen/home_icon_margin_left"
+        n1:layout_marginEnd="@dimen/home_icon_margin_left"
+        n1:layout_alignParentEnd="true" />
+    <View
+        n1:background="@drawable/filter_wifi_item_disabled"
+        n1:duplicateParentState="true"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+    <TextView
+        n1:textColor="@color/white"
+        n1:id="@id/text_forget_button"
+        n1:background="@drawable/home_forget_button_background"
+        n1:paddingTop="@dimen/home_connect_text_padding"
+        n1:paddingBottom="@dimen/home_connect_text_padding"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/forget"
+        n1:layout_centerVertical="true"
+        n1:paddingStart="@dimen/home_connect_text_padding_big"
+        n1:paddingEnd="@dimen/home_connect_text_padding_big"
+        n1:layout_marginEnd="@dimen/home_forget_margin_right"
+        n1:layout_toStartOf="@id/image_drone_wifi_signal" />
+</RelativeLayout>

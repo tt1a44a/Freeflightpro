@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    n1:paddingTop="5.0dip"
+    n1:paddingBottom="5.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="@dimen/drone_infos_item_text_size"
+        n1:textColor="@color/white"
+        n1:id="@id/drone_info_title"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n2:layout_widthPercent="50.0%"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView
+        n1:textSize="@dimen/drone_infos_item_text_size"
+        n1:textColor="@color/light_gray"
+        n1:gravity="end"
+        n1:layout_gravity="center"
+        n1:id="@id/drone_info_text_value"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_toEndOf="@id/drone_info_title"
+        n3:layout_widthPercent="50.0%"
+        xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="gamepad_mapping_image_height">75.0%</fraction>
+    <fraction name="gamepad_mapping_joystick_sens">25.0%</fraction>
+    <fraction name="gamepad_mapping_joystick_sens_curve">90.0%</fraction>
+    <fraction name="gamepad_mapping_joystick_sens_header">10.000002%</fraction>
+    <fraction name="map_preload_button_width">29.999996%</fraction>
+    <fraction name="map_preload_tuto_width">50.0%</fraction>
+    <fraction name="my_flights_details_summary_grid_height">50.0%</fraction>
+    <fraction name="my_flights_details_summary_grid_width">33.000004%</fraction>
+    <fraction name="my_flights_details_summary_title_buttons_width">39.999996%</fraction>
+    <fraction name="my_flights_details_summary_title_horizontal_margin">4.999995%</fraction>
+    <fraction name="registration_page_image_width">60.000004%</fraction>
+    <fraction name="registration_page_start_buttons_width">55.000008%</fraction>
+    <fraction name="registration_promo_code_content_width">45.000004%</fraction>
+    <fraction name="warning_rc_configuration_button_horizontal_margin">20.000004%</fraction>
+    <fraction name="warning_rc_configuration_part_height">33.000004%</fraction>
+    <fraction name="warning_rc_configuration_width">50.0%</fraction>
+</resources>

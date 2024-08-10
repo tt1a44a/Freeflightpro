@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_settings"
+    n1:background="@color/piloting_settings_bg"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        n1:id="@id/layout_back_button"
+        n1:background="@color/settings_category_background_color"
+        n1:layout_width="70.0dip"
+        n1:layout_height="wrap_content">
+        <ImageView
+            n1:layout_gravity="center_horizontal"
+            n1:id="@id/image_back_button"
+            n1:background="@drawable/circular_button_background"
+            n1:focusable="true"
+            n1:nextFocusLeft="@id/image_back_button"
+            n1:nextFocusRight="@id/text_reset"
+            n1:nextFocusUp="@id/image_back_button"
+            n1:nextFocusDown="@id/list_view_settings_category"
+            n1:layout_width="@dimen/settings_back_button_size"
+            n1:layout_height="@dimen/settings_back_button_size"
+            n1:layout_marginTop="@dimen/settings_space_between_widget"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside"
+            n1:contentDescription="@string/piloting_cd_go_back" />
+    </FrameLayout>
+    <ListView
+        n1:id="@id/list_view_settings_category"
+        n1:background="@color/settings_category_background_color"
+        n1:paddingTop="@dimen/settings_space_between_widget"
+        n1:nextFocusLeft="@id/list_view_settings_category"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:divider="@null"
+        n1:dividerHeight="0.0dip"
+        n1:layout_below="@id/layout_back_button"
+        n1:layout_alignLeft="@id/layout_back_button"
+        n1:layout_alignRight="@id/layout_back_button"
+        n1:layout_alignParentBottom="true"
+        n1:contentDescription="@string/piloting_settings_cd_lv_settings_category" />
+    <TextView
+        n1:textSize="@dimen/settings_title_size"
+        n1:textColor="@android:color/white"
+        n1:gravity="center_vertical"
+        n1:id="@id/text_settings_title"
+        n1:background="@color/settings_title_background_color"
+        n1:paddingLeft="@dimen/settings_margin_big"
+        n1:paddingTop="@dimen/settings_margin_middle"
+        n1:paddingBottom="@dimen/settings_margin_middle"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="Positions, Distances and Limits"
+        n1:maxLines="1"
+        n1:layout_toRightOf="@id/layout_back_button"
+        n1:layout_alignLeft="@id/recycler_view_entry_list"
+        n1:layout_alignParentTop="true"
+        n1:textAllCaps="true" />
+    <TextView
+        n1:textSize="@dimen/settings_title_size"
+        n1:textColor="@color/color_white_clickable_text_selector"
+        n1:layout_gravity="center_vertical"
+        n1:id="@id/text_reset"
+        n1:background="@drawable/transparent_focusable_background"
+        n1:padding="@dimen/settings_margin_middle"
+        n1:focusable="true"
+        n1:nextFocusLeft="@id/image_back_button"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/reset_button"
+        n1:layout_alignParentTop="true"
+        n1:layout_alignParentRight="true"
+        n1:contentDescription="@string/reset_button"
+        n1:textAllCaps="true"
+        n1:layout_alignParentEnd="true" />
+    <TextView
+        n1:textColor="@android:color/white"
+        n1:gravity="center_vertical"
+        n1:id="@id/text_help"
+        n1:background="@drawable/transparent_focusable_background"
+        n1:padding="@dimen/settings_padding"
+        n1:focusable="true"
+        n1:visibility="invisible"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="\?"
+        n1:layout_toLeftOf="@id/text_reset"
+        n1:layout_alignParentTop="true"
+        n1:contentDescription="@string/piloting_settings_cd_help" />
+    <com.parrot.freeflight.view.CustomRecyclerView
+        n1:id="@id/recycler_view_entry_list"
+        n1:background="@color/settings_background_color"
+        n1:focusableInTouchMode="true"
+        n1:scrollbars="vertical"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_toRightOf="@id/list_view_settings_category"
+        n1:layout_below="@id/text_settings_title" />
+    <TextView
+        n1:textSize="@dimen/toolbar_text_size"
+        n1:textColor="@color/white"
+        n1:gravity="center"
+        n1:id="@id/text_info_bar"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/toolbar_height"
+        n1:layout_alignParentBottom="true" />
+</RelativeLayout>

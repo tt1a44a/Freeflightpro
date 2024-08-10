@@ -1,0 +1,8 @@
+.class public interface abstract Lcom/parrot/arsdk/arcommands/ARCommandARDrone3PilotingStateReturnHomeBatteryCapacityListener;
+.super Ljava/lang/Object;
+.source "ARCommandARDrone3PilotingStateReturnHomeBatteryCapacityListener.java"
+
+
+# virtual methods
+.method public abstract onARDrone3PilotingStateReturnHomeBatteryCapacityUpdate(Lcom/parrot/arsdk/arcommands/ARCOMMANDS_ARDRONE3_PILOTINGSTATE_RETURNHOMEBATTERYCAPACITY_STATUS_ENUM;)V
+.end method

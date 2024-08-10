@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item
+        n1:state_pressed="true"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <bitmap
+            n1:src="@drawable/piloting_recording_switch_video"
+            n1:tint="@color/black" />
+    </item>
+    <item>
+        <level-list>
+            <item
+                n2:maxLevel="0"
+                xmlns:n2="http://schemas.android.com/apk/res/android">
+                <bitmap
+                    n2:src="@drawable/piloting_recording_switch_video"
+                    n2:tint="@color/white" />
+            </item>
+            <item
+                n3:maxLevel="1"
+                xmlns:n3="http://schemas.android.com/apk/res/android">
+                <bitmap
+                    n3:src="@drawable/piloting_recording_switch_video"
+                    n3:tint="@color/piloting_recording_mode_selected_color" />
+            </item>
+        </level-list>
+    </item>
+</selector>

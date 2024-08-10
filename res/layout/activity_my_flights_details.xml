@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_flight_details_root"
+    n1:background="@drawable/background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:id="@id/layout_my_flights_details_title"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentTop="true">
+        <ImageButton
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/button_my_flights_details_back"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_margin="@dimen/piloting_buttons_margin"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside" />
+        <TextView
+            n1:textSize="@dimen/home_title_text_size"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:id="@id/textview_my_flights_details_title"
+            n1:layout_width="fill_parent"
+            n1:layout_height="@dimen/my_flights_title_height"
+            n1:text="@string/my_flights_title"
+            n1:layout_centerVertical="true" />
+        <include
+            layout="@layout/item_share_run_details" />
+    </RelativeLayout>
+    <FrameLayout
+        n1:id="@id/fragment_my_flights_details"
+        n1:background="@android:color/transparent"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_above="@id/layout_my_flights_details_buttons"
+        n1:layout_below="@id/layout_my_flights_details_title" />
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/layout_my_flights_details_buttons"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/my_flights_details_button_height"
+        n1:layout_alignParentBottom="true">
+        <Button
+            n1:textColor="@color/academy_selectable_buttons_selector"
+            n1:id="@id/button_my_flights_details_summary"
+            n1:background="@drawable/my_flights_details_button_background"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:text="@string/my_flights_details_title_summary"
+            n1:layout_weight="1.0" />
+        <Button
+            n1:textColor="@color/academy_selectable_buttons_selector"
+            n1:id="@id/button_my_flights_details_gps"
+            n1:background="@drawable/my_flights_details_button_background"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:text="@string/my_flights_details_title_gps"
+            n1:layout_weight="1.0" />
+        <Button
+            n1:textColor="@color/academy_selectable_buttons_selector"
+            n1:id="@id/button_my_flights_details_graphics"
+            n1:background="@drawable/my_flights_details_button_background"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:text="@string/my_flights_details_title_graphics"
+            n1:layout_weight="1.0" />
+        <Button
+            n1:textColor="@color/academy_selectable_buttons_selector"
+            n1:id="@id/button_my_flights_details_medias"
+            n1:background="@drawable/my_flights_details_button_background"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:text="@string/my_flights_details_title_medias"
+            n1:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

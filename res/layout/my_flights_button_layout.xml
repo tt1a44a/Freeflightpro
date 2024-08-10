@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.parrot.freeflight.piloting.widget.RoundedCornerLayout
+    n1:layout_gravity="end|center"
+    n1:background="@drawable/ripple_effect"
+    n1:clickable="true"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    n1:layout_marginEnd="@dimen/home_toolbar_margin_end"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="horizontal"
+        n1:id="@id/layout_my_flights_button"
+        n1:background="@color/home_button_background"
+        n1:duplicateParentState="true"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content">
+        <TextView
+            n1:textSize="@dimen/home_title_toolbar_button_text_size"
+            n1:textColor="@color/color_white_clickable_text_selector"
+            n1:layout_gravity="center"
+            n1:background="@android:color/transparent"
+            n1:clickable="false"
+            n1:duplicateParentState="true"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/home_my_flights_vertical_margin"
+            n1:layout_marginBottom="@dimen/home_my_flights_vertical_margin"
+            n1:text="@string/home_my_flights"
+            n1:textAllCaps="true"
+            n1:layout_marginStart="@dimen/home_my_flights_horizontal_margin"
+            n1:layout_marginEnd="@dimen/home_my_flights_horizontal_margin" />
+        <TextView
+            n1:textSize="@dimen/home_unread_flight_count_text_size"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:id="@id/text_unread_flight_count"
+            n1:background="@drawable/round_accent_stroked_drawable"
+            n1:visibility="gone"
+            n1:layout_width="@dimen/homepage_status_bar_drone_icon_height"
+            n1:layout_height="@dimen/homepage_status_bar_drone_icon_height"
+            n1:layout_marginEnd="@dimen/home_icon_margin_left" />
+    </LinearLayout>
+</com.parrot.freeflight.piloting.widget.RoundedCornerLayout>

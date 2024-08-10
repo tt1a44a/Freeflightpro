@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:orientation="vertical"
+    n1:paddingTop="@dimen/director_toolbar_height"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView
+        n1:id="@id/flight_data_recycler_view"
+        n1:clipToPadding="false"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_above="@id/flight_data_box_layout"
+        n1:paddingStart="@dimen/director_window_padding"
+        n1:paddingEnd="@dimen/director_window_padding" />
+    <LinearLayout
+        n1:gravity="center_horizontal"
+        n1:orientation="horizontal"
+        n1:id="@id/flight_data_box_layout"
+        n1:paddingTop="@dimen/director_data_vertical_padding"
+        n1:paddingBottom="@dimen/director_data_vertical_padding"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:divider="@drawable/flight_director_style_separator"
+        n1:layout_alignParentBottom="true"
+        n1:showDividers="middle">
+        <CheckBox
+            n1:id="@id/flight_data_location_checkbox"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/flight_director_data_location"
+            style="@style/RoundCheckBox" />
+        <CheckBox
+            n1:id="@id/flight_data_map_checkbox"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/flight_director_data_gps_map"
+            style="@style/RoundCheckBox" />
+        <CheckBox
+            n1:id="@id/flight_data_telemetry_checkbox"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/flight_director_data_telemetry"
+            style="@style/RoundCheckBox" />
+        <CheckBox
+            n1:id="@id/flight_data_logo_checkbox"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/flight_director_data_logo"
+            style="@style/RoundCheckBox" />
+    </LinearLayout>
+</RelativeLayout>

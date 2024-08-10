@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:id="@id/layout_root_drone_info"
+    n1:background="@drawable/background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <ImageButton
+            n1:layout_gravity="start|center"
+            n1:id="@id/button_back"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_margin="@dimen/piloting_buttons_margin"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside" />
+        <TextView
+            n1:textSize="@dimen/home_title_text_size"
+            n1:textColor="@color/white"
+            n1:layout_gravity="center"
+            n1:id="@id/title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content" />
+        <com.parrot.freeflight.piloting.widget.RoundedCornerLayout
+            n1:layout_gravity="end"
+            n1:id="@id/layout_drone_wifi_signal"
+            n1:background="@drawable/ripple_effect"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_margin="@dimen/piloting_buttons_margin">
+            <RelativeLayout
+                n1:background="@color/transparent_light_grey"
+                n1:padding="@dimen/drone_infos_map_horizontal_padding"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+                <com.parrot.freeflight.home.widget.WifiSignalView
+                    n1:id="@id/drone_wifi_signal"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerVertical="true" />
+                <TextView
+                    n1:textSize="@dimen/charge_text_size_medium"
+                    n1:id="@id/text_drone_wifi_signal"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginStart="@dimen/drone_infos_margin_image"
+                    n1:layout_toEndOf="@id/drone_wifi_signal" />
+            </RelativeLayout>
+        </com.parrot.freeflight.piloting.widget.RoundedCornerLayout>
+        <TextView
+            n1:textSize="@dimen/charge_text_size_medium"
+            n1:textColor="@color/drone_memory_bottom_bar_delete_text"
+            n1:layout_gravity="end|center"
+            n1:id="@id/text_not_connected_status"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/piloting_cd_not_connected"
+            n1:layout_marginEnd="@dimen/home_icon_margin_left" />
+    </FrameLayout>
+    <android.support.percent.PercentRelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <android.support.percent.PercentFrameLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_marginStart="@dimen/piloting_buttons_margin"
+            n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+            n2:layout_widthPercent="50.0%"
+            xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <RelativeLayout
+                n1:id="@id/drone_info_map_layout"
+                n1:layout_width="fill_parent"
+                n2:layout_heightPercent="50.0%">
+                <TextView
+                    n1:textColor="@color/white"
+                    n1:id="@id/drone_position_status"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="@dimen/drone_infos_margin_image"
+                    n1:shadowColor="@color/black"
+                    n1:shadowDx="0.0"
+                    n1:shadowDy="0.0"
+                    n1:shadowRadius="1.0"
+                    n1:textAllCaps="true"
+                    n1:layout_marginStart="@dimen/drone_infos_margin_image" />
+                <ImageButton
+                    n1:id="@id/button_beep_drone"
+                    n1:background="@drawable/ripple_effect"
+                    n1:visibility="gone"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_margin="@dimen/drone_infos_map_horizontal_padding"
+                    n1:src="@drawable/button_beep_my_drone"
+                    n1:layout_alignParentEnd="true" />
+                <ImageButton
+                    n1:id="@id/button_stop_beep_drone"
+                    n1:background="@drawable/ripple_effect"
+                    n1:visibility="gone"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_margin="@dimen/drone_infos_map_horizontal_padding"
+                    n1:src="@drawable/button_beep_my_drone_off"
+                    n1:layout_alignParentEnd="true" />
+                <FrameLayout
+                    n1:id="@id/drone_position_layout"
+                    n1:background="@color/transparent_black"
+                    n1:paddingTop="@dimen/drone_infos_map_vertical_padding"
+                    n1:paddingBottom="@dimen/drone_infos_map_vertical_padding"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:layout_alignParentBottom="true"
+                    n1:paddingStart="@dimen/drone_infos_map_horizontal_padding"
+                    n1:paddingEnd="@dimen/drone_infos_map_horizontal_padding">
+                    <TextView
+                        n1:id="@id/drone_last_time_used_text"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content" />
+                    <LinearLayout
+                        n1:layout_gravity="end"
+                        n1:orientation="horizontal"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content">
+                        <TextView
+                            n1:id="@id/drone_last_known_position"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content" />
+                        <ImageView
+                            n1:layout_gravity="center_vertical"
+                            n1:layout_width="wrap_content"
+                            n1:layout_height="wrap_content"
+                            n1:src="@drawable/chevron_right"
+                            n1:tint="@color/white"
+                            n1:layout_marginStart="@dimen/drone_infos_margin_image" />
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                n1:layout_gravity="bottom"
+                n1:id="@id/recycler_view"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_alignParentBottom="true"
+                n1:overScrollMode="never"
+                n2:layout_heightPercent="50.0%" />
+        </android.support.percent.PercentFrameLayout>
+        <FrameLayout
+            n1:gravity="center"
+            n1:layout_gravity="center"
+            n1:id="@id/layout_drone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentEnd="true"
+            n3:layout_heightPercent="60.000004%"
+            n3:layout_widthPercent="50.0%"
+            xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <RelativeLayout
+            n1:gravity="center"
+            n1:id="@id/layout_drone_setup"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/drone_infos_margin_button"
+            n1:layout_below="@id/layout_drone"
+            n1:layout_alignParentEnd="true"
+            n4:layout_widthPercent="50.0%"
+            xmlns:n4="http://schemas.android.com/apk/res-auto">
+            <Button
+                n1:layout_gravity="bottom|center"
+                n1:id="@id/button_drone_calibration"
+                n1:background="@drawable/button_selector"
+                n1:layout_width="wrap_content"
+                n1:layout_height="@dimen/settings_buttons_height"
+                n1:layout_marginBottom="@dimen/drone_infos_margin_button"
+                n1:minWidth="@dimen/drone_infos_button_min_width"
+                n1:text="@string/piloting_settings_calibration"
+                n1:paddingStart="@dimen/drone_infos_padding_button"
+                n1:paddingEnd="@dimen/drone_infos_padding_button" />
+            <Button
+                n1:layout_gravity="center_horizontal"
+                n1:id="@id/button_drone_flat_trim"
+                n1:background="@drawable/button_selector"
+                n1:layout_width="wrap_content"
+                n1:layout_height="@dimen/settings_buttons_height"
+                n1:minWidth="@dimen/drone_infos_button_min_width"
+                n1:text="@string/piloting_settings_flat_trim"
+                n1:layout_below="@id/button_drone_calibration"
+                n1:paddingStart="@dimen/drone_infos_padding_button"
+                n1:paddingEnd="@dimen/drone_infos_padding_button" />
+        </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>

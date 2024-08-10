@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:id="@id/layout_web_info"
+    n1:padding="@dimen/profile_bloc_padding"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="@dimen/profile_principal_text_size"
+        n1:textStyle="bold"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/profile_web_contacts"
+        n1:textAllCaps="true" />
+    <TableLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:stretchColumns="1">
+        <include
+            layout="@layout/activity_profile_web_info1" />
+        <include
+            layout="@layout/activity_profile_web_info2" />
+    </TableLayout>
+</LinearLayout>

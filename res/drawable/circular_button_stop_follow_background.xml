@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item
+        n1:state_enabled="false"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape
+            n1:shape="oval">
+            <solid
+                n1:color="@color/piloting_button_disabled_color" />
+            <stroke
+                n1:width="1.0dip"
+                n1:color="@color/piloting_button_outline_color" />
+        </shape>
+    </item>
+    <item
+        n2:state_pressed="true"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape
+            n2:shape="oval">
+            <solid
+                n2:color="@color/follow_me_stop_button_selected_bg_color" />
+            <stroke
+                n2:width="1.0dip"
+                n2:color="@color/follow_me_stop_button_pressed_outline_color" />
+        </shape>
+    </item>
+    <item
+        n3:state_focused="true"
+        xmlns:n3="http://schemas.android.com/apk/res/android">
+        <shape
+            n3:shape="oval">
+            <solid
+                n3:color="@color/light_gray" />
+            <stroke
+                n3:width="1.0dip"
+                n3:color="@color/piloting_button_outline_color" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            n4:shape="oval"
+            xmlns:n4="http://schemas.android.com/apk/res/android">
+            <solid
+                n4:color="@color/follow_me_stop_button_selected_bg_color" />
+            <stroke
+                n4:width="1.0dip"
+                n4:color="@color/follow_me_stop_button_selected_outline_color" />
+        </shape>
+    </item>
+</selector>

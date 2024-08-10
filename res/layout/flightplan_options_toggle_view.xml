@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.parrot.freeflight.flightplan.FlightPlanOptionsToggleView
+    n1:layout_gravity="center"
+    n1:orientation="horizontal"
+    n1:id="@id/radio_group"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RadioButton
+        n1:textSize="@dimen/settings_text_size"
+        n1:textColor="@color/white"
+        n1:gravity="center"
+        n1:id="@id/radio_button_left"
+        n1:background="@drawable/radio_button_left_selector"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:button="@android:color/transparent"
+        n1:text="@string/no"
+        n1:layout_weight="1.0" />
+    <RadioButton
+        n1:textSize="@dimen/settings_text_size"
+        n1:textColor="@color/white"
+        n1:gravity="center"
+        n1:id="@id/radio_button_right"
+        n1:background="@drawable/radio_button_right_selector"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:button="@android:color/transparent"
+        n1:text="@string/yes"
+        n1:layout_weight="1.0" />
+</com.parrot.freeflight.flightplan.FlightPlanOptionsToggleView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="horizontal"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.percent.PercentRelativeLayout
+        n1:focusable="false"
+        n1:focusableInTouchMode="false"
+        n1:clickable="false"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_marginTop="@dimen/gamepad_mapping_margin"
+        n1:layout_marginBottom="@dimen/gamepad_mapping_margin"
+        n1:layout_weight="1.0"
+        n1:paddingStart="@dimen/gamepad_mapping_margin"
+        n1:paddingEnd="@dimen/gamepad_mapping_margin">
+        <ImageView
+            n1:id="@id/image_mapped_remote"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_alignParentTop="true"
+            n2:layout_heightPercent="@fraction/gamepad_mapping_image_height"
+            xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:id="@id/image_mapped_joystick"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_marginTop="@dimen/gamepad_mapping_joystick_margin"
+            n1:layout_below="@id/image_mapped_remote"
+            n3:layout_heightPercent="@fraction/gamepad_mapping_joystick_sens"
+            xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <ImageView
+                n1:id="@id/image_joystick_mapping_left"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:src="@drawable/joystick_mapping"
+                n1:layout_weight="1.0" />
+            <LinearLayout
+                n1:gravity="center|top"
+                n1:orientation="horizontal"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent">
+                <ImageView
+                    n1:layout_gravity="center_vertical"
+                    n1:id="@id/image_battery_percentage"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="@dimen/gamepad_mapping_joystick_battery_icon_size"
+                    n1:src="@drawable/battery" />
+                <TextView
+                    n1:textSize="@dimen/gamepad_mapping_joystick_battery_text_size"
+                    n1:textColor="@color/colorAccent"
+                    n1:layout_gravity="center_vertical"
+                    n1:id="@id/text_battery_percentage"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="@string/question_mark"
+                    n1:layout_marginStart="5.0dip" />
+            </LinearLayout>
+            <ImageView
+                n1:id="@id/image_joystick_mapping_right"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:src="@drawable/joystick_mapping"
+                n1:layout_weight="1.0" />
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:id="@id/layout_mapping"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_weight="1.0">
+        <RadioGroup
+            n1:layout_gravity="center_horizontal"
+            n1:orientation="horizontal"
+            n1:id="@id/radiogroup_switch_mapping"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/about_item_vertical_margin"
+            n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+            n1:checkedButton="@id/radiobutton_main_mapping">
+            <RadioButton
+                n1:textColor="@drawable/text_color_selector"
+                n1:gravity="center"
+                n1:id="@id/radiobutton_main_mapping"
+                n1:background="@drawable/radio_button_left_selector"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:button="@android:color/transparent"
+                n1:layout_weight="1.0" />
+            <RadioButton
+                n1:textColor="@drawable/text_color_selector"
+                n1:gravity="center"
+                n1:id="@id/radiobutton_alternate_mapping"
+                n1:background="@drawable/radio_button_right_selector"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:button="@android:color/transparent"
+                n1:layout_weight="1.0" />
+        </RadioGroup>
+        <android.support.v7.widget.RecyclerView
+            n1:id="@id/recycler_view_mapping"
+            n1:scrollbars="vertical"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

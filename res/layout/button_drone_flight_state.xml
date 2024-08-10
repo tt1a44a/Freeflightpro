@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageButton
+        n1:layout_gravity="bottom|center"
+        n1:id="@id/single_flight_state_button"
+        n1:background="@android:color/transparent"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:src="@drawable/take_off_button_level_list"
+        n1:scaleType="fitXY"
+        n1:adjustViewBounds="true"
+        n1:contentDescription="@string/piloting_cd_take_off" />
+    <RelativeLayout
+        n1:layout_gravity="bottom|center"
+        n1:id="@id/double_flight_state_layout"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <ImageButton
+            n1:id="@id/stop_state_button"
+            n1:background="@android:color/transparent"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/btn_small_stop_selector"
+            n1:scaleType="fitXY"
+            n1:layout_toStartOf="@id/flight_state_separator" />
+        <View
+            n1:id="@id/flight_state_separator"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_centerHorizontal="true" />
+        <ImageButton
+            n1:id="@id/follow_state_button"
+            n1:background="@android:color/transparent"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/btn_small_follow_selector"
+            n1:scaleType="fitXY"
+            n1:layout_toEndOf="@id/flight_state_separator" />
+    </RelativeLayout>
+</FrameLayout>

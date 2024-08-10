@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:id="@id/animation_options_close"
+        n1:background="@drawable/background_animation_close_right"
+        n1:layout_width="@dimen/animations_button_close_width"
+        n1:layout_height="@dimen/animations_button_option_height"
+        n1:layout_marginLeft="@dimen/animations_button_close_margin"
+        n1:src="@drawable/ic_animation_close"
+        n1:scaleType="center"
+        n1:layout_toRightOf="@id/animation_options_right_layout" />
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:id="@id/animation_options_left_layout"
+        n1:background="@drawable/background_animation_right"
+        n1:layout_width="@dimen/animations_button_option_width"
+        n1:layout_height="@dimen/animations_button_option_height"
+        n1:layout_marginRight="@dimen/animations_button_options_margin">
+        <ImageView
+            n1:id="@id/animation_options_left_icon"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="8.0dip" />
+        <TextView
+            n1:textColor="@color/white"
+            n1:id="@id/animation_options_left_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:id="@id/animation_options_right_layout"
+        n1:background="@drawable/background_animation_left"
+        n1:layout_width="@dimen/animations_button_option_width"
+        n1:layout_height="@dimen/animations_button_option_height"
+        n1:layout_toRightOf="@id/animation_options_left_layout">
+        <ImageView
+            n1:id="@id/animation_options_right_icon"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="8.0dip" />
+        <TextView
+            n1:textColor="@color/white"
+            n1:id="@id/animation_options_right_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

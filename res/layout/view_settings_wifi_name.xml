@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:gravity="center"
+    n1:orientation="vertical"
+    n1:background="@drawable/item_background_selector"
+    n1:paddingLeft="@dimen/settings_padding_row"
+    n1:paddingRight="@dimen/settings_padding_row"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="horizontal"
+        n1:background="@drawable/item_background_selector"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/settings_row_height">
+        <TextView
+            n1:textSize="@dimen/settings_title_size"
+            n1:textColor="@color/white"
+            n1:layout_gravity="start|center"
+            n1:id="@id/text_view_name"
+            n1:layout_width="@dimen/settings_name_width"
+            n1:layout_height="wrap_content"
+            n1:layout_marginEnd="@dimen/settings_name_right_margin" />
+        <EditText
+            n1:textSize="@dimen/settings_text_size"
+            n1:textStyle="normal"
+            n1:textColor="@color/transparent_white"
+            n1:gravity="start|bottom|center"
+            n1:id="@id/text_country"
+            n1:background="@drawable/edit_text_selector"
+            n1:layout_width="fill_parent"
+            n1:layout_height="@dimen/settings_buttons_height"
+            n1:layout_weight="1.0"
+            n1:inputType="text"
+            n1:imeOptions="actionDone"
+            n1:layout_marginEnd="@dimen/settings_space_between_widget" />
+        <Button
+            n1:textSize="@dimen/settings_text_size"
+            n1:textStyle="normal"
+            n1:textColor="@drawable/settings_text_color_selector"
+            n1:gravity="center"
+            n1:id="@id/checkbox_setting_wpa2"
+            n1:background="@drawable/settings_button_selector"
+            n1:paddingLeft="@dimen/settings_padding"
+            n1:paddingRight="@dimen/settings_padding"
+            n1:layout_width="fill_parent"
+            n1:layout_height="@dimen/settings_buttons_height"
+            n1:button="@android:color/transparent"
+            n1:layout_weight="1.0"
+            n1:layout_marginEnd="@dimen/settings_space_between_widget" />
+    </LinearLayout>
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="horizontal"
+        n1:id="@id/layout_wp2_area"
+        n1:background="@drawable/item_background_selector"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <TextView
+            n1:textSize="@dimen/settings_title_size"
+            n1:textColor="@color/white"
+            n1:layout_gravity="start|center"
+            n1:id="@id/text_wpa2_area"
+            n1:layout_width="@dimen/settings_name_width"
+            n1:layout_height="wrap_content"
+            n1:text="@string/piloting_settings_network_security"
+            n1:layout_marginEnd="@dimen/settings_name_right_margin" />
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="vertical"
+            n1:background="@drawable/item_background_selector"
+            n1:paddingTop="@dimen/about_item_vertical_margin"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="@dimen/settings_wifi_vertical_margin"
+            n1:layout_marginEnd="@dimen/settings_wifi_vertical_margin">
+            <TextView
+                n1:textSize="@dimen/settings_text_size"
+                n1:textStyle="normal"
+                n1:textColor="@color/transparent_white"
+                n1:gravity="start"
+                n1:id="@id/text_view_info_wpa2"
+                n1:visibility="gone"
+                n1:layout_width="fill_parent"
+                n1:layout_height="@dimen/settings_buttons_height"
+                n1:text="@string/piloting_settings_network_security_deactivated" />
+            <TextView
+                n1:textSize="@dimen/settings_text_size"
+                n1:textStyle="normal"
+                n1:textColor="@color/transparent_white"
+                n1:gravity="start"
+                n1:id="@id/text_view_description_wpa2"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:text="@string/piloting_settings_network_security_desc" />
+            <EditText
+                n1:textSize="@dimen/settings_text_size"
+                n1:textStyle="normal"
+                n1:textColor="@color/transparent_white"
+                n1:gravity="start|bottom|center"
+                n1:id="@id/text_pass_phrase"
+                n1:background="@drawable/edit_text_selector"
+                n1:layout_width="fill_parent"
+                n1:layout_height="@dimen/settings_buttons_height"
+                n1:inputType="text"
+                n1:imeOptions="actionDone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

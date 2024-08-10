@@ -1,0 +1,8 @@
+.class public interface abstract Lcom/parrot/arsdk/arcommands/ARCommandSkyControllerWifiStateWifiEnvironmentChangedListener;
+.super Ljava/lang/Object;
+.source "ARCommandSkyControllerWifiStateWifiEnvironmentChangedListener.java"
+
+
+# virtual methods
+.method public abstract onSkyControllerWifiStateWifiEnvironmentChangedUpdate(Lcom/parrot/arsdk/arcommands/ARCOMMANDS_SKYCONTROLLER_WIFISTATE_WIFIENVIRONMENTCHANGED_ENVIRONMENT_ENUM;)V
+.end method

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_marginStart="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentStart="true">
+        <ImageButton
+            n1:id="@id/button_overdrive_up"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_marginBottom="@dimen/follow_me_side_buttons_vertical_margin"
+            n1:src="@drawable/btn_surpilotage_up"
+            n1:scaleType="centerInside" />
+        <ImageButton
+            n1:id="@id/button_overdrive_yaw_roll_left"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_marginBottom="@dimen/follow_me_side_buttons_vertical_margin"
+            n1:src="@drawable/btn_surpilotage_loiter_left"
+            n1:scaleType="centerInside" />
+        <ImageButton
+            n1:id="@id/button_overdrive_down"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:src="@drawable/btn_surpilotage_down"
+            n1:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentEnd="true">
+        <ImageButton
+            n1:id="@id/button_overdrive_forward"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_marginBottom="@dimen/follow_me_side_buttons_vertical_margin"
+            n1:src="@drawable/btn_surpilotage_forward"
+            n1:scaleType="centerInside" />
+        <ImageButton
+            n1:id="@id/button_overdrive_yaw_roll_right"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_marginBottom="@dimen/follow_me_side_buttons_vertical_margin"
+            n1:src="@drawable/btn_surpilotage_loiter_right"
+            n1:scaleType="centerInside" />
+        <ImageButton
+            n1:id="@id/button_overdrive_backward"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:src="@drawable/btn_surpilotage_backward"
+            n1:scaleType="centerInside" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:gravity="center_horizontal"
+        n1:orientation="vertical"
+        n1:paddingLeft="@dimen/hand_launch_layout_horizontal_padding"
+        n1:paddingRight="@dimen/hand_launch_layout_horizontal_padding"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:weightSum="1.0">
+        <FrameLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="0.2">
+            <TextView
+                n1:textSize="@dimen/home_title_text_size"
+                n1:textColor="@color/light_blue"
+                n1:layout_gravity="center"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/hand_launch_tutorial_title" />
+        </FrameLayout>
+        <ImageView
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:src="@drawable/hand_launch_how_to"
+            n1:layout_weight="0.4" />
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_marginTop="@dimen/hand_launch_suggestion_layout_content_margin"
+            n1:weightSum="3.0"
+            n1:layout_weight="0.2">
+            <TextView
+                n1:gravity="center_horizontal"
+                n1:id="@id/text_hand_launch_how_to_instruction_1"
+                n1:paddingRight="@dimen/hand_launch_how_to_padding"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_margin="@dimen/piloting_buttons_small_margin"
+                n1:layout_weight="1.0" />
+            <TextView
+                n1:gravity="center_horizontal"
+                n1:id="@id/text_hand_launch_how_to_instruction_2"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_margin="@dimen/piloting_buttons_small_margin"
+                n1:layout_weight="1.0" />
+            <TextView
+                n1:gravity="center_horizontal"
+                n1:id="@id/text_hand_launch_how_to_instruction_3"
+                n1:paddingLeft="@dimen/hand_launch_how_to_padding"
+                n1:layout_width="0.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_margin="@dimen/piloting_buttons_small_margin"
+                n1:layout_weight="1.0" />
+        </LinearLayout>
+        <FrameLayout
+            n1:paddingBottom="@dimen/hand_launch_vertical_margin"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="0.2">
+            <Button
+                n1:textSize="@dimen/hand_launch_button_text_size"
+                n1:textColor="@color/light_blue"
+                n1:layout_gravity="center"
+                n1:id="@id/button_hand_launch_how_to_got_it"
+                n1:background="@drawable/button_blue_selector"
+                n1:layout_width="wrap_content"
+                n1:layout_height="@dimen/hand_launch_suggestion_button_height"
+                n1:layout_margin="@dimen/hand_launch_suggestion_button_margin"
+                n1:minWidth="@dimen/hand_launch_suggestion_button_min_width"
+                n1:text="@string/hand_launch_tutorial_ok"
+                n1:paddingStart="@dimen/hand_launch_suggestion_button_horizontal_padding"
+                n1:paddingEnd="@dimen/hand_launch_suggestion_button_horizontal_padding" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

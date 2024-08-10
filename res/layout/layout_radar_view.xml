@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_radar"
+    n1:layout_width="@dimen/piloting_radar_size"
+    n1:layout_height="@dimen/piloting_radar_size"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.parrot.freeflight.piloting.ui.radar.RadarView
+        n1:id="@id/radarview"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+    <ImageView
+        n1:id="@id/imageview_radar_drone_position"
+        n1:layout_width="@dimen/radar_drone_size"
+        n1:layout_height="@dimen/radar_drone_size" />
+    <Button
+        n1:id="@id/button_radar_calibrate"
+        n1:background="@drawable/radar_calibration_button_drawable"
+        n1:padding="5.0dip"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:text="@string/calibration_needed"
+        n1:layout_centerInParent="true" />
+</RelativeLayout>

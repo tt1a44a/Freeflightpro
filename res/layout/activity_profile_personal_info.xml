@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:layout_gravity="center_vertical"
+    n1:orientation="horizontal"
+    n1:id="@id/layout_personal_info"
+    n1:layout_width="fill_parent"
+    n1:layout_height="0.0dip"
+    n1:layout_weight="1.0"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:gravity="center"
+        n1:layout_gravity="center"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_margin="@dimen/profile_avatar_margin">
+        <ImageView
+            n1:id="@id/icon_avatar"
+            n1:layout_width="@dimen/profile_avatar_size"
+            n1:layout_height="@dimen/profile_avatar_size"
+            n1:scaleType="fitCenter"
+            n1:layout_centerInParent="true" />
+        <ProgressBar
+            n1:id="@id/progress_avatar"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="vertical"
+        n1:padding="@dimen/profile_bloc_padding"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_weight="1.0">
+        <TextView
+            n1:textSize="@dimen/profile_principal_text_size"
+            n1:textStyle="bold"
+            n1:id="@id/text_name"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:contentDescription="@string/academy_profile_cd_name"
+            n1:textAllCaps="true" />
+        <TextView
+            n1:textSize="@dimen/profile_secondary_text_size"
+            n1:textStyle="bold"
+            n1:id="@id/text_status"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/form_field_spacing"
+            n1:contentDescription="@string/academy_profile_cd_status" />
+        <ScrollView
+            n1:id="@id/layout_biography"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/form_field_section_spacing">
+            <TextView
+                n1:textSize="@dimen/profile_secondary_text_size"
+                n1:textStyle="bold"
+                n1:id="@id/text_biography"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:contentDescription="@string/academy_profile_cd_biography" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

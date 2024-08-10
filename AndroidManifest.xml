@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.parrot.freeflight3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.usb.accessory"
+        android:required="false" />
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:name="com.parrot.freeflight.MainApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:supportsRtl="false">
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_api_key" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ecddffc521aa0c211772f16cfe86b5e73871590d" />
+        <activity
+            android:theme="@style/SplashTheme"
+            android:name="com.parrot.freeflight.start.StartActivity"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.parrot.freeflight.usb.UsbDetectionActivity"
+            android:taskAffinity="com.parrot.mpp"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action
+                    android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/usb_accessory_filter" />
+        </activity>
+        <activity
+            android:name="com.parrot.freeflight.settings.FpvEyesCalibrationActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.piloting.ui.fpv.FpvGlassesChoiceActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.piloting.FpvPilotingActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.settings.CalibrationActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.whatsnew.WhatsNewHistoryActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.whatsnew.WhatsNewActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.flightplan.ui.FlightPlanTimelineActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.flightplan.mavlink.MavlinkFileListActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.infos.DroneInfosActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.about.AboutActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.start.CountryChoiceActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.followme.FollowMeFreeTrialActivity"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.parrot.freeflight.flightplan.FlightPlanFreeTrialActivity"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.parrot.freeflight.map.MapPreloadActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.map.MapPreloadTutoActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.parrot.freeflight.infos.flattrim.DroneFlatTrimActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.piloting.PilotingActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.home.HomeActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.academy.MyFlightsActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.academy.MyFlightsDetailsActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.mediaplayer.MediaPlayerActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.academy.ProfileActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.about.LegalMentionsActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.gamepad.GamePadInfosActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.gamepad.GamePadConfigurationActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.gamepad.configuration.JoystickSensibilityActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.gamepad.configuration.PresetJoystickSensibility"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.update.UpdateListActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.update.UpdaterActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.update.ForceUpdateActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.myparrot.MyParrotLoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.myparrot.MyParrotLoginReturnActivity"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="com.parrot.freeflight3" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.myparrot.personaldata.DataConfidentialityActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.myparrot.personaldata.ConfirmDeleteAccountActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.myparrot.personaldata.ConfirmDownloadFlightDataActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.myparrot.personaldata.ConfirmDeleteFlightDataActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.media.dronememory.DroneMemoryActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.gamepad.ConfirmRcConfigurationExitActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.offer.OfferActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.authentication.WhyConnectActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.authentication.SplashConnectActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.authentication.ConnectActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.gallery.activity.GalleryActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.gallery.activity.CreateBestOfActivity"
+            android:screenOrientation="sensorLandscape"
+            android:noHistory="true" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.flightdirector.activity.PreviewActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.flightdirector.activity.ExportActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.flightdirector.activity.FlightDirectorActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/ErrorTheme"
+            android:name="com.parrot.freeflight.flightdirector.activity.FlightDirectorErrorActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name="com.parrot.freeflight.flightdirector.activity.FlightDirectorFreeTrialActivity"
+            android:screenOrientation="sensorLandscape" />
+        <service
+            android:name="com.parrot.freeflight.start.ExpansionsDownloaderService" />
+        <service
+            android:name="com.parrot.arsdk.ardiscovery.ARDiscoveryService" />
+        <service
+            android:name="com.parrot.freeflight.util.sync.SyncAuthenticatorService">
+            <intent-filter>
+                <action
+                    android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/sync_authenticator" />
+        </service>
+        <service
+            android:name="com.parrot.freeflight.util.sync.SyncService"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync_adapter" />
+        </service>
+        <service
+            android:name="com.csr.btsmart.BtSmartService"
+            android:enabled="true"
+            android:exported="false" />
+        <provider
+            android:name="com.parrot.freeflight.util.sync.StubSyncContentProvider"
+            android:exported="false"
+            android:authorities="@string/provider_name"
+            android:syncable="true" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.parrot.freeflight3.file.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <receiver
+            android:name="com.parrot.freeflight.start.ExpansionsDownloaderAlarmReceiver" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="2.0.3" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <service
+            android:name="com.parrot.controller.devicecontrollers.ARDrone3DeviceController" />
+        <service
+            android:name="com.parrot.controller.devicecontrollers.SkyControllerDeviceController" />
+        <service
+            android:name="com.parrot.controller.devicecontrollers.FixedWingDeviceController" />
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+    </application>
+</manifest>

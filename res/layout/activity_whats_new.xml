@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_whats_new_root"
+    n1:background="@drawable/background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:id="@id/layout_fake_toolbar"
+        n1:background="@android:color/transparent"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?actionBarSize"
+        n1:layout_alignParentTop="true">
+        <ImageButton
+            n1:id="@id/button_back"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside"
+            n1:layout_centerVertical="true"
+            n1:contentDescription="@string/cd_back"
+            n1:layout_marginStart="@dimen/piloting_buttons_margin" />
+        <TextView
+            n1:textSize="@dimen/toolbar_text_size"
+            n1:textColor="@color/white"
+            n1:id="@id/text_title_whats_new"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/whats_news_menu_long"
+            n1:layout_centerHorizontal="true"
+            n1:layout_centerVertical="true"
+            n1:textAllCaps="true" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        n1:id="@id/viewpager_whats_new"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_above="@id/viewpagerindicator_whats_new"
+        n1:layout_below="@id/layout_fake_toolbar" />
+    <com.parrot.freeflight.view.ViewPagerIndicator
+        n1:id="@id/viewpagerindicator_whats_new"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/flight_plan_free_trial_viewpagerindicator_vertical_margin"
+        n1:layout_marginBottom="@dimen/flight_plan_free_trial_viewpagerindicator_vertical_margin"
+        n1:layout_alignParentBottom="true"
+        n1:layout_centerHorizontal="true" />
+</RelativeLayout>

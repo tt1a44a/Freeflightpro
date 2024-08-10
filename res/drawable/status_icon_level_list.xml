@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list>
+    <item
+        n1:maxLevel="0"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <rotate
+            n1:duration="3000"
+            n1:drawable="@drawable/ic_small_propeller"
+            n1:fromDegrees="0.0"
+            n1:toDegrees="720.0"
+            n1:pivotX="50.0%"
+            n1:pivotY="50.0%" />
+    </item>
+    <item
+        n2:drawable="@drawable/ic_check"
+        n2:maxLevel="1"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item
+        n3:drawable="@drawable/ic_error_red"
+        n3:maxLevel="2"
+        xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item
+        n4:drawable="@drawable/ic_error_orange"
+        n4:maxLevel="3"
+        xmlns:n4="http://schemas.android.com/apk/res/android" />
+</level-list>

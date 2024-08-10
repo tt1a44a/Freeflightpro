@@ -1,0 +1,8 @@
+.class public interface abstract Lcom/parrot/arsdk/arcommands/ARCommandMiniDroneVideoSettingsStateVideoResolutionChangedListener;
+.super Ljava/lang/Object;
+.source "ARCommandMiniDroneVideoSettingsStateVideoResolutionChangedListener.java"
+
+
+# virtual methods
+.method public abstract onMiniDroneVideoSettingsStateVideoResolutionChangedUpdate(Lcom/parrot/arsdk/arcommands/ARCOMMANDS_MINIDRONE_VIDEOSETTINGSSTATE_VIDEORESOLUTIONCHANGED_TYPE_ENUM;)V
+.end method

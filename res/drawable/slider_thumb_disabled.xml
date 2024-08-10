@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <shape
+            n1:shape="oval"
+            xmlns:n1="http://schemas.android.com/apk/res/android">
+            <solid
+                n1:color="@color/transparent_white" />
+            <stroke
+                n1:width="1.0dip"
+                n1:color="@color/white" />
+            <size
+                n1:height="@dimen/settings_thumb_size"
+                n1:width="@dimen/settings_thumb_size" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            n2:shape="oval"
+            xmlns:n2="http://schemas.android.com/apk/res/android">
+            <solid
+                n2:color="@color/white" />
+            <stroke
+                n2:width="@dimen/settings_thumb_inner_size"
+                n2:color="@android:color/transparent" />
+        </shape>
+    </item>
+</layer-list>

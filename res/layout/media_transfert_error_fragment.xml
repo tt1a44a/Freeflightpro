@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    n1:background="@drawable/background"
+    n1:clickable="true"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        n1:id="@id/toolbar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?actionBarSize">
+        <RelativeLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+            <TextView
+                n1:textSize="@dimen/home_title_text_size"
+                n1:textColor="@color/white"
+                n1:id="@id/text_toolbar_title"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/media_drone_memory"
+                n1:layout_centerInParent="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        n1:id="@id/image_status"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_above="@id/text_status"
+        n1:layout_centerHorizontal="true"
+        n2:layout_marginBottomPercent="10.000002%"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView
+        n1:id="@id/text_status"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/memory_full"
+        n1:layout_centerInParent="true"
+        n1:textAllCaps="true" />
+    <TextView
+        n1:id="@id/text_description_status"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/memory_full_error"
+        n1:layout_below="@id/text_status"
+        n1:layout_centerInParent="true" />
+    <Button
+        n1:layout_gravity="center_horizontal"
+        n1:id="@id/button_neutral"
+        n1:background="@drawable/button_selector"
+        n1:paddingLeft="@dimen/about_button_horizontal_padding"
+        n1:paddingRight="@dimen/about_button_horizontal_padding"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/drone_memory_button_height"
+        n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+        n1:text="@string/ok"
+        n1:layout_below="@id/text_description_status"
+        n1:layout_centerHorizontal="true"
+        n3:layout_marginTopPercent="10.000002%"
+        n3:layout_widthPercent="29.999996%"
+        xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <android.support.v4.widget.Space
+        n1:id="@id/center"
+        n1:layout_width="0.0dip"
+        n1:layout_height="0.0dip"
+        n1:layout_centerInParent="true" />
+    <Button
+        n1:layout_gravity="center_horizontal"
+        n1:id="@id/button_negative"
+        n1:background="@drawable/button_selector"
+        n1:paddingLeft="@dimen/about_button_horizontal_padding"
+        n1:paddingRight="@dimen/about_button_horizontal_padding"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/drone_memory_button_height"
+        n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+        n1:text="@string/cancel"
+        n1:layout_below="@id/text_description_status"
+        n1:layout_toStartOf="@id/center"
+        n4:layout_marginEndPercent="4.999995%"
+        n4:layout_marginTopPercent="10.000002%"
+        n4:layout_widthPercent="29.999996%"
+        xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <Button
+        n1:layout_gravity="center_horizontal"
+        n1:id="@id/button_positive"
+        n1:background="@drawable/button_selector"
+        n1:paddingLeft="@dimen/about_button_horizontal_padding"
+        n1:paddingRight="@dimen/about_button_horizontal_padding"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/drone_memory_button_height"
+        n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+        n1:text="@string/delete"
+        n1:layout_below="@id/text_description_status"
+        n1:layout_toEndOf="@id/center"
+        n5:layout_marginStartPercent="4.999995%"
+        n5:layout_marginTopPercent="10.000002%"
+        n5:layout_widthPercent="29.999996%"
+        xmlns:n5="http://schemas.android.com/apk/res-auto" />
+</android.support.percent.PercentRelativeLayout>

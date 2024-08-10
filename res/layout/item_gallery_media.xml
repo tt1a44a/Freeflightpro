@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:background="@drawable/ripple_effect"
+    n1:layout_width="@dimen/gallery_media_preview_width"
+    n1:layout_height="@dimen/gallery_media_preview_height"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:id="@id/media_preview"
+        n1:layout_width="@dimen/gallery_media_preview_width"
+        n1:layout_height="@dimen/gallery_media_preview_height"
+        n1:scaleType="centerCrop"
+        n1:layout_centerHorizontal="true"
+        n1:contentDescription="@null" />
+    <RelativeLayout
+        n1:id="@id/media_layout"
+        n1:background="@drawable/gallery_media_selection_level_list"
+        n1:paddingTop="@dimen/gallery_media_padding"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignTop="@id/media_preview"
+        n1:layout_alignBottom="@id/media_preview"
+        n1:paddingStart="@dimen/gallery_media_padding"
+        n1:paddingEnd="@dimen/gallery_media_padding"
+        n1:layout_alignStart="@id/media_preview"
+        n1:layout_alignEnd="@id/media_preview">
+        <ImageView
+            n1:id="@id/media_bestof_available"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/ic_bestof_available"
+            n1:contentDescription="@null"
+            n1:layout_alignParentEnd="true" />
+        <ImageView
+            n1:id="@id/media_play"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/btn_play_video"
+            n1:layout_centerInParent="true"
+            n1:contentDescription="@null" />
+        <TextView
+            n1:textSize="@dimen/form_secondary_text_size"
+            n1:textColor="@color/white"
+            n1:id="@id/media_duration"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentBottom="true"
+            n1:fontFamily="sans-serif-condensed" />
+        <TextView
+            n1:textSize="@dimen/form_secondary_text_size"
+            n1:textColor="@color/white"
+            n1:id="@id/media_size"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentBottom="true"
+            n1:fontFamily="sans-serif-condensed"
+            n1:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.muvee.studio.view.MmsaGLSurfaceView
+        n1:layout_gravity="center"
+        n1:id="@id/preview_player_surface"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+    <FrameLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <ImageButton
+            n1:layout_gravity="center"
+            n1:id="@id/preview_play_button"
+            n1:background="@null"
+            n1:padding="@dimen/toolbar_button_padding"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/btn_transparent_play" />
+        <ImageButton
+            n1:layout_gravity="center"
+            n1:id="@id/preview_pause_button"
+            n1:background="@null"
+            n1:padding="@dimen/toolbar_button_padding"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/btn_transparent_pause" />
+    </FrameLayout>
+    <FrameLayout
+        n1:gravity="center"
+        n1:id="@id/preview_loader_layout"
+        n1:focusable="true"
+        n1:visibility="visible"
+        n1:clickable="true"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_alignParentTop="true"
+        n1:layout_alignParentStart="true">
+        <ProgressBar
+            n1:layout_gravity="center"
+            n1:id="@id/preview_loader_progress_bar"
+            n1:background="@android:color/transparent"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/preview_progress"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="@dimen/preview_progress_margin"
+        n1:layout_marginRight="@dimen/preview_progress_margin"
+        n1:layout_marginBottom="@dimen/preview_progress_margin"
+        n1:layout_alignParentBottom="true">
+        <TextView
+            n1:id="@id/preview_progress_time"
+            n1:visibility="visible"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="@dimen/preview_progress_seekbar_left_margin"
+            n1:text="00:00" />
+        <SeekBar
+            n1:id="@id/preview_progress_seekbar"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

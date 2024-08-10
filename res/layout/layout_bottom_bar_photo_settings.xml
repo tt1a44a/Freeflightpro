@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_bottom_bar"
+    n1:background="@color/piloting_settings_bg"
+    n1:layout_width="fill_parent"
+    n1:layout_height="@dimen/bottom_bar_height"
+    n1:layout_alignParentBottom="true"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:id="@id/icon_shutter"
+        n1:layout_width="@dimen/piloting_icon_size"
+        n1:layout_height="@dimen/piloting_icon_size"
+        n1:src="@drawable/icn_aperture"
+        n1:tint="@android:color/white"
+        n1:layout_centerVertical="true"
+        n1:layout_marginStart="@dimen/piloting_buttons_medium_margin" />
+    <TextView
+        n1:textSize="@dimen/bottom_bar_font_size"
+        n1:textStyle="bold"
+        n1:textColor="@android:color/white"
+        n1:gravity="center"
+        n1:id="@id/text_aperture"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/bottom_bar_height"
+        n1:contentDescription="@string/camera_settings_cd_aperture"
+        n1:layout_marginStart="@dimen/piloting_buttons_small_margin"
+        n1:layout_toEndOf="@id/icon_shutter" />
+    <TextView
+        n1:textSize="@dimen/bottom_bar_font_size"
+        n1:textStyle="bold"
+        n1:textColor="@android:color/white"
+        n1:gravity="center"
+        n1:id="@id/text_definition"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/bottom_bar_height"
+        n1:contentDescription="@string/camera_settings_cd_definition"
+        n1:layout_marginStart="@dimen/piloting_buttons_medium_margin"
+        n1:layout_toEndOf="@id/text_aperture" />
+    <FrameLayout
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_centerHorizontal="true">
+        <SeekBar
+            n1:layout_gravity="center_horizontal"
+            n1:id="@id/slider_exposition"
+            n1:layout_width="@dimen/camera_settings_exposition_slider_width"
+            n1:layout_height="wrap_content"
+            n1:progressDrawable="@android:color/transparent"
+            n1:thumb="@drawable/hud_exposition_cursor" />
+        <ImageView
+            n1:layout_gravity="bottom|center"
+            n1:layout_width="@dimen/camera_settings_exposition_meter_width"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="@dimen/camera_settings_exposition_margin_bottom"
+            n1:src="@drawable/exposition_meter" />
+    </FrameLayout>
+    <TextView
+        n1:textSize="@dimen/bottom_bar_font_size"
+        n1:textStyle="bold"
+        n1:textColor="@android:color/white"
+        n1:gravity="center_vertical"
+        n1:id="@id/text_memory_space"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/bottom_bar_height"
+        n1:layout_marginEnd="@dimen/piloting_buttons_medium_margin"
+        n1:layout_toStartOf="@id/icon_photo_count" />
+    <ImageView
+        n1:id="@id/icon_photo_count"
+        n1:layout_width="@dimen/bottom_bar_font_size"
+        n1:layout_height="@dimen/bottom_bar_font_size"
+        n1:src="@drawable/drawable_hud_photo_record"
+        n1:layout_centerVertical="true"
+        n1:layout_marginEnd="@dimen/piloting_buttons_medium_margin"
+        n1:layout_toStartOf="@id/text_photo_count" />
+    <TextView
+        n1:textSize="@dimen/bottom_bar_font_size"
+        n1:textStyle="bold"
+        n1:textColor="@android:color/white"
+        n1:gravity="center_vertical"
+        n1:id="@id/text_photo_count"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/bottom_bar_height"
+        n1:contentDescription="@string/camera_settings_cd_picture_count"
+        n1:layout_marginEnd="@dimen/piloting_buttons_medium_margin"
+        n1:layout_alignParentEnd="true" />
+</RelativeLayout>

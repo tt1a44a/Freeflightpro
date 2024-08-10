@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    n1:paddingTop="8.0dip"
+    n1:paddingBottom="8.0dip"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="@dimen/drone_infos_item_text_size"
+        n1:textColor="@color/white"
+        n1:gravity="center_vertical"
+        n1:id="@id/drone_info_title"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n2:layout_widthPercent="50.0%"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout
+        n1:gravity="end|center"
+        n1:orientation="horizontal"
+        n1:layout_height="wrap_content"
+        n1:layout_toEndOf="@id/drone_info_title"
+        n3:layout_widthPercent="50.0%"
+        xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <TextView
+            n1:textSize="@dimen/drone_infos_item_text_size"
+            n1:textColor="@color/light_gray"
+            n1:layout_gravity="center"
+            n1:id="@id/drone_info_text_value"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:drawablePadding="@dimen/drone_infos_update_padding" />
+        <com.parrot.freeflight.piloting.widget.RoundedCornerLayout
+            n1:id="@id/drone_info_update_round_layout"
+            n1:background="@drawable/ripple_effect_round_corner"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:layout_marginStart="10.0dip">
+            <RelativeLayout
+                n1:id="@id/drone_info_update_layout"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent">
+                <TextView
+                    n1:id="@id/drone_info_update_text"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:drawablePadding="@dimen/drone_infos_update_padding"
+                    n1:layout_centerVertical="true"
+                    n1:paddingStart="@dimen/drone_infos_update_padding"
+                    n1:paddingEnd="@dimen/drone_infos_update_padding" />
+            </RelativeLayout>
+        </com.parrot.freeflight.piloting.widget.RoundedCornerLayout>
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

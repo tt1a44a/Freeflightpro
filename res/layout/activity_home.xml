@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:background="@color/home_background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        n1:id="@id/toolbar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?actionBarSize">
+        <TextView
+            n1:textSize="@dimen/home_title_text_size"
+            n1:gravity="center"
+            n1:layout_gravity="center"
+            n1:id="@id/text_toolbar_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/main_title" />
+        <TextView
+            n1:textSize="@dimen/home_title_text_size"
+            n1:textColor="@color/grey"
+            n1:gravity="center"
+            n1:layout_gravity="center"
+            n1:id="@id/text_toolbar_title_ext"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/main_title_extension" />
+        <include
+            n1:id="@id/button_toolbar_my_flights"
+            layout="@layout/my_flights_button_layout" />
+    </android.support.v7.widget.Toolbar>
+    <com.parrot.freeflight.piloting.widget.RoundedCornerLayout
+        n1:id="@id/root_drone_status_bar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/homepage_status_bar_height"
+        n1:layout_margin="@dimen/piloting_buttons_small_margin"
+        n1:layout_below="@id/toolbar"
+        n1:layout_toStartOf="@id/root_remote_ctrl_status_bar"
+        n2:outerBackgroundColor="?android:colorBackground"
+        xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <include
+            layout="@layout/layout_drone_status_bar" />
+    </com.parrot.freeflight.piloting.widget.RoundedCornerLayout>
+    <com.parrot.freeflight.piloting.widget.RoundedCornerLayout
+        n1:id="@id/root_remote_ctrl_status_bar"
+        n1:layout_width="@dimen/home_controller_tile_width"
+        n1:layout_height="@dimen/homepage_status_bar_height"
+        n1:layout_marginTop="@dimen/piloting_buttons_small_margin"
+        n1:layout_marginBottom="@dimen/piloting_buttons_small_margin"
+        n1:layout_below="@id/toolbar"
+        n1:layout_marginEnd="@dimen/piloting_buttons_small_margin"
+        n1:layout_alignParentEnd="true"
+        n3:outerBackgroundColor="?android:colorBackground"
+        xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:id="@id/layout_remote"
+            n1:background="@color/home_button_background"
+            n1:duplicateParentState="true"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+            <ImageView
+                n1:id="@id/image_remote"
+                n1:layout_width="@dimen/homepage_status_bar_drone_icon_height"
+                n1:layout_height="@dimen/homepage_status_bar_drone_icon_height"
+                n1:src="@drawable/ic_small_skycontroller" />
+            <TextView
+                n1:textColor="@color/white"
+                n1:gravity="center"
+                n1:id="@id/text_remote_update"
+                n1:background="@drawable/round_accent_stroked_drawable"
+                n1:visibility="gone"
+                n1:layout_width="@dimen/homepage_status_bar_drone_icon_height"
+                n1:layout_height="@dimen/homepage_status_bar_drone_icon_height"
+                n1:layout_marginStart="@dimen/home_icon_margin_left" />
+            <ImageView
+                n1:id="@id/image_remote_calibration"
+                n1:visibility="gone"
+                n1:layout_width="@dimen/homepage_status_bar_drone_icon_height"
+                n1:layout_height="@dimen/homepage_status_bar_drone_icon_height"
+                n1:src="@drawable/warning"
+                n1:layout_marginStart="@dimen/home_icon_margin_left" />
+            <TextView
+                n1:textColor="@color/white"
+                n1:gravity="center"
+                n1:id="@id/text_remote_infos"
+                n1:visibility="gone"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent"
+                n1:text="@string/question_mark"
+                n1:layout_marginStart="@dimen/home_icon_margin_left" />
+        </LinearLayout>
+        <View
+            n1:background="@drawable/ripple_effect"
+            n1:duplicateParentState="true"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+    </com.parrot.freeflight.piloting.widget.RoundedCornerLayout>
+    <android.support.percent.PercentRelativeLayout
+        n1:id="@id/layout_cards"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_above="@id/layout_notification_bar"
+        n1:layout_below="@id/root_drone_status_bar"
+        n4:outerBackgroundColor="?android:colorBackground"
+        xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <com.parrot.freeflight.piloting.widget.RoundedCornerLayout
+            n1:id="@id/card_first"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_marginLeft="@dimen/piloting_buttons_small_margin"
+            n1:layout_marginBottom="@dimen/piloting_buttons_small_margin"
+            n1:layout_above="@id/card_third"
+            n1:layout_marginStart="@dimen/piloting_buttons_small_margin"
+            n1:layout_toStartOf="@id/card_second"
+            n4:outerBackgroundColor="?android:colorBackground">
+            <RelativeLayout
+                n1:id="@id/view_first_card_background"
+                n1:background="@color/home_second_card_background"
+                n1:duplicateParentState="true"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent">
+                <View
+                    n1:background="@drawable/ripple_effect"
+                    n1:duplicateParentState="true"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent" />
+                <TextView
+                    n1:id="@id/text_first_card_title"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    style="@style/TileText" />
+                <TextView
+                    n1:textColor="@color/home_inapp_freetrial_white"
+                    n1:id="@id/text_first_card_inapp_subtitle"
+                    n1:visibility="gone"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="@dimen/home_inapp_buy_rect_padding"
+                    n1:layout_below="@id/text_first_card_title"
+                    n1:layout_alignStart="@id/text_first_card_title" />
+                <ImageView
+                    n1:id="@id/image_first_card"
+                    n1:layout_width="@dimen/home_icon_size"
+                    n1:layout_height="@dimen/home_icon_size"
+                    n1:layout_alignParentRight="true"
+                    n1:layout_alignParentBottom="true"
+                    n1:layout_alignParentEnd="true"
+                    style="@style/TileIcon" />
+            </RelativeLayout>
+        </com.parrot.freeflight.piloting.widget.RoundedCornerLayout>
+        <com.parrot.freeflight.piloting.widget.RoundedCornerLayout
+            n1:id="@id/card_third"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_marginLeft="@dimen/piloting_buttons_small_margin"
+            n1:layout_marginBottom="@dimen/piloting_buttons_small_margin"
+            n1:layout_alignParentBottom="true"
+            n1:layout_marginStart="@dimen/piloting_buttons_small_margin"
+            n1:layout_toStartOf="@id/card_second"
+            n4:layout_heightPercent="50.0%"
+            n4:outerBackgroundColor="?android:colorBackground">
+            <RelativeLayout
+                n1:id="@id/view_third_card_background"
+                n1:background="@color/home_third_card_background"
+                n1:duplicateParentState="true"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent">
+                <View
+                    n1:background="@drawable/ripple_effect"
+                    n1:duplicateParentState="true"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent" />
+                <TextView
+                    n1:id="@id/text_third_card_title"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    style="@style/TileText" />
+                <TextView
+                    n1:id="@id/text_third_card_subtitle"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_below="@id/text_third_card_title"
+                    n1:layout_alignStart="@id/text_third_card_title" />
+                <TextView
+                    n1:textColor="@color/home_inapp_freetrial_white"
+                    n1:id="@id/text_third_card_inapp_subtitle"
+                    n1:visibility="gone"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="@dimen/home_inapp_buy_rect_padding"
+                    n1:layout_below="@id/text_third_card_subtitle"
+                    n1:layout_alignStart="@id/text_third_card_subtitle" />
+                <ImageView
+                    n1:id="@id/image_third_card"
+                    n1:layout_width="@dimen/home_icon_size"
+                    n1:layout_height="@dimen/home_icon_size"
+                    n1:tint="@color/white"
+                    n1:layout_alignParentRight="true"
+                    n1:layout_alignParentBottom="true"
+                    n1:layout_alignParentEnd="true"
+                    style="@style/TileIcon" />
+            </RelativeLayout>
+        </com.parrot.freeflight.piloting.widget.RoundedCornerLayout>
+        <com.parrot.freeflight.piloting.widget.RoundedCornerLayout
+            n1:id="@id/card_second"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_marginLeft="@dimen/piloting_buttons_small_margin"
+            n1:layout_marginRight="@dimen/piloting_buttons_small_margin"
+            n1:layout_marginBottom="@dimen/piloting_buttons_small_margin"
+            n1:contentDescription="@string/home_cd_piloting_card"
+            n1:layout_marginStart="@dimen/piloting_buttons_small_margin"
+            n1:layout_marginEnd="@dimen/piloting_buttons_small_margin"
+            n1:layout_alignParentEnd="true"
+            n4:layout_widthPercent="65.0%"
+            n4:outerBackgroundColor="?android:colorBackground">
+            <RelativeLayout
+                n1:duplicateParentState="true"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent">
+                <View
+                    n1:id="@id/view_second_card_background"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent" />
+                <View
+                    n1:background="@drawable/ripple_effect"
+                    n1:duplicateParentState="true"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent" />
+                <TextView
+                    n1:id="@id/text_second_card_title"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="@string/home_second_card_text"
+                    style="@style/TileText" />
+                <ImageView
+                    n1:id="@id/image_second_card"
+                    n1:layout_width="@dimen/home_icon_size"
+                    n1:layout_height="@dimen/home_icon_size"
+                    n1:layout_alignParentRight="true"
+                    n1:layout_alignParentBottom="true"
+                    n1:layout_alignParentEnd="true"
+                    style="@style/TileIcon" />
+            </RelativeLayout>
+        </com.parrot.freeflight.piloting.widget.RoundedCornerLayout>
+    </android.support.percent.PercentRelativeLayout>
+    <com.parrot.freeflight.view.NotificationBar
+        n1:id="@id/layout_notification_bar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentBottom="true" />
+    <com.parrot.freeflight.home.WifiListView
+        n1:id="@id/view_discovery_list"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="@dimen/piloting_buttons_small_margin"
+        n1:layout_marginRight="@dimen/piloting_buttons_small_margin"
+        n1:layout_below="@id/root_drone_status_bar"
+        n1:layout_toStartOf="@id/root_remote_ctrl_status_bar" />
+</RelativeLayout>

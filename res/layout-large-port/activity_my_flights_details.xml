@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_flight_details_root"
+    n1:background="@drawable/background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:id="@id/layout_my_flights_details_title"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentTop="true">
+        <ImageButton
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/button_my_flights_details_back"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_margin="@dimen/piloting_buttons_margin"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside" />
+        <TextView
+            n1:textSize="@dimen/home_title_text_size"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:id="@id/textview_my_flights_details_title"
+            n1:layout_width="fill_parent"
+            n1:layout_height="@dimen/my_flights_title_height"
+            n1:text="@string/my_flights_title"
+            n1:layout_centerVertical="true" />
+        <include
+            layout="@layout/item_share_run_details" />
+    </RelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_below="@id/layout_my_flights_details_title">
+        <fragment
+            n1:name="com.parrot.freeflight.academy.fragments.MyFlightsDetailsSummaryFragment"
+            n1:id="@id/fragment_my_flights_summary"
+            n1:background="@android:color/transparent"
+            n1:layout_width="fill_parent"
+            n1:layout_alignParentTop="true"
+            n1:layout_toEndOf="@id/fragment_my_flights_medias"
+            n1:layout_alignParentEnd="true"
+            n2:layout_heightPercent="33.000004%"
+            xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <fragment
+            n1:name="com.parrot.freeflight.academy.fragments.MyFlightsDetailsMediasFragment"
+            n1:id="@id/fragment_my_flights_medias"
+            n1:background="@android:color/transparent"
+            n1:layout_alignParentTop="true"
+            n1:layout_alignParentStart="true"
+            n3:layout_heightPercent="33.000004%"
+            n3:layout_widthPercent="34.000004%"
+            xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <fragment
+            n1:name="com.parrot.freeflight.academy.fragments.MyFlightsDetailsGpsFragment"
+            n1:id="@id/fragment_my_flights_map"
+            n1:background="@android:color/transparent"
+            n1:layout_width="fill_parent"
+            n1:layout_below="@id/fragment_my_flights_summary"
+            n4:layout_heightPercent="34.000004%"
+            xmlns:n4="http://schemas.android.com/apk/res-auto" />
+        <fragment
+            n1:name="com.parrot.freeflight.academy.fragments.MyFlightsDetailsGraphicsFragment"
+            n1:id="@id/fragment_my_flights_graphics"
+            n1:background="@android:color/transparent"
+            n1:layout_width="fill_parent"
+            n1:layout_alignParentBottom="true"
+            n5:layout_heightPercent="33.000004%"
+            xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    </android.support.percent.PercentRelativeLayout>
+</RelativeLayout>

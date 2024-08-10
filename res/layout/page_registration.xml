@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        n1:id="@id/frame_registration_page_media"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_centerVertical="true"
+        n1:layout_marginStart="@dimen/registration_page_horizontal_margin"
+        n1:layout_alignParentStart="true"
+        n2:layout_widthPercent="@fraction/registration_page_image_width"
+        xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <ImageView
+            n1:id="@id/image_registration_description"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:scaleType="fitCenter"
+            n1:adjustViewBounds="true" />
+    </FrameLayout>
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_alignTop="@id/frame_registration_page_media"
+        n1:layout_alignBottom="@id/frame_registration_page_media"
+        n1:layout_marginStart="@dimen/registration_page_horizontal_margin"
+        n1:layout_marginEnd="@dimen/registration_page_horizontal_margin"
+        n1:layout_toEndOf="@id/frame_registration_page_media"
+        n1:layout_alignParentEnd="true">
+        <TextView
+            n1:textSize="@dimen/registration_page_title_text_size"
+            n1:textColor="@color/white"
+            n1:gravity="start"
+            n1:id="@id/text_registration_page_title"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content" />
+        <TextView
+            n1:textSize="@dimen/registration_page_content_text_size"
+            n1:gravity="start|center"
+            n1:id="@id/text_registration_page_description"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_above="@id/text_registration_page_note"
+            n1:layout_below="@id/text_registration_page_title" />
+        <TextView
+            n1:textSize="@dimen/registration_page_small_text_size"
+            n1:gravity="start"
+            n1:id="@id/text_registration_page_note"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:text="@string/registration_follow_me_note"
+            n1:layout_above="@id/layout_registration_page_buttons" />
+        <android.support.percent.PercentRelativeLayout
+            n1:id="@id/layout_registration_page_buttons"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/registration_page_vertical_margin"
+            n1:layout_alignParentBottom="true">
+            <RelativeLayout
+                n1:id="@id/layout_registration_page_start_buttons"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:layout_centerVertical="true"
+                n3:layout_widthPercent="@fraction/registration_page_start_buttons_width"
+                xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <ProgressBar
+                    n1:id="@id/progress_registration_page_start_trial"
+                    n1:visibility="gone"
+                    n1:layout_width="@dimen/follow_me_free_trial_buttons_height"
+                    n1:layout_height="@dimen/follow_me_free_trial_buttons_height"
+                    n1:layout_centerInParent="true" />
+                <Button
+                    n1:id="@id/button_registration_page_continue_trial"
+                    n1:background="@drawable/rounded_corners_button_selector"
+                    n1:visibility="gone"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:minHeight="@dimen/follow_me_free_trial_buttons_height"
+                    n1:text="@string/registration_continue"
+                    n1:layout_centerInParent="true"
+                    n1:paddingStart="@dimen/follow_me_free_trial_buttons_horizontal_padding"
+                    n1:paddingEnd="@dimen/follow_me_free_trial_buttons_horizontal_padding" />
+            </RelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

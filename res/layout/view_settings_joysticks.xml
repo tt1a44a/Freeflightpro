@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:background="@drawable/item_background_selector"
+    n1:paddingLeft="@dimen/settings_padding_row"
+    n1:paddingRight="@dimen/settings_padding_row"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/settings_row_height">
+        <TextView
+            n1:textSize="@dimen/settings_title_size"
+            n1:textColor="@color/white"
+            n1:layout_gravity="center|left"
+            n1:id="@id/text_view_name"
+            n1:layout_width="@dimen/settings_name_width"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="@dimen/settings_name_right_margin" />
+        <RadioGroup
+            n1:layout_gravity="center"
+            n1:orientation="horizontal"
+            n1:id="@id/radio_group"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="@dimen/settings_space_between_widget"
+            n1:layout_weight="1.0">
+            <RadioButton
+                n1:textSize="@dimen/settings_text_size"
+                n1:textColor="@drawable/settings_text_color_selector"
+                n1:gravity="center"
+                n1:id="@id/radio_button_left"
+                n1:background="@drawable/radio_button_left_selector"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:button="@android:color/transparent"
+                n1:layout_weight="1.0"
+                n1:textAllCaps="true" />
+            <RadioButton
+                n1:textSize="@dimen/settings_text_size"
+                n1:textColor="@drawable/settings_text_color_selector"
+                n1:gravity="center"
+                n1:id="@id/radio_button_center"
+                n1:background="@drawable/radio_button_center_selector"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:button="@android:color/transparent"
+                n1:layout_weight="1.0"
+                n1:textAllCaps="true" />
+            <RadioButton
+                n1:textSize="@dimen/settings_text_size"
+                n1:textColor="@drawable/settings_text_color_selector"
+                n1:gravity="center"
+                n1:id="@id/radio_button_right"
+                n1:background="@drawable/radio_button_right_selector"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:button="@android:color/transparent"
+                n1:layout_weight="1.0"
+                n1:textAllCaps="true" />
+        </RadioGroup>
+        <CheckBox
+            n1:layout_gravity="center"
+            n1:id="@id/checkbox"
+            n1:layout_width="@dimen/settings_buttons_height"
+            n1:layout_height="@dimen/settings_buttons_height"
+            n1:layout_marginLeft="@dimen/settings_space_between_widget"
+            n1:button="@android:color/transparent" />
+    </LinearLayout>
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="horizontal"
+        n1:id="@id/linear_layout_jog_settings"
+        n1:padding="@dimen/settings_space_between_widget"
+        n1:visibility="visible"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <TextView
+            n1:textColor="@color/white"
+            n1:gravity="right"
+            n1:id="@id/text_jog_left_description"
+            n1:padding="@dimen/settings_space_between_widget"
+            n1:layout_width="@dimen/settings_name_width"
+            n1:layout_height="wrap_content" />
+        <ImageView
+            n1:layout_gravity="center"
+            n1:id="@id/image_jog"
+            n1:layout_width="@dimen/settings_jog_preview_width"
+            n1:layout_height="@dimen/settings_jog_preview_height"
+            n1:scaleType="fitCenter" />
+        <TextView
+            n1:textColor="@color/white"
+            n1:gravity="left"
+            n1:id="@id/text_jog_right_description"
+            n1:padding="@dimen/settings_space_between_widget"
+            n1:layout_width="@dimen/settings_name_width"
+            n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:id="@id/layout_camera_settings"
+            n1:padding="@dimen/settings_space_between_widget"
+            n1:visibility="visible"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+            <LinearLayout
+                n1:orientation="horizontal"
+                n1:paddingRight="@dimen/accessory_padding_between_widget"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatCheckBox
+                    n1:id="@id/checkbox_camera"
+                    n1:layout_width="@dimen/settings_buttons_height"
+                    n1:layout_height="@dimen/settings_buttons_height"
+                    n1:button="@drawable/checkbox_selector" />
+                <TextView
+                    n1:textColor="@color/white"
+                    n1:id="@id/text_camera_checkbox"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="@string/piloting_settings_camera" />
+            </LinearLayout>
+            <LinearLayout
+                n1:orientation="horizontal"
+                n1:paddingLeft="@dimen/accessory_padding_between_widget"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatCheckBox
+                    n1:id="@id/checkbox_camera_auto_record"
+                    n1:layout_width="@dimen/settings_buttons_height"
+                    n1:layout_height="@dimen/settings_buttons_height"
+                    n1:button="@drawable/checkbox_selector" />
+                <TextView
+                    n1:textColor="@color/white"
+                    n1:id="@id/text_autorecord_checkbox"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="@string/piloting_settings_camera_autorecord" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:id="@id/text_gyroscope_description_jog"
+            n1:padding="@dimen/settings_space_between_widget"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:text="@string/piloting_settings_gyroscope_description_jog_settings" />
+    </FrameLayout>
+</LinearLayout>

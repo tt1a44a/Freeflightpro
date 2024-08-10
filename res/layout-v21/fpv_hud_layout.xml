@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.parrot.freeflight.piloting.ui.fpv.GLRelativeLayout
+    n1:id="@id/layout_fpv_content"
+    n1:background="#01000000"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.parrot.freeflight.piloting.ui.fpv.GLView
+        n1:id="@id/horizon"
+        n1:background="@drawable/horizon_drawable"
+        n1:layout_width="fill_parent"
+        n1:layout_height="4.0dip"
+        n1:layout_centerInParent="true" />
+    <ImageView
+        n1:id="@id/drone_attitude"
+        n1:layout_width="40.0dip"
+        n1:layout_height="40.0dip"
+        n1:src="@drawable/drone_attitude"
+        n1:layout_centerInParent="true" />
+    <ImageView
+        n1:id="@id/camera_center"
+        n1:layout_width="10.0dip"
+        n1:layout_height="10.0dip"
+        n1:src="@drawable/camera_angle"
+        n1:layout_centerInParent="true" />
+    <RelativeLayout
+        n1:id="@id/hud_piloting_telemetry"
+        n1:paddingBottom="25.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:stretchColumns="*"
+        n1:layout_centerVertical="true">
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:id="@id/layout_gps"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content">
+            <ImageView
+                n1:id="@id/imageview_gps_remote"
+                n1:visibility="gone"
+                n1:layout_width="@dimen/fpv_icon_size"
+                n1:layout_height="@dimen/fpv_icon_size"
+                n1:src="@drawable/sidebar_icn_product_0903"
+                n1:tint="@color/yellow" />
+            <ImageView
+                n1:id="@id/imageview_gps_product"
+                n1:layout_width="@dimen/fpv_icon_size"
+                n1:layout_height="@dimen/fpv_icon_size"
+                n1:src="@drawable/sidebar_icn_product_090c"
+                n1:tint="@color/yellow" />
+            <TextView
+                n1:textSize="@dimen/fpv_text_size"
+                n1:textColor="@color/fpv_default_color"
+                n1:gravity="center"
+                n1:id="@id/textview_gps"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/gps_label"
+                n1:layout_marginStart="@dimen/fpv_icon_margin" />
+        </LinearLayout>
+        <com.parrot.freeflight.piloting.ui.fpv.GLTextView
+            n1:textSize="@dimen/fpv_text_size"
+            n1:textColor="@color/fpv_default_color"
+            n1:gravity="center"
+            n1:id="@id/textview_signal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/question_mark"
+            n1:layout_marginEnd="@dimen/fpv_icon_margin"
+            n1:layout_toStartOf="@id/imageview_signal" />
+        <ImageView
+            n1:id="@id/imageview_signal"
+            n1:layout_width="@dimen/fpv_icon_size"
+            n1:layout_height="@dimen/fpv_icon_size"
+            n1:src="@drawable/sidebar_icn_wifimanager"
+            n1:tint="@color/fpv_default_color"
+            n1:layout_alignParentEnd="true" />
+        <ImageView
+            n1:id="@id/imageview_speed"
+            n1:layout_width="@dimen/fpv_icon_size"
+            n1:layout_height="@dimen/fpv_icon_size"
+            n1:layout_marginTop="@dimen/fpv_content_row_margin"
+            n1:src="@drawable/common_icn_speed"
+            n1:tint="@color/fpv_default_color"
+            n1:layout_below="@id/layout_gps"
+            n1:layout_alignParentStart="true" />
+        <com.parrot.freeflight.piloting.ui.fpv.GLTextView
+            n1:textSize="@dimen/fpv_text_size"
+            n1:textColor="@color/fpv_default_color"
+            n1:id="@id/textview_speed"
+            n1:layout_width="@dimen/fpv_text_width"
+            n1:layout_height="@dimen/fpv_text_height"
+            n1:text="@string/question_mark"
+            n1:layout_alignTop="@id/imageview_speed"
+            n1:layout_marginStart="@dimen/fpv_icon_margin"
+            n1:layout_toEndOf="@id/imageview_speed" />
+        <com.parrot.freeflight.piloting.ui.fpv.GLTextView
+            n1:textSize="@dimen/fpv_text_size"
+            n1:textColor="@color/fpv_default_color"
+            n1:gravity="end"
+            n1:id="@id/textview_battery_product"
+            n1:layout_width="@dimen/fpv_text_width"
+            n1:layout_height="@dimen/fpv_text_height"
+            n1:text="@string/question_mark"
+            n1:layout_alignTop="@id/imageview_speed"
+            n1:layout_marginEnd="@dimen/fpv_icon_margin"
+            n1:layout_toStartOf="@id/imageview_battery_product" />
+        <ImageView
+            n1:id="@id/imageview_battery_product"
+            n1:layout_width="@dimen/fpv_icon_size"
+            n1:layout_height="@dimen/fpv_icon_size"
+            n1:src="@drawable/battery_bebop2"
+            n1:tint="@color/fpv_default_color"
+            n1:layout_alignTop="@id/imageview_speed"
+            n1:layout_alignParentEnd="true" />
+        <ImageView
+            n1:id="@id/imageview_altitude"
+            n1:layout_width="@dimen/fpv_icon_size"
+            n1:layout_height="@dimen/fpv_icon_size"
+            n1:layout_marginTop="@dimen/fpv_content_row_margin"
+            n1:src="@drawable/common_icn_altitude"
+            n1:tint="@color/fpv_default_color"
+            n1:layout_below="@id/imageview_speed" />
+        <com.parrot.freeflight.piloting.ui.fpv.GLTextView
+            n1:textSize="@dimen/fpv_text_size"
+            n1:textColor="@color/fpv_default_color"
+            n1:id="@id/textview_altitude"
+            n1:layout_width="@dimen/fpv_text_width"
+            n1:layout_height="@dimen/fpv_text_height"
+            n1:text="@string/question_mark"
+            n1:layout_alignTop="@id/imageview_altitude"
+            n1:layout_marginStart="@dimen/fpv_icon_margin"
+            n1:layout_toEndOf="@id/imageview_altitude" />
+        <com.parrot.freeflight.piloting.ui.fpv.GLTextView
+            n1:textSize="@dimen/fpv_text_size"
+            n1:textColor="@color/fpv_default_color"
+            n1:gravity="end"
+            n1:id="@id/textview_remote_battery"
+            n1:visibility="gone"
+            n1:layout_width="@dimen/fpv_text_width"
+            n1:layout_height="@dimen/fpv_text_height"
+            n1:text="@string/question_mark"
+            n1:layout_alignTop="@id/imageview_altitude"
+            n1:layout_marginEnd="@dimen/fpv_icon_margin"
+            n1:layout_toStartOf="@id/imageview_remote_battery" />
+        <ImageView
+            n1:id="@id/imageview_remote_battery"
+            n1:visibility="gone"
+            n1:layout_width="@dimen/fpv_icon_size"
+            n1:layout_height="@dimen/fpv_icon_size"
+            n1:src="@drawable/ic_battery_controller"
+            n1:tint="@color/fpv_default_color"
+            n1:layout_alignTop="@id/imageview_altitude"
+            n1:layout_alignParentEnd="true" />
+        <ImageView
+            n1:id="@id/imageview_distance"
+            n1:layout_width="@dimen/fpv_icon_size"
+            n1:layout_height="@dimen/fpv_icon_size"
+            n1:layout_marginTop="@dimen/fpv_content_row_margin"
+            n1:src="@drawable/common_icn_distance"
+            n1:tint="@color/fpv_default_color"
+            n1:layout_below="@id/imageview_altitude" />
+        <com.parrot.freeflight.piloting.ui.fpv.GLTextView
+            n1:textSize="@dimen/fpv_text_size"
+            n1:textColor="@color/fpv_default_color"
+            n1:id="@id/textview_distance"
+            n1:layout_width="@dimen/fpv_text_width"
+            n1:layout_height="@dimen/fpv_text_height"
+            n1:text="@string/question_mark"
+            n1:layout_alignTop="@id/imageview_distance"
+            n1:layout_marginStart="@dimen/fpv_icon_margin"
+            n1:layout_toEndOf="@id/imageview_distance" />
+    </RelativeLayout>
+    <android.support.v4.widget.Space
+        n1:id="@id/space_center"
+        n1:layout_width="1.0dip"
+        n1:layout_height="1.0dip"
+        n1:layout_centerInParent="true" />
+    <com.parrot.freeflight.piloting.widget.AlertView
+        n1:id="@id/view_alert"
+        n1:layout_width="@dimen/fpv_text_width"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/fpv_alert_view_margin"
+        n1:layout_below="@id/space_center"
+        n1:layout_marginStart="@dimen/fpv_alert_view_margin"
+        n1:layout_toEndOf="@id/space_center" />
+    <RelativeLayout
+        n1:id="@id/layout_radar"
+        n1:layout_width="100.0dip"
+        n1:layout_height="100.0dip"
+        n1:layout_marginTop="45.0dip"
+        n1:layout_below="@id/space_center"
+        n1:layout_marginEnd="45.0dip"
+        n1:layout_toStartOf="@id/space_center">
+        <com.parrot.freeflight.piloting.ui.radar.RadarView
+            n1:id="@id/radarview"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+        <ImageView
+            n1:id="@id/imageview_radar_drone_position"
+            n1:layout_width="@dimen/radar_drone_size"
+            n1:layout_height="@dimen/radar_drone_size"
+            n1:backgroundTint="@color/colorAccent" />
+        <Button
+            n1:id="@id/button_radar_calibrate"
+            n1:background="@drawable/radar_calibration_button_drawable"
+            n1:padding="5.0dip"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:text="@string/calibration_needed"
+            n1:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView
+        n1:textSize="@dimen/fpv_text_size"
+        n1:textColor="@color/fpv_default_color"
+        n1:id="@id/text_flying_status"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerHorizontal="true"
+        n1:textAllCaps="true" />
+    <com.parrot.freeflight.piloting.ui.radar.HeadUpRadarView
+        n1:id="@id/view_headup_radar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+</com.parrot.freeflight.piloting.ui.fpv.GLRelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <ImageView
+        n1:layout_gravity="center_horizontal"
+        n1:id="@id/image_drone_battery_info"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:src="@drawable/drawable_bebop_infos"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout
+        n2:layout_gravity="center"
+        n2:orientation="vertical"
+        n2:layout_width="fill_parent"
+        n2:layout_height="wrap_content"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <ProgressBar
+            n2:layout_gravity="center"
+            n2:id="@id/progress_battery"
+            n2:layout_width="@dimen/drone_infos_battery_width"
+            n2:layout_height="@dimen/drone_infos_battery_height"
+            n2:layout_marginTop="@dimen/drone_infos_bebop_battery_margin_top"
+            n2:layout_centerHorizontal="true"
+            style="@style/Widget.ProgressBar.Vertical" />
+        <TextView
+            n2:gravity="center"
+            n2:id="@id/text_battery"
+            n2:layout_width="fill_parent"
+            n2:layout_height="wrap_content"
+            n2:layout_marginTop="@dimen/drone_infos_margin_image"
+            n2:layout_below="@id/progress_battery" />
+    </RelativeLayout>
+</merge>

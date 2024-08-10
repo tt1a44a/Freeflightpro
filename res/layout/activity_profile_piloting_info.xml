@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="horizontal"
+    n1:id="@id/layout_piloting_info"
+    n1:padding="@dimen/profile_bloc_padding"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_weight="1.0">
+        <ImageView
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/icon_time"
+            n1:layout_width="@dimen/profile_infos_icon_size"
+            n1:layout_height="@dimen/profile_infos_icon_size"
+            n1:src="@drawable/common_icn_duration" />
+        <TextView
+            n1:textSize="@dimen/profile_secondary_text_size"
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/text_time"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:contentDescription="@string/academy_profile_cd_time"
+            n1:layout_marginStart="@dimen/profile_infos_margin" />
+    </LinearLayout>
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_weight="1.0">
+        <ImageView
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/icon_pilotings"
+            n1:layout_width="@dimen/profile_infos_icon_size"
+            n1:layout_height="@dimen/profile_infos_icon_size"
+            n1:src="@drawable/academy_icn_pilotings" />
+        <TextView
+            n1:textSize="@dimen/profile_secondary_text_size"
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/text_pilotings"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:contentDescription="@string/academy_profile_cd_pilotings"
+            n1:layout_marginStart="@dimen/profile_infos_margin" />
+    </LinearLayout>
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_weight="1.0">
+        <ImageView
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/icon_crashes"
+            n1:layout_width="@dimen/profile_infos_icon_size"
+            n1:layout_height="@dimen/profile_infos_icon_size"
+            n1:src="@drawable/academy_icn_crash" />
+        <TextView
+            n1:textSize="@dimen/profile_secondary_text_size"
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/text_crashes"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:contentDescription="@string/academy_profile_cd_crash"
+            n1:layout_marginStart="@dimen/profile_infos_margin" />
+    </LinearLayout>
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_weight="1.0">
+        <ImageView
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/icon_drones"
+            n1:layout_width="@dimen/profile_infos_icon_size"
+            n1:layout_height="@dimen/profile_infos_icon_size"
+            n1:src="@drawable/sidebar_icn_product_0901" />
+        <TextView
+            n1:textSize="@dimen/profile_secondary_text_size"
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/text_drones"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:contentDescription="@string/academy_profile_cd_drone"
+            n1:layout_marginStart="@dimen/profile_infos_margin" />
+    </LinearLayout>
+</LinearLayout>

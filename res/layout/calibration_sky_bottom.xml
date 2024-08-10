@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:background="@android:color/transparent"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/layout_sky_calibration_bottom"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="vertical"
+            n1:id="@id/layout_sky_calibration_x_axis"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:paddingStart="@dimen/settings_space_between_widget"
+            n1:paddingEnd="@dimen/settings_space_between_widget">
+            <TextView
+                n1:textSize="@dimen/settings_text_size"
+                n1:gravity="center"
+                n1:layout_gravity="center"
+                n1:id="@id/text_sky_calibration_x"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/calibration_x_axis"
+                n1:textAllCaps="true" />
+            <ProgressBar
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/progress_sky_calibration_x"
+                n1:layout_width="fill_parent"
+                n1:layout_height="@dimen/sky_calibration_progress_bar_height"
+                n1:layout_marginTop="@dimen/settings_space_between_widget"
+                style="?android:progressBarStyleHorizontal" />
+        </LinearLayout>
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="vertical"
+            n1:id="@id/layout_sky_calibration_y_axis"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:paddingStart="@dimen/settings_space_between_widget"
+            n1:paddingEnd="@dimen/settings_space_between_widget">
+            <TextView
+                n1:textSize="@dimen/settings_text_size"
+                n1:gravity="center"
+                n1:layout_gravity="center"
+                n1:id="@id/text_sky_calibration_y"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/calibration_y_axis"
+                n1:textAllCaps="true" />
+            <ProgressBar
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/progress_sky_calibration_y"
+                n1:layout_width="fill_parent"
+                n1:layout_height="@dimen/sky_calibration_progress_bar_height"
+                n1:layout_marginTop="@dimen/settings_space_between_widget"
+                style="?android:progressBarStyleHorizontal" />
+        </LinearLayout>
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="vertical"
+            n1:id="@id/layout_sky_calibration_z_axis"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:paddingStart="@dimen/settings_space_between_widget"
+            n1:paddingEnd="@dimen/settings_space_between_widget">
+            <TextView
+                n1:textSize="@dimen/settings_text_size"
+                n1:gravity="center"
+                n1:layout_gravity="center"
+                n1:id="@id/text_sky_calibration_z"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/calibration_z_axis"
+                n1:textAllCaps="true" />
+            <ProgressBar
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/progress_sky_calibration_z"
+                n1:layout_width="fill_parent"
+                n1:layout_height="@dimen/sky_calibration_progress_bar_height"
+                n1:layout_marginTop="@dimen/settings_space_between_widget"
+                style="?android:progressBarStyleHorizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    n1:orientation="vertical"
+    n1:paddingLeft="@dimen/activity_horizontal_margin"
+    n1:paddingTop="@dimen/activity_vertical_margin"
+    n1:paddingRight="@dimen/activity_horizontal_margin"
+    n1:paddingBottom="@dimen/activity_vertical_margin"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:id="@id/image_warning_rc_calibration_exit"
+        n1:layout_width="wrap_content"
+        n1:layout_height="0.0dip"
+        n1:src="@drawable/icn_warning_followme"
+        n1:minWidth="@dimen/warning_rc_calibration_image_min_size"
+        n1:minHeight="@dimen/warning_rc_calibration_image_min_size"
+        n1:layout_centerHorizontal="true"
+        n2:layout_heightPercent="@fraction/warning_rc_configuration_part_height"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView
+        n1:textSize="@dimen/warning_rc_calibration_text_size"
+        n1:gravity="center"
+        n1:id="@id/text_warning_rc_calibration_exit"
+        n1:layout_width="0.0dip"
+        n1:layout_height="0.0dip"
+        n1:text="@string/gamepad_mapping_warning"
+        n1:layout_below="@id/image_warning_rc_calibration_exit"
+        n1:layout_centerHorizontal="true"
+        n3:layout_heightPercent="@fraction/warning_rc_configuration_part_height"
+        n3:layout_widthPercent="@fraction/warning_rc_configuration_width"
+        xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <android.support.percent.PercentRelativeLayout
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_below="@id/text_warning_rc_calibration_exit"
+        n1:layout_centerHorizontal="true"
+        n4:layout_heightPercent="@fraction/warning_rc_configuration_part_height"
+        xmlns:n4="http://schemas.android.com/apk/res-auto">
+        <Button
+            n1:textSize="@dimen/warning_rc_calibration_text_size"
+            n1:id="@id/button_cancel_rc_calibration_exit"
+            n1:background="@drawable/button_selector"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:minWidth="@dimen/warning_rc_calibration_button_min_width"
+            n1:text="@string/cancel"
+            n1:paddingStart="@dimen/gamepad_mapping_button_padding"
+            n1:paddingEnd="@dimen/gamepad_mapping_button_padding"
+            n1:layout_alignParentStart="true"
+            n4:layout_marginStartPercent="@fraction/warning_rc_configuration_button_horizontal_margin"
+            style="@style/SettingsButton" />
+        <Button
+            n1:textSize="@dimen/warning_rc_calibration_text_size"
+            n1:textColor="@color/colorAccent"
+            n1:id="@id/button_confirm_rc_calibration_exit"
+            n1:background="@drawable/button_selector"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:minWidth="@dimen/warning_rc_calibration_button_min_width"
+            n1:text="@string/ok"
+            n1:paddingStart="@dimen/gamepad_mapping_button_padding"
+            n1:paddingEnd="@dimen/gamepad_mapping_button_padding"
+            n1:layout_alignParentEnd="true"
+            n4:layout_marginEndPercent="@fraction/warning_rc_configuration_button_horizontal_margin"
+            style="@style/SettingsButton" />
+    </android.support.percent.PercentRelativeLayout>
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_root_follow_me"
+    n1:visibility="gone"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.parrot.freeflight.piloting.widget.RectangleSelectorView
+        n1:id="@id/selector_view"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+    <include
+        n1:id="@id/layout_reframing"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        layout="@layout/follow_me_reframing_layout" />
+    <RelativeLayout
+        n1:id="@id/layout_follow_me_piloting_buttons"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <include
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_marginBottom="@dimen/bottom_bar_height"
+            layout="@layout/followme_radar_controller_layout" />
+        <com.parrot.freeflight.followme.widget.TrackLayout
+            n1:id="@id/track_lock"
+            n1:background="@drawable/follow_me_lock_track_background"
+            n1:visibility="gone"
+            n1:clickable="true"
+            n1:layout_width="@dimen/follow_me_lock_button_width"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_marginBottom="@dimen/follow_me_lock_button_margin_bottom"
+            n1:layout_alignParentBottom="true"
+            n1:layout_marginEnd="@dimen/follow_me_lock_button_margin_end"
+            n1:layout_alignParentEnd="true"
+            n2:drawableThumbBackground="@drawable/circular_button_background"
+            n2:drawableThumbOff="@drawable/icn_lock_screen"
+            n2:drawableThumbOn="@drawable/icn_unlock_screen"
+            n2:textOff="@string/follow_me_lock_screen"
+            n2:textOn="@string/follow_me_unlock_screen"
+            xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.parrot.freeflight.followme.widget.TrackLayout
+            n1:id="@id/track_stop_follow"
+            n1:background="@drawable/follow_me_stop_track_background"
+            n1:visibility="gone"
+            n1:clickable="true"
+            n1:layout_width="@dimen/follow_me_lock_button_width"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_marginBottom="@dimen/follow_me_lock_button_margin_bottom"
+            n1:layout_alignParentBottom="true"
+            n1:layout_marginStart="@dimen/follow_me_lock_button_margin_end"
+            n1:layout_alignParentStart="true"
+            n3:drawableThumbBackground="@drawable/circular_button_stop_follow_background"
+            n3:drawableThumbOff="@drawable/icn_stop_follow"
+            n3:resetOnRelease="true"
+            n3:textOff="@string/follow_me_stop_follow"
+            xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        <include
+            n1:id="@id/layout_follow_me_overdrive_buttons"
+            n1:visibility="gone"
+            n1:layout_alignParentTop="true"
+            n1:layout_alignParentStart="true"
+            layout="@layout/follow_me_overdrive_buttons_layout" />
+    </RelativeLayout>
+</RelativeLayout>

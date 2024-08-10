@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:orientation="vertical"
+    n1:id="@id/layout_root_gamepad_configuration"
+    n1:background="@color/background_grey"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:id="@id/layout_top"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentTop="true">
+        <ImageButton
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/button_back"
+            n1:background="@android:color/transparent"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_margin="@dimen/piloting_buttons_margin"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside" />
+        <TextView
+            n1:textSize="16.0sp"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:id="@id/gamepad_title"
+            n1:layout_width="0.0dip"
+            n1:layout_height="@dimen/homepage_status_bar_height"
+            n1:layout_margin="@dimen/piloting_buttons_small_margin"
+            n1:text="@string/gamepad_mapping_sky_title"
+            n1:layout_weight="1.0" />
+        <Button
+            n1:textSize="@dimen/button_text_size"
+            n1:textColor="@color/color_white_clickable_text_selector"
+            n1:gravity="center"
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/button_reset"
+            n1:background="@android:color/transparent"
+            n1:visibility="invisible"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_margin="@dimen/piloting_buttons_margin"
+            n1:text="@string/reset_button" />
+    </LinearLayout>
+    <FrameLayout
+        n1:id="@id/layout_remote_configuration"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_below="@id/layout_top">
+        <com.parrot.freeflight.gamepad.configuration.GamePadConfigurationView
+            n1:id="@id/game_pad_configuration"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+        <com.parrot.freeflight.gamepad.configuration.RcControllerConfigurationView
+            n1:id="@id/rc_controller_configuration"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:id="@id/layout_gamepad_no_controller"
+        n1:background="@color/transparent_light_grey"
+        n1:duplicateParentState="true"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <ImageView
+            n1:layout_gravity="center_horizontal"
+            n1:id="@id/image_no_controller_detected"
+            n1:paddingTop="@dimen/gamepad_configuration_image_no_controller_detected_padding"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/no_controller"
+            n1:scaleType="centerInside"
+            n1:tint="@color/white"
+            n1:layout_weight="0.5" />
+        <TextView
+            n1:textSize="@dimen/home_tile_text_size"
+            n1:textColor="@color/green"
+            n1:gravity="center_horizontal"
+            n1:id="@id/text_no_controller_detected"
+            n1:paddingTop="0.0dip"
+            n1:layout_width="wrap_content"
+            n1:layout_height="0.0dip"
+            n1:text="@string/no_controller_detected"
+            n1:layout_weight="0.2"
+            n1:layout_marginStart="@dimen/gamepad_configuration_text_no_controller_detected_margin"
+            n1:layout_marginEnd="@dimen/gamepad_configuration_text_no_controller_detected_margin" />
+        <TextView
+            n1:textSize="@dimen/home_tile_text_size"
+            n1:gravity="center_horizontal"
+            n1:id="@id/text_no_controller_detected_description"
+            n1:paddingTop="0.0dip"
+            n1:layout_width="wrap_content"
+            n1:layout_height="0.0dip"
+            n1:text="@string/no_controller_detected_description"
+            n1:layout_weight="0.5"
+            n1:layout_marginStart="@dimen/gamepad_configuration_text_no_controller_detected_description_margin"
+            n1:layout_marginEnd="@dimen/gamepad_configuration_text_no_controller_detected_description_margin" />
+    </LinearLayout>
+</RelativeLayout>

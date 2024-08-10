@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list>
+    <item
+        n1:drawable="@drawable/icn_not_connected"
+        n1:maxLevel="0"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item
+        n2:maxLevel="1"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n2:state_pressed="false"
+                n2:drawable="@drawable/btn_takeoff" />
+            <item
+                n2:state_pressed="true"
+                n2:drawable="@drawable/btn_takeoff_pressed" />
+            <item
+                n2:state_focused="true"
+                n2:drawable="@drawable/btn_takeoff_pressed" />
+        </selector>
+    </item>
+    <item
+        n3:maxLevel="2"
+        xmlns:n3="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n3:state_pressed="false"
+                n3:drawable="@drawable/btn_landing" />
+            <item
+                n3:state_pressed="true"
+                n3:drawable="@drawable/btn_landing_pressed" />
+        </selector>
+    </item>
+    <item
+        n4:maxLevel="3"
+        xmlns:n4="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n4:state_pressed="false"
+                n4:drawable="@drawable/btn_cancel" />
+            <item
+                n4:state_pressed="true"
+                n4:drawable="@drawable/btn_cancel_pressed" />
+        </selector>
+    </item>
+    <item
+        n5:maxLevel="4"
+        xmlns:n5="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n5:state_pressed="false"
+                n5:drawable="@drawable/btn_stop" />
+            <item
+                n5:state_pressed="true"
+                n5:drawable="@drawable/btn_stop_pressed" />
+        </selector>
+    </item>
+    <item
+        n6:maxLevel="5"
+        xmlns:n6="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n6:state_pressed="false"
+                n6:drawable="@drawable/btn_stop_follow" />
+            <item
+                n6:state_pressed="true"
+                n6:drawable="@drawable/btn_stop_follow_pressed" />
+        </selector>
+    </item>
+    <item
+        n7:maxLevel="6"
+        xmlns:n7="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n7:state_pressed="false"
+                n7:drawable="@drawable/btn_inhand" />
+            <item
+                n7:state_pressed="true"
+                n7:drawable="@drawable/btn_inhand_pressed" />
+        </selector>
+    </item>
+    <item
+        n8:maxLevel="8"
+        xmlns:n8="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n8:state_pressed="false"
+                n8:drawable="@drawable/btn_stop_tap" />
+            <item
+                n8:state_pressed="true"
+                n8:drawable="@drawable/btn_stop_tap_pressed" />
+        </selector>
+    </item>
+    <item
+        n9:maxLevel="9"
+        xmlns:n9="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n9:state_pressed="false"
+                n9:drawable="@drawable/btn_stop_poi" />
+            <item
+                n9:state_pressed="true"
+                n9:drawable="@drawable/btn_stop_poi_pressed" />
+        </selector>
+    </item>
+    <item
+        n10:maxLevel="10"
+        xmlns:n10="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n10:state_pressed="false"
+                n10:drawable="@drawable/btn_stop_rth" />
+            <item
+                n10:state_pressed="true"
+                n10:drawable="@drawable/btn_stop_rth_pressed" />
+        </selector>
+    </item>
+    <item
+        n11:maxLevel="11"
+        xmlns:n11="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n11:state_pressed="false"
+                n11:drawable="@drawable/btn_stop" />
+            <item
+                n11:state_pressed="true"
+                n11:drawable="@drawable/btn_stop_pressed" />
+        </selector>
+    </item>
+</level-list>

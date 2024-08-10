@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item
+        n1:height="@dimen/drone_infos_battery_top_height"
+        n1:width="@dimen/drone_infos_battery_third_of_width"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <inset
+            n1:insetLeft="@dimen/drone_infos_battery_third_of_width"
+            n1:insetRight="@dimen/drone_infos_battery_third_of_width"
+            n1:insetBottom="@dimen/drone_infos_battery_height_minus_top_height">
+            <shape>
+                <solid
+                    n1:color="@color/product_main_color" />
+            </shape>
+        </inset>
+    </item>
+    <item
+        n2:id="@android:id/background"
+        n2:height="@dimen/drone_infos_battery_height"
+        n2:width="@dimen/drone_infos_battery_width"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <inset
+            n2:insetTop="@dimen/drone_infos_battery_top_height">
+            <shape>
+                <solid
+                    n2:color="@color/tranparent_product_main_color" />
+            </shape>
+        </inset>
+    </item>
+    <item
+        n3:id="@android:id/progress"
+        n3:height="@dimen/drone_infos_battery_height"
+        n3:width="@dimen/drone_infos_battery_width"
+        xmlns:n3="http://schemas.android.com/apk/res/android">
+        <inset
+            n3:insetLeft="@dimen/drone_infos_battery_padding"
+            n3:insetRight="@dimen/drone_infos_battery_padding"
+            n3:insetTop="@dimen/drone_infos_battery_padding"
+            n3:insetBottom="@dimen/drone_infos_battery_padding">
+            <clip
+                n3:gravity="bottom"
+                n3:clipOrientation="vertical">
+                <shape>
+                    <solid
+                        n3:color="@color/product_main_color" />
+                </shape>
+            </clip>
+        </inset>
+    </item>
+</layer-list>

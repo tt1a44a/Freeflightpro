@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    n1:layout_width="wrap_content"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent">
+        <LinearLayout
+            n1:gravity="center_vertical"
+            n1:orientation="horizontal"
+            n1:id="@id/recording_view_video_settings"
+            n1:background="@drawable/drawable_flightplan_toolbar_left_background"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:paddingStart="6.0dip"
+            n1:paddingEnd="16.0dip">
+            <FrameLayout
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+                <Switch
+                    n1:id="@id/piloting_recording_mode_switch"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:textOn=" "
+                    n1:textOff=" "
+                    n1:thumb="@drawable/piloting_recording_switch_thumb"
+                    n1:track="@drawable/piloting_recording_switch_track"
+                    n1:switchMinWidth="@dimen/piloting_recording_view_switch_width" />
+                <ImageView
+                    n1:layout_gravity="center_vertical"
+                    n1:id="@id/piloting_recording_switch_photo"
+                    n1:layout_width="@dimen/piloting_recording_view_icon_size"
+                    n1:layout_height="@dimen/piloting_recording_view_icon_size"
+                    n1:src="@drawable/drawable_piloting_recording_switch_photo"
+                    n1:scaleType="center" />
+                <ImageView
+                    n1:layout_gravity="center|right"
+                    n1:id="@id/piloting_recording_switch_video"
+                    n1:layout_width="@dimen/piloting_recording_view_icon_size"
+                    n1:layout_height="@dimen/piloting_recording_view_icon_size"
+                    n1:src="@drawable/drawable_piloting_recording_switch_video"
+                    n1:scaleType="center" />
+            </FrameLayout>
+            <LinearLayout
+                n1:orientation="vertical"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="8.0dip"
+                n1:minWidth="36.0dip">
+                <TextView
+                    n1:textSize="@dimen/piloting_recording_view_text_size"
+                    n1:textColor="@color/white"
+                    n1:id="@id/text_counter"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="@string/piloting_default_record_duration_time" />
+                <TextView
+                    n1:textSize="@dimen/piloting_recording_view_text_size_small"
+                    n1:textColor="@color/white"
+                    n1:id="@id/text_format"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/button_options"
+            n1:background="@drawable/drawable_recording_toolbar_options_background"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/drawable_flightplan_options"
+            n1:scaleType="centerInside"
+            n1:paddingStart="18.0dip"
+            n1:paddingEnd="24.0dip"
+            n1:layout_toEndOf="@id/text_counter" />
+    </LinearLayout>
+</merge>

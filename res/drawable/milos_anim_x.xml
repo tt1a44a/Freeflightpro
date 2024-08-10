@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    n1:oneshot="false"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0016" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0017" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0018" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0019" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0020" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0021" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0022" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0023" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0024" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0025" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0026" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0027" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0028" />
+    <item
+        n1:duration="100"
+        n1:drawable="@drawable/calibration_product_090c_0029" />
+</animation-list>

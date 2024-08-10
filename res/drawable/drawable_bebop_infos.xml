@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item
+        n1:drawable="@drawable/img_bebop"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item
+        n2:id="@id/upper_left"
+        n2:drawable="@drawable/motor_state"
+        n2:left="@dimen/bebop_closer_left_motor_padding_start"
+        n2:top="@dimen/bebop_closer_top_motor_padding_start"
+        n2:right="@dimen/bebop_closer_left_motor_padding_end"
+        n2:bottom="@dimen/bebop_closer_top_motor_padding_end"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item
+        n3:id="@id/upper_right"
+        n3:drawable="@drawable/motor_state"
+        n3:left="@dimen/bebop_further_left_motor_padding_start"
+        n3:top="@dimen/bebop_closer_top_motor_padding_start"
+        n3:right="@dimen/bebop_further_left_motor_padding_end"
+        n3:bottom="@dimen/bebop_closer_top_motor_padding_end"
+        xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item
+        n4:id="@id/lower_right"
+        n4:drawable="@drawable/motor_state"
+        n4:left="@dimen/bebop_further_left_motor_padding_start"
+        n4:top="@dimen/bebop_further_top_motor_padding_start"
+        n4:right="@dimen/bebop_further_left_motor_padding_end"
+        n4:bottom="@dimen/bebop_further_top_motor_padding_end"
+        xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item
+        n5:id="@id/lower_left"
+        n5:drawable="@drawable/motor_state"
+        n5:left="@dimen/bebop_closer_left_motor_padding_start"
+        n5:top="@dimen/bebop_further_top_motor_padding_start"
+        n5:right="@dimen/bebop_closer_left_motor_padding_end"
+        n5:bottom="@dimen/bebop_further_top_motor_padding_end"
+        xmlns:n5="http://schemas.android.com/apk/res/android" />
+</layer-list>

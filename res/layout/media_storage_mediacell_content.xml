@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="@dimen/list_row_height"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:id="@id/image_media_thumbnail"
+        n1:layout_width="@dimen/list_row_height"
+        n1:layout_height="@dimen/list_row_height"
+        n1:scaleType="centerCrop"
+        n1:contentDescription="@string/media_cd_thumbnail" />
+    <ImageView
+        n1:id="@id/image_media_video_indicator"
+        n1:visibility="gone"
+        n1:layout_width="@dimen/half_list_row_height"
+        n1:layout_height="@dimen/half_list_row_height"
+        n1:layout_margin="@dimen/quarter_list_row_height"
+        n1:src="@drawable/media_icn_play"
+        n1:scaleType="centerCrop"
+        n1:tint="@color/white"
+        n1:layout_centerVertical="true"
+        n1:alpha="0.7" />
+    <RelativeLayout
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerVertical="true"
+        n1:layout_marginStart="@dimen/list_row_main_icon_margin"
+        n1:layout_toEndOf="@id/image_media_thumbnail">
+        <TextView
+            n1:textSize="@dimen/list_row_text_size_primary"
+            n1:textColor="@color/white"
+            n1:id="@id/text_date"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentTop="true"
+            n1:contentDescription="@string/media_cd_date"
+            n1:layout_alignParentStart="true" />
+        <TextView
+            n1:textSize="@dimen/list_row_text_size_primary"
+            n1:textColor="@color/light_gray"
+            n1:gravity="center"
+            n1:id="@id/text_time"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignTop="@id/text_date"
+            n1:layout_alignBottom="@id/text_date"
+            n1:contentDescription="@string/media_cd_time"
+            n1:layout_marginStart="10.0dip"
+            n1:layout_toEndOf="@id/text_date" />
+    </RelativeLayout>
+    <TextView
+        n1:textColor="@color/light_gray"
+        n1:gravity="center"
+        n1:id="@id/text_file_size"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_marginEnd="20.0dip"
+        n1:layout_toStartOf="@id/checkbox_switch" />
+    <CheckBox
+        n1:textSize="18.0sp"
+        n1:id="@id/checkbox_switch"
+        n1:background="@drawable/drone_memory_checkbox_selector"
+        n1:focusable="false"
+        n1:layout_width="25.0dip"
+        n1:layout_height="25.0dip"
+        n1:button="@null"
+        n1:layout_centerVertical="true"
+        n1:contentDescription="@string/media_cd_checkbox"
+        n1:layout_marginEnd="20.0dip"
+        n1:layout_alignParentEnd="true" />
+</RelativeLayout>

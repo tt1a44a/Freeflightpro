@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_confidentiality_root"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageButton
+        n1:id="@id/button_data_confidentiality_back"
+        n1:background="@drawable/circular_button_background"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:src="@drawable/drawable_hud_back"
+        n1:scaleType="centerInside"
+        n1:layout_marginStart="@dimen/piloting_buttons_margin" />
+    <TextView
+        n1:textSize="18.0sp"
+        n1:textColor="@color/white"
+        n1:id="@id/data_confidentiality_title"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="20.0dip"
+        n1:text="@string/myparrot_data_title"
+        n1:layout_centerHorizontal="true" />
+    <ScrollView
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_below="@id/data_confidentiality_title"
+        n1:layout_toEndOf="@id/button_data_confidentiality_back">
+        <LinearLayout
+            n1:orientation="vertical"
+            n1:paddingTop="@dimen/myparrot_data_conf_margin_top"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:divider="@drawable/list_divider"
+            n1:showDividers="middle"
+            n1:layout_marginStart="@dimen/myparrot_data_conf_margin_start"
+            n1:layout_marginEnd="@dimen/myparrot_data_conf_margin_end">
+            <include
+                n1:id="@id/myparrot_data_conf_data_sharing"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="19.5dip"
+                n1:layout_marginBottom="21.0dip"
+                layout="@layout/item_myparrot_data_confidentiality_with_actions" />
+            <include
+                n1:id="@id/myparrot_data_conf_newsletter"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="18.5dip"
+                n1:layout_marginBottom="20.0dip"
+                layout="@layout/item_myparrot_data_confidentiality" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

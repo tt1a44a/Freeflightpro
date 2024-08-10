@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:gravity="center_vertical"
+    n1:orientation="horizontal"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:minHeight="@dimen/gamepad_mapping_item_rc_height"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="@dimen/gamepad_mapping_item_text_size"
+        n1:textColor="@color/white"
+        n1:id="@id/text_action_name"
+        n1:layout_width="0.0dip"
+        n1:layout_height="wrap_content"
+        n1:layout_weight="1.0"
+        n1:layout_marginStart="@dimen/gamepad_mapping_item_padding_sides" />
+    <TextView
+        n1:textColor="@color/dark_red"
+        n1:id="@id/text_required"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/gamepad_mapping_required"
+        n1:textAllCaps="true"
+        n1:layout_marginEnd="@dimen/gamepad_mapping_item_padding_sides" />
+    <com.parrot.freeflight.gamepad.configuration.widget.OneWayGaugeView
+        n1:id="@id/one_way_gauge"
+        n1:layout_width="@dimen/gamepad_mapping_item_gauge_width"
+        n1:layout_height="@dimen/gamepad_mapping_item_gauge_height" />
+    <com.parrot.freeflight.gamepad.configuration.widget.TwoWaysGaugeView
+        n1:id="@id/two_ways_gauge"
+        n1:layout_width="@dimen/gamepad_mapping_item_gauge_width"
+        n1:layout_height="@dimen/gamepad_mapping_item_gauge_height" />
+    <ImageView
+        n1:id="@id/image_channel_type"
+        n1:layout_width="@dimen/gamepad_mapping_item_control_button_width"
+        n1:layout_height="wrap_content"
+        n1:layout_marginStart="@dimen/gamepad_mapping_item_control_button_padding"
+        n1:layout_marginEnd="@dimen/gamepad_mapping_item_padding_sides" />
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:id="@id/layout_invert"
+        n1:background="@drawable/gamepad_mapping_item_invert_button_background"
+        n1:layout_width="@dimen/gamepad_mapping_item_edit_button_width"
+        n1:layout_height="fill_parent">
+        <ImageView
+            n1:layout_width="@dimen/gamepad_mapping_item_edit_icon_width"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="@dimen/gamepad_mapping_item_edit_icon_padding"
+            n1:src="@drawable/icn_inverse" />
+        <TextView
+            n1:textSize="@dimen/gamepad_mapping_item_secondary_text_size"
+            n1:textColor="@color/white"
+            n1:id="@id/text_inverse"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/gamepad_mapping_inverse" />
+    </LinearLayout>
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:id="@id/layout_edit"
+        n1:background="@drawable/gamepad_mapping_item_edit_button_background"
+        n1:layout_width="@dimen/gamepad_mapping_item_edit_button_width"
+        n1:layout_height="fill_parent">
+        <ImageView
+            n1:layout_width="@dimen/gamepad_mapping_item_edit_icon_width"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="@dimen/gamepad_mapping_item_edit_icon_padding"
+            n1:src="@drawable/icn_edit" />
+        <TextView
+            n1:textSize="@dimen/gamepad_mapping_item_secondary_text_size"
+            n1:textColor="@color/white"
+            n1:id="@id/text_edit"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/edit" />
+    </LinearLayout>
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:id="@id/layout_channel_type_choice"
+        n1:background="@color/transparent_light_green"
+        n1:padding="@dimen/gamepad_mapping_item_control_row_margin"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <TextView
+            n1:textSize="@dimen/gamepad_mapping_item_secondary_text_size"
+            n1:textColor="@color/green"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/gamepad_mapping_choose" />
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:id="@id/layout_channel_types"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        n1:textSize="@dimen/gamepad_mapping_item_secondary_text_size"
+        n1:textColor="@color/green"
+        n1:gravity="center"
+        n1:id="@id/text_min_max"
+        n1:background="@color/transparent_light_green"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:text="@string/gamepad_mapping_move_button" />
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:id="@id/gallery_toolbar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/gallery_toolbar_height"
+        n1:layout_marginBottom="@dimen/gallery_toolbar_margin">
+        <ImageButton
+            n1:id="@id/gallery_back_btn"
+            n1:background="@drawable/ripple_effect"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside"
+            n1:layout_alignParentTop="true"
+            n1:contentDescription="@null"
+            n1:layout_alignParentStart="true" />
+        <TextView
+            n1:textSize="@dimen/director_title_size"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:id="@id/gallery_media_title"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/gallery_media_tab_media"
+            n1:layout_centerInParent="true" />
+        <com.parrot.freeflight.piloting.widget.RoundedCornerLayout
+            n1:id="@id/gallery_media_selector"
+            n1:layout_width="@dimen/gallery_tab_layout_width"
+            n1:layout_height="@dimen/gallery_tab_layout_height"
+            n1:layout_centerInParent="true">
+            <RelativeLayout
+                n1:background="@drawable/gallery_tab_layout_border"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content">
+                <TextView
+                    n1:id="@id/gallery_media"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent"
+                    n1:text="@string/media"
+                    n1:layout_toStartOf="@id/gallery_media_separator"
+                    style="@style/TabView" />
+                <View
+                    n1:id="@id/gallery_media_separator"
+                    n1:layout_width="0.0dip"
+                    n1:layout_height="fill_parent"
+                    n1:layout_centerHorizontal="true" />
+                <TextView
+                    n1:id="@id/gallery_best_of"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent"
+                    n1:text="@string/gallery_media_tab_best_of"
+                    n1:layout_toEndOf="@id/gallery_media_separator"
+                    style="@style/TabView" />
+            </RelativeLayout>
+        </com.parrot.freeflight.piloting.widget.RoundedCornerLayout>
+        <FrameLayout
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:layout_toStartOf="@id/gallery_create_btn"
+            n1:layout_toEndOf="@id/gallery_media_selector">
+            <com.parrot.freeflight.view.CheckableImageButton
+                n1:layout_gravity="center"
+                n1:id="@id/gallery_delete_btn"
+                n1:background="@null"
+                n1:padding="@dimen/gallery_delete_padding"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:src="@drawable/drawable_delete_media" />
+        </FrameLayout>
+        <Button
+            n1:id="@id/gallery_create_btn"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerVertical="true"
+            n1:layout_marginEnd="@dimen/gallery_toolbar_margin"
+            n1:layout_alignParentEnd="true"
+            style="@style/CreateButton" />
+    </RelativeLayout>
+    <FrameLayout
+        n1:id="@id/delete_bottom_bar"
+        n1:background="@color/transparent_black"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentBottom="true">
+        <Button
+            n1:textSize="@dimen/create_bottom_bar_text_size"
+            n1:textColor="@color/white"
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/delete_cancel_button"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:minHeight="0.0dip"
+            n1:text="@string/gallery_media_action_cancel"
+            n1:textAllCaps="true"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+        <TextView
+            n1:textColor="@color/white"
+            n1:layout_gravity="center"
+            n1:id="@id/delete_media_count"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content" />
+        <Button
+            n1:textSize="@dimen/create_bottom_bar_text_size"
+            n1:textColor="@color/red"
+            n1:layout_gravity="end|center"
+            n1:id="@id/delete_button"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:minHeight="0.0dip"
+            n1:text="@string/gallery_media_action_delete"
+            n1:textAllCaps="true"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+    </FrameLayout>
+    <FrameLayout
+        n1:id="@id/gallery_fragment_container"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_above="@id/delete_bottom_bar"
+        n1:layout_below="@id/gallery_toolbar" />
+</RelativeLayout>

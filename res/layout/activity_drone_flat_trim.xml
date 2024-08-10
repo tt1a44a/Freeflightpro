@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/flat_trim_root_layout"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        n1:layout_width="@dimen/flat_trim_button_size"
+        n1:layout_height="@dimen/flat_trim_button_size"
+        n1:layout_margin="@dimen/flat_trim_margin_button">
+        <ImageView
+            n1:id="@id/flat_trim_back_button"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/drawable_hud_back" />
+    </FrameLayout>
+    <TextView
+        n1:textSize="@dimen/flat_trim_title_text"
+        n1:textColor="@color/white"
+        n1:id="@id/flat_trim_title"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="20.0dip"
+        n1:text="@string/flat_trim_title"
+        n1:layout_centerHorizontal="true" />
+    <TextView
+        n1:textSize="@dimen/flat_trim_description_text"
+        n1:textColor="@color/white"
+        n1:id="@id/flat_trim_description"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/flat_trim_desciption"
+        n1:layout_below="@id/flat_trim_title"
+        n1:layout_centerHorizontal="true" />
+    <com.parrot.freeflight.piloting.widget.ArtificialHorizonView
+        n1:id="@id/flat_trim_artificial_horizon"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+    <Button
+        n1:id="@id/flat_trim_set_button"
+        n1:background="@drawable/button_selector"
+        n1:layout_width="wrap_content"
+        n1:layout_height="35.0dip"
+        n1:layout_marginBottom="@dimen/flat_trim_margin_bottom_button"
+        n1:text="@string/flat_trim_set"
+        n1:layout_alignParentBottom="true"
+        n1:layout_centerHorizontal="true"
+        n1:textAllCaps="true" />
+</RelativeLayout>

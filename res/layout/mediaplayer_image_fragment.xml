@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:background="@android:color/transparent"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        n1:id="@id/progress_mediaplayer_loading"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerInParent="true" />
+    <ImageView
+        n1:id="@id/image_mediaplayer_image"
+        n1:background="@android:color/transparent"
+        n1:visibility="invisible"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:scaleType="fitCenter" />
+    <ImageView
+        n1:id="@id/image_mediaplayer_loading_failed"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:src="@drawable/ic_highlight_off_white_48dp"
+        n1:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    n1:id="@id/layout_map_preload"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageButton
+        n1:id="@id/button_map_preload_back"
+        n1:background="@drawable/circular_button_background"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:layout_margin="@dimen/piloting_buttons_margin"
+        n1:src="@drawable/drawable_hud_back"
+        n1:scaleType="centerInside"
+        n1:layout_alignParentTop="true"
+        n1:layout_alignParentStart="true" />
+    <ImageButton
+        n1:id="@id/button_map_preload_center"
+        n1:background="@drawable/circular_button_background"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:layout_margin="@dimen/piloting_buttons_margin"
+        n1:src="@drawable/flightplan_icn_user_position"
+        n1:scaleType="centerInside"
+        n1:layout_alignParentTop="true"
+        n1:layout_alignParentEnd="true" />
+    <ImageButton
+        n1:id="@id/button_map_preload_search"
+        n1:background="@drawable/circular_button_background"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:layout_margin="@dimen/piloting_buttons_margin"
+        n1:src="@drawable/places_ic_search"
+        n1:scaleType="centerInside"
+        n1:layout_alignParentTop="true"
+        n1:layout_toStartOf="@id/button_map_preload_center" />
+    <ImageButton
+        n1:id="@id/button_map_preload_cancel_search"
+        n1:background="@drawable/circular_button_background"
+        n1:visibility="gone"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:layout_margin="@dimen/piloting_buttons_margin"
+        n1:src="@drawable/flightplan_icn_uncheck"
+        n1:scaleType="centerInside"
+        n1:layout_alignParentTop="true"
+        n1:layout_toStartOf="@id/button_map_preload_center" />
+    <EditText
+        n1:textColorHint="@color/grey"
+        n1:id="@id/edit_map_preload_search"
+        n1:background="@drawable/rounded_rectangle_search_background"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:hint="@string/map_preload_search_hint"
+        n1:layout_alignParentTop="true"
+        n1:inputType="text"
+        n1:imeOptions="actionSearch"
+        n1:paddingStart="@dimen/piloting_button_size"
+        n1:layout_toStartOf="@id/button_map_preload_cancel_search"
+        n1:layout_toEndOf="@id/button_map_preload_back" />
+    <ImageView
+        n1:id="@id/image_map_preload_search_hint"
+        n1:background="@null"
+        n1:visibility="gone"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:src="@drawable/places_ic_search"
+        n1:scaleType="centerInside"
+        n1:layout_alignTop="@id/edit_map_preload_search"
+        n1:layout_alignStart="@id/edit_map_preload_search" />
+    <ProgressBar
+        n1:id="@id/image_map_preload_search_progress"
+        n1:visibility="gone"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:layout_alignTop="@id/edit_map_preload_search"
+        n1:layout_alignStart="@id/edit_map_preload_search" />
+    <TextView
+        n1:textSize="@dimen/home_title_text_size"
+        n1:textColor="@color/white"
+        n1:gravity="center"
+        n1:id="@id/text_map_preload_title"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/piloting_buttons_margin"
+        n1:text="@string/map_preload_title"
+        n1:layout_alignParentTop="true"
+        n1:layout_toStartOf="@id/button_map_preload_search"
+        n1:layout_toEndOf="@id/button_map_preload_back" />
+    <TextView
+        n1:textColor="@color/white"
+        n1:gravity="center"
+        n1:id="@id/text_map_preload_subtitle"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:text="@string/map_preload_subtitle"
+        n1:layout_below="@id/text_map_preload_title"
+        n1:layout_alignStart="@id/text_map_preload_title"
+        n1:layout_alignEnd="@id/text_map_preload_title" />
+    <Button
+        n1:id="@id/button_map_preload_ok"
+        n1:background="@drawable/rounded_rectangle_button_selector"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginBottom="@dimen/map_preload_button_margin"
+        n1:text="@string/map_preload_save_map"
+        n1:layout_alignParentBottom="true"
+        n1:layout_centerHorizontal="true"
+        n2:layout_widthPercent="@fraction/map_preload_button_width"
+        style="@style/SettingsButton"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <FrameLayout
+        n1:id="@id/layout_map_preload_progress"
+        n1:background="@drawable/rounded_rectangle_horizontal_progress_background"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginBottom="@dimen/map_preload_button_margin"
+        n1:layout_alignParentBottom="true"
+        n1:layout_centerHorizontal="true"
+        n3:layout_widthPercent="@fraction/map_preload_button_width"
+        xmlns:n3="http://schemas.android.com/apk/res-auto">
+        <ImageView
+            n1:id="@id/image_map_preload_progress_value"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/rounded_rectangle_horizontal_progress_clip" />
+        <TextView
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:id="@id/text_map_preload_progress"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+        <ImageButton
+            n1:layout_gravity="end"
+            n1:id="@id/button_map_preload_cancel"
+            n1:background="@null"
+            n1:layout_width="@dimen/settings_buttons_height"
+            n1:layout_height="@dimen/settings_buttons_height"
+            n1:src="@drawable/flightplan_icn_uncheck"
+            n1:scaleType="centerInside" />
+    </FrameLayout>
+</android.support.percent.PercentRelativeLayout>

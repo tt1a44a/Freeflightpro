@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:background="@drawable/background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager
+        n1:id="@id/pager_media_player"
+        n1:background="@android:color/transparent"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+    <RelativeLayout
+        n1:id="@id/layout_mediaplayer_title"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/mediaplayer_title_height"
+        n1:layout_marginTop="@dimen/mediaplayer_title_margin"
+        n1:layout_alignParentTop="true">
+        <ImageButton
+            n1:id="@id/button_mediaplayer_back"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside"
+            n1:layout_centerVertical="true"
+            n1:layout_marginStart="@dimen/piloting_buttons_margin" />
+        <Button
+            n1:id="@id/button_mediaplayer_upload"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/share"
+            n1:layout_marginStart="@dimen/mediaplayer_upload_button_horizontal_margin"
+            n1:layout_marginEnd="@dimen/mediaplayer_upload_button_horizontal_margin"
+            n1:layout_alignParentEnd="true"
+            style="@style/NextButton" />
+        <ProgressBar
+            n1:id="@id/progress_mediaplayer_upload"
+            n1:visibility="gone"
+            n1:layout_width="@dimen/infinite_progressbar_size"
+            n1:layout_height="@dimen/infinite_progressbar_size"
+            n1:layout_centerVertical="true"
+            n1:layout_toStartOf="@id/button_mediaplayer_upload" />
+        <ImageView
+            n1:id="@id/image_mediaplayer_uploaded_indicator"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/academy_icn_uploadtoserver"
+            n1:scaleType="centerInside"
+            n1:layout_centerVertical="true"
+            n1:layout_marginEnd="@dimen/mediaplayer_upload_button_horizontal_margin"
+            n1:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

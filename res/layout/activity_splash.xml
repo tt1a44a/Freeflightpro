@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:background="@drawable/splash_bg"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:id="@id/splash_logo"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:src="@drawable/splash_logo"
+        n1:layout_centerHorizontal="true"
+        n1:layout_centerVertical="true" />
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="60.0dip"
+        n1:layout_below="@id/splash_logo">
+        <TextView
+            n1:gravity="center"
+            n1:id="@id/text_data_synchronization"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/syncing_data"
+            n1:layout_centerInParent="true" />
+        <ProgressBar
+            n1:layout_gravity="center_vertical"
+            n1:id="@id/progress_data_synchronization"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="@dimen/drone_memory_progress_bar_height"
+            n1:max="@integer/max_progression"
+            n1:indeterminate="false"
+            n1:layout_below="@id/text_data_synchronization"
+            n1:layout_centerHorizontal="true"
+            n1:layout_alignStart="@id/text_data_synchronization"
+            n1:layout_alignEnd="@id/text_data_synchronization"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+        <RelativeLayout
+            n1:id="@id/layout_data_synchronization_failed"
+            n1:visibility="gone"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_centerInParent="true">
+            <TextView
+                n1:gravity="center"
+                n1:id="@id/text_data_synchronization_failed"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/sync_data_failed"
+                n1:layout_centerHorizontal="true" />
+            <Button
+                n1:id="@id/button_data_synchronization_open_settings"
+                n1:background="@drawable/button_selector"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginTop="@dimen/splash_button_margin"
+                n1:text="@string/settings"
+                n1:layout_below="@id/text_data_synchronization_failed"
+                n1:layout_centerHorizontal="true"
+                n1:paddingStart="@dimen/splash_button_padding"
+                n1:paddingEnd="@dimen/splash_button_padding"
+                n1:layout_marginStart="@dimen/splash_button_margin"
+                style="@style/SettingsButton" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <Button
+        n1:textColor="@color/color_white_clickable_text_selector"
+        n1:gravity="center_vertical"
+        n1:id="@id/button_my_flights_details_share_graphic"
+        n1:background="@android:color/transparent"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:minWidth="0.0dip"
+        n1:text="@string/share"
+        n1:layout_centerVertical="true"
+        n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+        n1:layout_alignParentEnd="true" />
+    <View
+        n1:id="@id/view_my_flights_details_share_separator"
+        n1:background="@android:color/white"
+        n1:visibility="gone"
+        n1:layout_width="@dimen/share_separator_width"
+        n1:layout_height="@dimen/share_separator_size"
+        n1:layout_centerVertical="true"
+        n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+        n1:layout_toStartOf="@id/button_my_flights_details_share_graphic" />
+    <Button
+        n1:textColor="@color/color_white_clickable_text_selector"
+        n1:id="@id/button_my_flights_details_share_run"
+        n1:background="@android:color/transparent"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/my_piloting_send_piloting"
+        n1:layout_centerVertical="true"
+        n1:layout_alignWithParentIfMissing="true"
+        n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+        n1:layout_toStartOf="@id/view_my_flights_details_share_separator" />
+    <ProgressBar
+        n1:id="@id/progress_my_flights_details_share"
+        n1:visibility="gone"
+        n1:layout_width="@dimen/share_progressbar_size"
+        n1:layout_height="@dimen/share_progressbar_size"
+        n1:layout_centerVertical="true"
+        n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+        n1:layout_toStartOf="@id/button_my_flights_details_share_run" />
+</merge>

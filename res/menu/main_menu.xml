@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <group
+        n1:id="@id/navigation_menu"
+        n1:checkableBehavior="none"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <item
+            n1:icon="@drawable/ic_gallery"
+            n1:id="@id/nav_gallery"
+            n1:title="@string/my_gallery_title" />
+        <item
+            n1:icon="@drawable/ic_film_plan"
+            n1:id="@id/nav_flight_plan"
+            n1:title="@string/film_plan" />
+        <item
+            n1:icon="@drawable/whats_new_icon"
+            n1:id="@id/nav_whats_new"
+            n1:title="@string/whats_news_menu_short" />
+        <item
+            n1:icon="@drawable/media_icn_play"
+            n1:id="@id/nav_school"
+            n1:title="@string/drone_school" />
+        <item
+            n1:icon="@drawable/store"
+            n1:id="@id/nav_store"
+            n1:title="@string/welcome_buy_a_drone" />
+        <item
+            n1:icon="@drawable/sidebar_icn_update"
+            n1:id="@id/nav_update"
+            n1:title="@string/check_for_updates" />
+        <item
+            n1:icon="@drawable/product_0901_icn_switch_map"
+            n1:id="@id/nav_map_preload"
+            n1:title="@string/map_preloading" />
+        <item
+            n1:icon="@drawable/ic_data_confidentiality"
+            n1:id="@id/nav_data_confidentiality"
+            n1:title="@string/myparrot_data_title" />
+        <item
+            n1:icon="@drawable/sidebar_icn_help"
+            n1:id="@id/nav_about"
+            n1:title="@string/about_information" />
+    </group>
+</menu>

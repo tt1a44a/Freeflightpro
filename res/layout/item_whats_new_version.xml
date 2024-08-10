@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:background="@drawable/ripple_effect"
+    n1:layout_width="fill_parent"
+    n1:layout_height="@dimen/list_row_height"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="@dimen/list_row_text_size_primary"
+        n1:textColor="@color/white"
+        n1:id="@id/text_title_whats_new"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerVertical="true"
+        n1:layout_marginStart="@dimen/whats_new_item_vertical_margin"
+        n1:layout_alignParentStart="true" />
+    <TextView
+        n1:textColor="@color/white"
+        n1:gravity="center"
+        n1:id="@id/text_unread_count_whats_new"
+        n1:background="@drawable/round_accent_filled_drawable"
+        n1:layout_width="@dimen/whats_new_count_icon_size"
+        n1:layout_height="@dimen/whats_new_count_icon_size"
+        n1:layout_margin="@dimen/whats_new_count_margin"
+        n1:layout_centerInParent="true"
+        n1:layout_centerVertical="true"
+        n1:layout_toStartOf="@id/image_chevron_whats_new" />
+    <ImageView
+        n1:id="@id/image_chevron_whats_new"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_margin="@dimen/whats_new_item_vertical_margin"
+        n1:src="@drawable/drawable_chevron_right"
+        n1:tint="@color/light_gray"
+        n1:layout_centerVertical="true"
+        n1:layout_alignParentEnd="true" />
+</RelativeLayout>

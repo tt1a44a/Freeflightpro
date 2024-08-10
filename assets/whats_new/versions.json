@@ -1,0 +1,171 @@
+[
+  {
+    "version": "5.2",
+    "features": [
+      {
+        "title_identfier": "WN002000",
+        "title_second_identifier": "whats_news_page_17_title",
+        "text_identifier": "WN002001",
+        "text_second_identifier": "whats_news_page_17_text",
+        "img": "whats_new_gallery"
+      },
+      {
+        "title_identfier": "WN002002",
+        "title_second_identifier": "whats_news_page_18_title",
+        "text_identifier": "WN002003",
+        "text_second_identifier": "whats_news_page_18_text",
+        "img": "whats_new_flight_director"
+      },
+      {
+        "title_identfier": "WN002004",
+        "title_second_identifier": "whats_news_page_19_title",
+        "text_identifier": "WN002005",
+        "text_second_identifier": "whats_news_page_19_text",
+        "img": "whats_new_social_media"
+      },
+      {
+        "title_identfier": "WN002006",
+        "title_second_identifier": "whats_news_page_20_title",
+        "text_identifier": "WN002007",
+        "text_second_identifier": "whats_news_page_20_text",
+        "img": "whats_new_marketing_notification"
+      },
+      {
+        "title_identfier": "WN002010",
+        "title_second_identifier": "whats_news_page_22_title",
+        "text_identifier": "WN002011",
+        "text_second_identifier": "whats_news_page_22_text",
+        "img": "whats_new_photo_timer"
+      }
+    ]
+  },
+  {
+    "version": "5.1",
+    "features": [
+      {
+        "title_identfier": "WN001003",
+        "title_second_identifier": "whats_news_page_15_title",
+        "text_identifier": "WN001004",
+        "text_second_identifier": "whats_news_page_15_text",
+        "img": "whats_new_bip_my_drone"
+      },
+      {
+        "title_identfier": "WN001005",
+        "title_second_identifier": "whats_news_page_16_title",
+        "text_identifier": "WN001006",
+        "text_second_identifier": "whats_news_page_16_text",
+        "img": "whats_new_bluegrass"
+      },
+      {
+        "title_identfier": "WN000026",
+        "title_second_identifier": "whats_news_page_9_title",
+        "text_identifier": "WN000027",
+        "text_second_identifier": "whats_news_page_9_text",
+        "img": "whats_new_radar"
+      }
+    ]
+  },
+  {
+    "version": "5.0",
+    "features": [
+      {
+        "title_identfier": "WN000010",
+        "title_second_identifier": "whats_news_page_1_title",
+        "text_identifier": "WN000011",
+        "text_second_identifier": "whats_news_page_1_text",
+        "img": "whats_new_hand_launch"
+      },
+      {
+        "title_identfier": "WN000012",
+        "title_second_identifier": "whats_news_page_2_title",
+        "text_identifier": "WN000013",
+        "text_second_identifier": "whats_news_page_2_text",
+        "img": "whats_new_presets"
+      },
+      {
+        "title_identfier": "WN000014",
+        "title_second_identifier": "whats_news_page_3_title",
+        "text_identifier": "WN000015",
+        "text_second_identifier": "whats_news_page_3_text",
+        "img": "whats_new_cameraman"
+      },
+      {
+        "title_identfier": "WN000016",
+        "title_second_identifier": "whats_news_page_4_title",
+        "text_identifier": "WN000017",
+        "text_second_identifier": "whats_news_page_4_text",
+        "img": "whats_new_framing"
+      },
+      {
+        "title_identfier": "WN000018",
+        "title_second_identifier": "whats_news_page_5_title",
+        "text_identifier": "WN000019",
+        "text_second_identifier": "whats_news_page_5_text",
+        "img": "whats_new_tap_n_go"
+      },
+      {
+        "title_identfier": "WN000020",
+        "title_second_identifier": "whats_news_page_6_title",
+        "text_identifier": "WN000021",
+        "text_second_identifier": "whats_news_page_6_text",
+        "img": "whats_new_poi"
+      },
+      {
+        "title_identfier": "WN000022",
+        "title_second_identifier": "whats_news_page_7_title",
+        "text_identifier": "WN000023",
+        "text_second_identifier": "whats_news_page_7_text",
+        "img": "whats_new_dronies"
+      },
+      {
+        "title_identfier": "WN000024",
+        "title_second_identifier": "whats_news_page_8_title",
+        "text_identifier": "WN000025",
+        "text_second_identifier": "whats_news_page_8_text",
+        "img": "whats_new_pro_shots"
+      },
+      /*{
+        "title_identfier": "WN000026",
+        "title_second_identifier": "whats_news_page_9_title",
+        "text_identifier": "WN000027",
+        "text_second_identifier": "whats_news_page_9_text",
+        "img": "whats_new_radar"
+      },
+      {
+        "title_identfier": "WN000028",
+        "title_second_identifier": "whats_news_page_10_title",
+        "text_identifier": "WN000029",
+        "text_second_identifier": "whats_news_page_10_text",
+        "img": "whats_new_geofencing"
+      },*/
+      {
+        "title_identfier": "WN000030",
+        "title_second_identifier": "whats_news_page_11_title",
+        "text_identifier": "WN000031",
+        "text_second_identifier": "whats_news_page_11_text",
+        "img": "whats_new_flight_plan"
+      },
+      {
+        "title_identfier": "WN000032",
+        "title_second_identifier": "whats_news_page_12_title",
+        "text_identifier": "WN000033",
+        "text_second_identifier": "whats_news_page_12_text",
+        "img": "whats_new_camera_widget"
+      },
+      {
+        "title_identfier": "WN000034",
+        "title_second_identifier": "whats_news_page_13_title",
+        "text_identifier": "WN000035",
+        "text_second_identifier": "whats_news_page_13_text",
+        "img": "whats_new_telemetry"
+      },
+      {
+        "title_identfier": "WN000036",
+        "title_second_identifier": "whats_news_page_14_title",
+        "text_identifier": "WN000037",
+        "text_second_identifier": "whats_news_page_14_text",
+        "img": "whats_new_find_my_drone"
+      }
+    ]
+  }
+]

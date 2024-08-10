@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item
+        n1:state_enabled="false"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape
+            n1:shape="rectangle">
+            <solid
+                n1:color="@color/piloting_button_disabled_color" />
+            <stroke
+                n1:width="1.0dip"
+                n1:color="@color/piloting_button_outline_color" />
+            <size
+                n1:height="@dimen/settings_buttons_height" />
+            <corners
+                n1:radius="@dimen/settings_buttons_half_height" />
+        </shape>
+    </item>
+    <item
+        n2:state_focused="true"
+        n2:state_pressed="false"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape
+            n2:shape="rectangle">
+            <solid
+                n2:color="@color/light_gray" />
+            <stroke
+                n2:width="1.0dip"
+                n2:color="@color/piloting_button_outline_color" />
+            <size
+                n2:height="@dimen/settings_buttons_height" />
+            <corners
+                n2:radius="@dimen/settings_buttons_half_height" />
+        </shape>
+    </item>
+    <item
+        n3:state_pressed="true"
+        xmlns:n3="http://schemas.android.com/apk/res/android">
+        <layer-list>
+            <item>
+                <shape
+                    n3:shape="rectangle">
+                    <solid
+                        n3:color="@color/piloting_button_bg_color" />
+                    <stroke
+                        n3:width="1.0dip"
+                        n3:color="@android:color/transparent" />
+                    <size
+                        n3:height="@dimen/settings_buttons_height" />
+                    <corners
+                        n3:radius="@dimen/settings_buttons_half_height" />
+                </shape>
+            </item>
+            <item>
+                <shape
+                    n3:shape="rectangle">
+                    <solid
+                        n3:color="@color/piloting_button_pressed_bg_color" />
+                    <stroke
+                        n3:width="1.0dip"
+                        n3:color="@color/green" />
+                    <size
+                        n3:height="@dimen/settings_buttons_height" />
+                    <corners
+                        n3:radius="@dimen/settings_buttons_half_height" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item
+        n4:state_selected="true"
+        n4:state_pressed="false"
+        xmlns:n4="http://schemas.android.com/apk/res/android">
+        <shape
+            n4:shape="rectangle">
+            <solid
+                n4:color="@color/piloting_settings_disabled_focus_color" />
+            <stroke
+                n4:width="1.0dip"
+                n4:color="@color/piloting_button_outline_color" />
+            <size
+                n4:height="@dimen/settings_buttons_height" />
+            <corners
+                n4:radius="@dimen/settings_buttons_half_height" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            n5:shape="rectangle"
+            xmlns:n5="http://schemas.android.com/apk/res/android">
+            <solid
+                n5:color="@color/piloting_button_bg_color" />
+            <stroke
+                n5:width="1.0dip"
+                n5:color="@color/piloting_button_outline_color" />
+            <size
+                n5:height="@dimen/settings_buttons_height" />
+            <corners
+                n5:radius="@dimen/settings_buttons_half_height" />
+        </shape>
+    </item>
+</selector>

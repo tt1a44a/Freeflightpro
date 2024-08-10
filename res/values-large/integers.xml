@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="mavlink_saved_plan_row_number">3</integer>
+</resources>

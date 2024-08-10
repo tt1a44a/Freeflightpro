@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:background="@color/light_gray"
+    n1:layout_width="@dimen/my_flights_details_media_thumbnail_size"
+    n1:layout_height="@dimen/my_flights_details_media_thumbnail_size"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:id="@id/imageview_my_flights_details_medias_thumbnail"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:scaleType="centerCrop" />
+    <ImageView
+        n1:id="@id/imageview_my_flights_details_medias_thumbnail_video"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:src="@drawable/sidebar_icn_play"
+        n1:scaleType="centerInside"
+        n1:layout_centerInParent="true" />
+    <ImageView
+        n1:id="@id/imageview_my_flights_details_medias_thumbnail_uploaded"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:src="@drawable/academy_icn_uploadtoserver"
+        n1:scaleType="centerInside"
+        n1:layout_alignParentBottom="true"
+        n1:layout_alignParentEnd="true" />
+</RelativeLayout>

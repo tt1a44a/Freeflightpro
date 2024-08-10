@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <TableRow
+        n1:layout_width="fill_parent"
+        n1:layout_marginTop="@dimen/profile_tablerow_margin_top"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <TextView
+            n1:textSize="@dimen/profile_secondary_text_size"
+            n1:layout_gravity="bottom"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/profile_first_name" />
+        <TextView
+            n1:textSize="@dimen/form_secondary_text_size"
+            n1:layout_gravity="end|bottom|center"
+            n1:id="@id/text_firstname"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="-"
+            n1:contentDescription="@string/academy_profile_cd_firstname" />
+    </TableRow>
+    <TableRow
+        n2:layout_width="fill_parent"
+        n2:layout_marginTop="@dimen/profile_tablerow_margin_top"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <TextView
+            n2:textSize="@dimen/profile_secondary_text_size"
+            n2:layout_gravity="bottom"
+            n2:layout_width="wrap_content"
+            n2:layout_height="wrap_content"
+            n2:text="@string/profile_last_name" />
+        <TextView
+            n2:textSize="@dimen/form_secondary_text_size"
+            n2:layout_gravity="end|bottom|center"
+            n2:id="@id/text_lastname"
+            n2:layout_width="wrap_content"
+            n2:layout_height="wrap_content"
+            n2:text="-"
+            n2:contentDescription="@string/academy_profile_cd_lastname" />
+    </TableRow>
+    <TableRow
+        n3:layout_width="fill_parent"
+        n3:layout_marginTop="@dimen/profile_tablerow_margin_top"
+        xmlns:n3="http://schemas.android.com/apk/res/android">
+        <TextView
+            n3:textSize="@dimen/profile_secondary_text_size"
+            n3:layout_gravity="bottom"
+            n3:layout_width="wrap_content"
+            n3:layout_height="wrap_content"
+            n3:text="@string/profile_birthday" />
+        <TextView
+            n3:textSize="@dimen/form_secondary_text_size"
+            n3:layout_gravity="end|bottom|center"
+            n3:id="@id/text_birthday"
+            n3:layout_width="wrap_content"
+            n3:layout_height="wrap_content"
+            n3:text="-"
+            n3:contentDescription="@string/academy_profile_cd_birthday" />
+    </TableRow>
+    <TableRow
+        n4:layout_width="fill_parent"
+        n4:layout_marginTop="@dimen/profile_tablerow_margin_top"
+        xmlns:n4="http://schemas.android.com/apk/res/android">
+        <TextView
+            n4:textSize="@dimen/profile_secondary_text_size"
+            n4:layout_gravity="bottom"
+            n4:layout_width="wrap_content"
+            n4:layout_height="wrap_content"
+            n4:text="@string/profile_phone" />
+        <TextView
+            n4:textSize="@dimen/form_secondary_text_size"
+            n4:layout_gravity="end|bottom|center"
+            n4:id="@id/text_phone"
+            n4:layout_width="wrap_content"
+            n4:layout_height="wrap_content"
+            n4:text="-"
+            n4:contentDescription="@string/academy_profile_cd_phone" />
+    </TableRow>
+</merge>

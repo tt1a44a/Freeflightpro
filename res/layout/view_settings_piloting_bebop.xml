@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:gravity="center"
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:id="@id/settings_piloting_tab_layout"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/settings_piloting_tab_height"
+        n1:layout_marginTop="@dimen/settings_piloting_tab_margin">
+        <TextView
+            n1:textSize="@dimen/settings_title_size"
+            n1:textColor="@color/white"
+            n1:gravity="center_vertical"
+            n1:id="@id/settings_piloting_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:layout_marginLeft="@dimen/settings_padding_row"
+            n1:text="@string/presets_title"
+            n1:layout_toLeftOf="@id/settings_piloting_tab_film"
+            n1:layout_alignParentLeft="true" />
+        <View
+            n1:id="@id/settings_piloting_tab_selected"
+            n1:background="@drawable/background_dark_transparent"
+            n1:layout_width="@dimen/settings_piloting_tab_width"
+            n1:layout_height="fill_parent"
+            n1:layout_alignLeft="@id/settings_piloting_tab_film"
+            n1:layout_alignRight="@id/settings_piloting_tab_film" />
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:id="@id/settings_piloting_tab_film"
+            n1:focusableInTouchMode="true"
+            n1:clickable="true"
+            n1:layout_width="@dimen/settings_piloting_tab_width"
+            n1:layout_height="fill_parent"
+            n1:layout_toLeftOf="@id/settings_piloting_tab_racing">
+            <TextView
+                n1:textColor="@color/black"
+                n1:gravity="center"
+                n1:id="@id/settings_piloting_tab_film_icon"
+                n1:background="@drawable/background_tab_badge_selected"
+                n1:layout_width="@dimen/settings_piloting_tab_icon_size"
+                n1:layout_height="@dimen/settings_piloting_tab_icon_size"
+                n1:layout_marginRight="@dimen/settings_piloting_tab_icon_margin" />
+            <TextView
+                n1:textColor="@color/green"
+                n1:gravity="center"
+                n1:id="@id/settings_piloting_tab_film_title"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/presets_film_making"
+                n1:textAllCaps="true" />
+        </LinearLayout>
+        <LinearLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:id="@id/settings_piloting_tab_racing"
+            n1:focusableInTouchMode="true"
+            n1:clickable="true"
+            n1:layout_width="@dimen/settings_piloting_tab_width"
+            n1:layout_height="fill_parent"
+            n1:layout_marginRight="@dimen/settings_padding_row"
+            n1:layout_alignParentRight="true">
+            <TextView
+                n1:textColor="@color/black"
+                n1:gravity="center"
+                n1:id="@id/settings_piloting_tab_racing_icon"
+                n1:background="@drawable/background_tab_badge"
+                n1:layout_width="@dimen/settings_piloting_tab_icon_size"
+                n1:layout_height="@dimen/settings_piloting_tab_icon_size"
+                n1:layout_marginRight="@dimen/settings_piloting_tab_icon_margin" />
+            <TextView
+                n1:textColor="@color/white"
+                n1:gravity="center"
+                n1:id="@id/settings_piloting_tab_racing_title"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/presets_racing"
+                n1:textAllCaps="true" />
+        </LinearLayout>
+        <View
+            n1:id="@id/settings_piloting_tab_separator_1"
+            n1:background="#63ffffff"
+            n1:layout_width="fill_parent"
+            n1:layout_height="1.0dip"
+            n1:layout_toLeftOf="@id/settings_piloting_tab_selected"
+            n1:layout_alignParentLeft="true"
+            n1:layout_alignParentBottom="true" />
+        <View
+            n1:id="@id/settings_piloting_tab_separator_2"
+            n1:background="#63ffffff"
+            n1:layout_width="fill_parent"
+            n1:layout_height="1.0dip"
+            n1:layout_toRightOf="@id/settings_piloting_tab_selected"
+            n1:layout_alignParentRight="true"
+            n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        n1:id="@id/settings_piloting_list"
+        n1:background="@color/transparent_black_20"
+        n1:focusableInTouchMode="true"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+</LinearLayout>

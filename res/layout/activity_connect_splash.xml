@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_about_root"
+    n1:background="@drawable/background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:src="@drawable/my_parrot_background"
+        n1:scaleType="centerCrop" />
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="vertical"
+        n1:id="@id/linearLayout"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_centerInParent="true">
+        <ImageView
+            n1:layout_gravity="center_horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="@dimen/my_parrot_connect_logo_vertical_margin"
+            n1:src="@drawable/my_parrot_logo" />
+        <TextView
+            n1:textSize="@dimen/my_parrot_connect_title_size"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:layout_gravity="center_horizontal"
+            n1:id="@id/text_connect_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/my_parrot_connect_title" />
+        <TextView
+            n1:textSize="@dimen/my_parrot_connect_subtitle_size"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:layout_gravity="center_horizontal"
+            n1:id="@id/text_connect_subtitle"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/about_item_vertical_margin"
+            n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+            n1:text="@string/my_parrot_connect_description" />
+        <Button
+            n1:textSize="@dimen/my_parrot_connect_button_text_size"
+            n1:gravity="center"
+            n1:layout_gravity="center_horizontal"
+            n1:id="@id/button_connect_now"
+            n1:background="@drawable/button_connect_now_selector"
+            n1:paddingLeft="@dimen/my_parrot_connect_button_vertical_padding"
+            n1:paddingRight="@dimen/my_parrot_connect_button_vertical_padding"
+            n1:layout_width="wrap_content"
+            n1:layout_height="@dimen/my_parrot_connect_button_height"
+            n1:layout_marginTop="32.0dip"
+            n1:layout_marginBottom="24.0dip"
+            n1:text="@string/my_parrot_connect_now_button" />
+        <Button
+            n1:textSize="@dimen/my_parrot_connect_button_text_size"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:layout_gravity="center_horizontal"
+            n1:id="@id/button_why_connect"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/my_parrot_why_connect_button"
+            n1:textAllCaps="false"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+    <Button
+        n1:textSize="@dimen/my_parrot_connect_button_text_size"
+        n1:textColor="@color/grey"
+        n1:id="@id/button_connect_later"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/my_parrot_connect_later_button"
+        n1:layout_alignParentBottom="true"
+        n1:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+</RelativeLayout>

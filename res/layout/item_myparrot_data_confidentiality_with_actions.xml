@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.parrot.freeflight.myparrot.personaldata.DataConfidentialityWithActionView
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include
+        n1:id="@id/data_confidentiality_view"
+        layout="@layout/item_myparrot_data_confidentiality" />
+    <Button
+        n1:id="@id/data_confidentiality_download_my_data"
+        n1:layout_width="wrap_content"
+        n1:layout_height="30.0dip"
+        n1:layout_marginTop="24.0dip"
+        n1:minWidth="220.0dip"
+        n1:text="@string/myparrot_flight_history_download_button"
+        n1:paddingStart="8.0dip"
+        n1:paddingEnd="8.0dip"
+        n1:layout_marginStart="8.0dip"
+        n1:layout_marginEnd="8.0dip"
+        n2:layout_constraintEnd_toEndOf="parent"
+        n2:layout_constraintStart_toStartOf="parent"
+        n2:layout_constraintTop_toBottomOf="@id/data_confidentiality_view"
+        style="@style/Button.Default.Grey"
+        xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <Button
+        n1:id="@id/data_confidentiality_delete_my_data"
+        n1:layout_width="wrap_content"
+        n1:layout_height="30.0dip"
+        n1:layout_marginTop="21.0dip"
+        n1:minWidth="220.0dip"
+        n1:text="@string/myparrot_flight_history_delete_button"
+        n1:paddingStart="8.0dip"
+        n1:paddingEnd="8.0dip"
+        n1:layout_marginStart="8.0dip"
+        n1:layout_marginEnd="8.0dip"
+        n3:layout_constraintEnd_toEndOf="parent"
+        n3:layout_constraintStart_toStartOf="parent"
+        n3:layout_constraintTop_toBottomOf="@id/data_confidentiality_download_my_data"
+        style="@style/Button.Default.Grey"
+        xmlns:n3="http://schemas.android.com/apk/res-auto" />
+</com.parrot.freeflight.myparrot.personaldata.DataConfidentialityWithActionView>

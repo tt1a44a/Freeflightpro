@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include
+        n1:layout_width="@dimen/piloting_flightplan_options_width"
+        n1:layout_height="fill_parent"
+        n1:layout_alignParentRight="true"
+        layout="@layout/hud_piloting_bebop_flightplan_options" />
+    <RelativeLayout
+        n1:id="@id/hud_piloting_content"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_alignParentTop="true"
+        n1:layout_alignParentStart="true">
+        <FrameLayout
+            n1:id="@id/hud_piloting_streaming"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+            <ImageView
+                n1:id="@id/hud_piloting_streaming_nosignal"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:scaleType="centerCrop" />
+        </FrameLayout>
+        <com.parrot.freeflight.piloting.widget.ThirdRulesView
+            n1:id="@id/hud_piloting_grid"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+        <com.parrot.freeflight.map.RadarMapView
+            n1:id="@id/hud_piloting_radarmap"
+            n1:visibility="gone"
+            n1:layout_width="@dimen/hud_radarmap_mini_size"
+            n1:layout_height="@dimen/hud_radarmap_mini_size"
+            n1:layout_marginBottom="@dimen/hud_radarmap_mini_margin_bottom"
+            n1:layout_alignParentBottom="true"
+            n1:layout_centerHorizontal="true">
+            <com.parrot.freeflight.map.CircularMapView
+                n1:id="@id/hud_piloting_circularmapview"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent">
+                <com.parrot.freeflight.map.GLMapLayout
+                    n1:id="@id/hud_piloting_maplayout"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent">
+                    <ImageView
+                        n1:id="@id/hud_piloting_compass"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="fill_parent"
+                        n1:src="@drawable/map_radar_compass" />
+                </com.parrot.freeflight.map.GLMapLayout>
+            </com.parrot.freeflight.map.CircularMapView>
+        </com.parrot.freeflight.map.RadarMapView>
+        <include
+            n1:id="@id/hud_map_layer"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_marginTop="@dimen/piloting_buttons_margin"
+            n1:layout_marginRight="@dimen/piloting_buttons_margin"
+            n1:layout_above="@id/hud_piloting_show_hide_joysticks"
+            layout="@layout/hud_map_layer" />
+        <include
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            layout="@layout/joystick_controller_layout" />
+        <com.parrot.freeflight.piloting.ui.CameraTouchView
+            n1:id="@id/camera_controller_view"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+        <com.parrot.freeflight.piloting.ui.TouchController
+            n1:id="@id/touch_controller_view"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+        <com.parrot.freeflight.view.CheckableImageButton
+            n1:id="@id/hud_piloting_show_hide_joysticks"
+            n1:background="@drawable/circular_button_background"
+            n1:visibility="gone"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:layout_marginBottom="@dimen/piloting_buttons_margin"
+            n1:src="@drawable/drawable_hud_piloting_show_hide_joysticks"
+            n1:scaleType="centerInside"
+            n1:layout_above="@id/hud_piloting_telemetry"
+            n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+            n1:layout_alignParentEnd="true" />
+        <com.parrot.freeflight.piloting.widget.ArtificialHorizonView
+            n1:id="@id/hud_piloting_artificial_horizon"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+        <com.parrot.freeflight.piloting.widget.AlertView
+            n1:id="@id/alert_view"
+            n1:visibility="gone"
+            n1:layout_width="@dimen/alert_view_width"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="@dimen/piloting_alert_margin"
+            n1:layout_centerHorizontal="true" />
+        <RelativeLayout
+            n1:id="@id/layout_piloting_buttons"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_above="@id/hud_piloting_telemetry"
+            n1:layout_alignParentTop="true">
+            <ImageButton
+                n1:id="@id/button_back"
+                n1:background="@drawable/circular_button_background"
+                n1:layout_width="@dimen/piloting_button_size"
+                n1:layout_height="@dimen/piloting_button_size"
+                n1:layout_marginTop="@dimen/piloting_buttons_margin"
+                n1:src="@drawable/drawable_hud_back"
+                n1:scaleType="centerInside"
+                n1:layout_alignParentTop="true"
+                n1:contentDescription="@string/piloting_cd_go_back"
+                n1:layout_marginStart="@dimen/piloting_buttons_margin"
+                n1:layout_alignParentStart="true" />
+            <include
+                n1:id="@id/hud_piloting_flightplan_mode"
+                n1:background="@drawable/circular_button_background"
+                n1:visibility="gone"
+                n1:layout_width="@dimen/piloting_button_size"
+                n1:layout_height="@dimen/piloting_button_size"
+                n1:layout_marginTop="@dimen/piloting_buttons_margin"
+                n1:layout_alignParentTop="true"
+                n1:contentDescription="@string/piloting_cd_settings"
+                n1:layout_marginStart="@dimen/piloting_buttons_lateral_margin"
+                n1:layout_toEndOf="@id/button_settings"
+                layout="@layout/hud_progress_button_view" />
+            <com.parrot.freeflight.piloting.widget.RecordingView
+                n1:id="@id/recording_view"
+                n1:layout_width="wrap_content"
+                n1:layout_height="@dimen/piloting_button_size"
+                n1:layout_marginTop="@dimen/piloting_buttons_margin"
+                n1:layout_alignParentTop="true"
+                n1:layout_centerHorizontal="true" />
+            <include
+                n1:id="@id/hud_piloting_buttons_layer"
+                n1:visibility="visible"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_marginTop="@dimen/piloting_buttons_margin"
+                n1:layout_marginStart="@dimen/piloting_buttons_lateral_margin"
+                n1:layout_marginEnd="@dimen/piloting_buttons_margin"
+                layout="@layout/piloting_toolbar_chimera_view" />
+            <ImageButton
+                n1:id="@id/button_settings"
+                n1:background="@drawable/circular_button_background"
+                n1:layout_width="@dimen/piloting_button_size"
+                n1:layout_height="@dimen/piloting_button_size"
+                n1:layout_marginTop="@dimen/piloting_buttons_margin"
+                n1:src="@drawable/drawable_hud_settings"
+                n1:scaleType="centerInside"
+                n1:layout_alignParentTop="true"
+                n1:contentDescription="@string/piloting_cd_settings"
+                n1:layout_marginStart="@dimen/piloting_buttons_lateral_margin"
+                n1:layout_toEndOf="@id/button_back" />
+        </RelativeLayout>
+        <include
+            n1:id="@id/hud_piloting_telemetry"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_alignParentBottom="true"
+            layout="@layout/layout_telemetry" />
+        <View
+            n1:id="@id/hud_piloting_map_overlay"
+            n1:layout_width="0.0dip"
+            n1:layout_height="0.0dip"
+            n1:layout_alignLeft="@id/hud_piloting_radarmap"
+            n1:layout_alignTop="@id/hud_piloting_radarmap"
+            n1:layout_alignRight="@id/hud_piloting_radarmap"
+            n1:layout_alignBottom="@id/hud_piloting_radarmap" />
+        <FrameLayout
+            n1:id="@id/piloting_tiny_icon_layout"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="@dimen/piloting_buttons_margin"
+            n1:layout_above="@id/hud_piloting_telemetry"
+            n1:layout_alignParentBottom="false"
+            n1:layout_alignWithParentIfMissing="true"
+            n1:layout_marginStart="@dimen/piloting_buttons_margin">
+            <com.parrot.freeflight.piloting.widget.CenterOnImageButton
+                n1:id="@id/drawable_hud_piloting_map_center_on"
+                n1:background="@drawable/circular_button_background"
+                n1:visibility="visible"
+                n1:layout_width="@dimen/piloting_button_size"
+                n1:layout_height="@dimen/piloting_button_size"
+                n1:src="@drawable/map_center_on_level_list"
+                n1:scaleType="centerInside" />
+            <ImageView
+                n1:id="@id/drawable_hud_piloting_map_tiny"
+                n1:visibility="gone"
+                n1:layout_width="@dimen/piloting_button_size"
+                n1:layout_height="@dimen/piloting_button_size"
+                n1:src="@drawable/drawable_hud_piloting_map_tiny" />
+        </FrameLayout>
+        <FrameLayout
+            n1:id="@id/hud_piloting_mini_streaming"
+            n1:background="@drawable/hud_piloting_small_video_border"
+            n1:visibility="gone"
+            n1:layout_width="@dimen/flightplan_video_width"
+            n1:layout_height="@dimen/flightplan_video_height"
+            n1:layout_marginBottom="@dimen/flightplan_video_margin_bottom"
+            n1:layout_alignParentBottom="true"
+            n1:layout_centerHorizontal="true">
+            <ImageView
+                n1:id="@id/hud_piloting_mini_streaming_nosignal"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:scaleType="centerCrop" />
+        </FrameLayout>
+        <TextView
+            n1:textSize="@dimen/bottom_bar_font_size"
+            n1:textColor="@color/white"
+            n1:gravity="center"
+            n1:id="@id/text_info"
+            n1:background="@color/piloting_fixed_wing_info_error"
+            n1:padding="@dimen/piloting_fixed_wing_shake_drone_padding"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="@dimen/bottom_bar_height"
+            n1:layout_marginBottom="@dimen/drone_takeoff_button_height"
+            n1:text="@string/piloting_remote_required"
+            n1:layout_alignParentBottom="true" />
+        <View
+            n1:id="@id/hud_piloting_flightplan_close_panel"
+            n1:visibility="gone"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+        <ImageView
+            n1:id="@id/hud_timer_countdown_view"
+            n1:visibility="gone"
+            n1:clickable="true"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:src="@drawable/timer_countdown_animation"
+            n1:scaleType="centerInside"
+            n1:layout_centerInParent="true" />
+    </RelativeLayout>
+</merge>

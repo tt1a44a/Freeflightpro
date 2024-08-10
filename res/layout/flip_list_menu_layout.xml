@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <ImageButton
+        n1:id="@id/button_flipfront"
+        n1:background="@drawable/circular_button_background"
+        n1:layout_width="@dimen/piloting_button_size"
+        n1:layout_height="@dimen/piloting_button_size"
+        n1:layout_marginBottom="@dimen/flip_menu_dropdown_margin_between"
+        n1:src="@drawable/common_icn_flip_front"
+        n1:scaleType="centerInside"
+        n1:tint="@color/piloting_button_icon_tint"
+        n1:contentDescription="@string/piloting_cd_front_flip"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <ImageButton
+        n2:id="@id/button_flipback"
+        n2:background="@drawable/circular_button_background"
+        n2:layout_width="@dimen/piloting_button_size"
+        n2:layout_height="@dimen/piloting_button_size"
+        n2:layout_marginBottom="@dimen/flip_menu_dropdown_margin_between"
+        n2:src="@drawable/common_icn_flip_back"
+        n2:scaleType="centerInside"
+        n2:tint="@color/piloting_button_icon_tint"
+        n2:contentDescription="@string/piloting_cd_back_flip"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <ImageButton
+        n3:id="@id/button_flipright"
+        n3:background="@drawable/circular_button_background"
+        n3:layout_width="@dimen/piloting_button_size"
+        n3:layout_height="@dimen/piloting_button_size"
+        n3:layout_marginBottom="@dimen/flip_menu_dropdown_margin_between"
+        n3:src="@drawable/common_icn_flip_right"
+        n3:scaleType="centerInside"
+        n3:tint="@color/piloting_button_icon_tint"
+        n3:contentDescription="@string/piloting_cd_right_flip"
+        xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <ImageButton
+        n4:id="@id/button_flipleft"
+        n4:background="@drawable/circular_button_background"
+        n4:layout_width="@dimen/piloting_button_size"
+        n4:layout_height="@dimen/piloting_button_size"
+        n4:layout_marginBottom="@dimen/flip_menu_dropdown_margin_between"
+        n4:src="@drawable/common_icn_flip_left"
+        n4:scaleType="centerInside"
+        n4:tint="@color/piloting_button_icon_tint"
+        n4:contentDescription="@string/piloting_cd_left_flip"
+        xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <ImageButton
+        n5:id="@id/button_noflip"
+        n5:background="@drawable/circular_button_background"
+        n5:layout_width="@dimen/piloting_button_size"
+        n5:layout_height="@dimen/piloting_button_size"
+        n5:src="@drawable/drawable_hud_flip_menu"
+        n5:scaleType="centerInside"
+        n5:tint="@color/piloting_button_icon_tint"
+        n5:contentDescription="@string/piloting_cd_no_flip"
+        xmlns:n5="http://schemas.android.com/apk/res/android" />
+</merge>

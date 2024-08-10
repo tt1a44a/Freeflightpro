@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        n1:id="@id/preview_fragment_container"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent" />
+    <RelativeLayout
+        n1:id="@id/preview_layout"
+        n1:padding="@dimen/director_window_padding"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <FrameLayout
+            n1:id="@id/preview_toolbar"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+            <ImageButton
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/preview_back_btn"
+                n1:background="@null"
+                n1:layout_width="@dimen/create_back_button_size"
+                n1:layout_height="@dimen/create_back_button_size"
+                n1:src="@drawable/drawable_hud_back"
+                n1:scaleType="centerInside"
+                n1:contentDescription="@null" />
+            <TextView
+                n1:gravity="center"
+                n1:layout_gravity="center"
+                n1:id="@id/preview_title"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/preview_title"
+                style="@style/TitleView" />
+            <Button
+                n1:layout_gravity="end|center"
+                n1:id="@id/preview_export_button"
+                n1:background="@drawable/button_green_border_selector"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="@string/flight_director_common_export"
+                n1:drawableEnd="@drawable/icn_green_arrow"
+                style="@style/NextButton" />
+        </FrameLayout>
+        <Button
+            n1:id="@id/preview_edit_button"
+            n1:background="@drawable/button_rounded_green_selector"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/preview_edit_button"
+            n1:layout_alignParentBottom="true"
+            n1:layout_centerHorizontal="true"
+            n1:textAllCaps="true"
+            n1:drawableStart="@drawable/ic_edit_director"
+            style="@style/RoundedGreenButton" />
+        <ImageView
+            n1:id="@id/preview_director_locked"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:src="@drawable/icn_locked"
+            n1:layout_alignTop="@id/preview_edit_button"
+            n1:layout_alignEnd="@id/preview_edit_button"
+            n2:elevation="@dimen/flight_director_lock_elevation"
+            xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+</RelativeLayout>

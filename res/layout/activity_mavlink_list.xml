@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:background="@drawable/background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        n1:id="@id/toolbar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?actionBarSize">
+        <ImageButton
+            n1:layout_gravity="center|left"
+            n1:id="@id/button_back"
+            n1:background="@null"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside"
+            n1:contentDescription="@string/cd_back" />
+        <TextView
+            n1:textColor="@color/colorAccent"
+            n1:layout_gravity="center"
+            n1:id="@id/text_title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/saved_flight_plans"
+            n1:textAllCaps="true" />
+    </android.support.v7.widget.Toolbar>
+    <GridView
+        n1:id="@id/gridview"
+        n1:background="@color/mavlink_card_list_bg"
+        n1:padding="@dimen/mavlink_card_list_padding"
+        n1:focusable="true"
+        n1:focusableInTouchMode="true"
+        n1:clipToPadding="false"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:listSelector="@drawable/background_mavlink_item"
+        n1:cacheColorHint="@android:color/transparent"
+        n1:horizontalSpacing="@dimen/mavlink_card_list_spacing"
+        n1:verticalSpacing="@dimen/mavlink_card_list_spacing"
+        n1:stretchMode="columnWidth"
+        n1:numColumns="@integer/mavlink_saved_plan_row_number"
+        n1:layout_weight="1.0" />
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:padding="3.0dip"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/flightplan_round_button_size"
+        n1:weightSum="5.0">
+        <Button
+            n1:id="@id/button_new"
+            n1:background="@drawable/rectangular_background"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/new_"
+            n1:layout_weight="1.0"
+            style="@style/ToolbarButton" />
+        <Button
+            n1:id="@id/button_save"
+            n1:background="@drawable/rectangular_background"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/mavlink_cd_save"
+            n1:layout_weight="1.0"
+            style="@style/ToolbarButton" />
+        <Button
+            n1:id="@id/button_save_as"
+            n1:background="@drawable/rectangular_background"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/mavlink_cd_save_as"
+            n1:layout_weight="1.0"
+            style="@style/ToolbarButton" />
+        <Button
+            n1:id="@id/button_delete"
+            n1:background="@drawable/rectangular_background"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/delete"
+            n1:layout_weight="1.0"
+            style="@style/ToolbarButton" />
+        <Button
+            n1:id="@id/button_load"
+            n1:background="@drawable/rectangular_background"
+            n1:layout_width="wrap_content"
+            n1:layout_height="fill_parent"
+            n1:text="@string/mavlink_cd_load"
+            n1:layout_weight="1.0"
+            style="@style/ToolbarButton" />
+    </LinearLayout>
+</LinearLayout>

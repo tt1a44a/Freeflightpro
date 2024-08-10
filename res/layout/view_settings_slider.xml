@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="horizontal"
+    n1:id="@id/layout_root_slider"
+    n1:background="@drawable/item_background_selector"
+    n1:paddingLeft="@dimen/settings_padding_row"
+    n1:paddingRight="@dimen/settings_padding_row"
+    n1:layout_width="fill_parent"
+    n1:layout_height="@dimen/settings_row_height"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="vertical"
+        n1:layout_width="@dimen/settings_name_width"
+        n1:layout_height="fill_parent"
+        n1:layout_marginEnd="@dimen/settings_name_right_margin">
+        <TextView
+            n1:textSize="@dimen/settings_title_size"
+            n1:textColor="@color/white"
+            n1:id="@id/text_view_name"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content" />
+        <TextView
+            n1:textColor="@drawable/item_text_color_selector"
+            n1:id="@id/text_settings_interpreted_value"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        n1:textSize="@dimen/settings_title_size"
+        n1:textColor="@drawable/item_text_color_selector"
+        n1:layout_gravity="center"
+        n1:id="@id/text_value"
+        n1:layout_width="@dimen/settings_value_text_width"
+        n1:layout_height="wrap_content" />
+    <RelativeLayout
+        n1:layout_gravity="center"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <View
+            n1:id="@id/seekbar_recommended_value_view"
+            n1:background="@color/green"
+            n1:visibility="invisible"
+            n1:layout_width="@dimen/settings_slider_tick_width"
+            n1:layout_height="@dimen/settings_slider_tick_height"
+            n1:layout_centerVertical="true" />
+        <com.parrot.freeflight.settings.widget.Slider
+            n1:layout_gravity="center"
+            n1:id="@id/seekbar"
+            n1:paddingLeft="@dimen/settings_slider_left_padding"
+            n1:paddingTop="@dimen/settings_slider_padding"
+            n1:paddingRight="@dimen/settings_padding_row"
+            n1:paddingBottom="@dimen/settings_slider_padding"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:maxWidth="1.0dip"
+            n1:progressDrawable="@drawable/slider_progress_bar"
+            n1:minWidth="1.0dip"
+            n1:thumb="@drawable/slider_green_thumb_selector"
+            style="?android:progressBarStyleHorizontal" />
+    </RelativeLayout>
+</LinearLayout>

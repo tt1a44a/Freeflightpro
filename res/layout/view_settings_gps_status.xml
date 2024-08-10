@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="horizontal"
+    n1:id="@id/layout_root_gps"
+    n1:background="@drawable/item_background_selector"
+    n1:paddingLeft="@dimen/settings_padding_row"
+    n1:paddingRight="@dimen/settings_padding_row"
+    n1:layout_width="fill_parent"
+    n1:layout_height="@dimen/settings_row_height"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:layout_gravity="center|left"
+        n1:layout_width="@dimen/gps_status_title_icon_size"
+        n1:layout_height="@dimen/gps_status_title_icon_size"
+        n1:src="@drawable/gps"
+        n1:layout_marginEnd="@dimen/gps_status_title_margin" />
+    <TextView
+        n1:textSize="@dimen/settings_title_size"
+        n1:textColor="@color/white"
+        n1:layout_gravity="center|left"
+        n1:id="@id/text_view_name"
+        n1:layout_width="@dimen/gps_status_setting_name_width"
+        n1:layout_height="wrap_content"
+        n1:text="@string/piloting_settings_gps_signal" />
+    <LinearLayout
+        n1:gravity="center"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <RelativeLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_marginRight="@dimen/gps_status_separator_margin"
+            n1:layout_weight="1.0">
+            <TextView
+                n1:textSize="@dimen/gps_status_title_text_size"
+                n1:textColor="@color/white"
+                n1:gravity="center|right"
+                n1:id="@id/text_drone"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent"
+                n1:layout_marginRight="@dimen/gps_status_title_margin"
+                n1:text="@string/academy_profile_cd_drone" />
+            <ImageView
+                n1:layout_width="@dimen/gps_status_image_size"
+                n1:layout_height="@dimen/gps_status_image_size"
+                n1:src="@drawable/settings_signal"
+                n1:layout_centerVertical="true"
+                n1:alpha="0.3"
+                n1:layout_toEndOf="@id/text_drone" />
+            <ImageView
+                n1:id="@id/image_gps_drone_status"
+                n1:layout_width="@dimen/gps_status_image_size"
+                n1:layout_height="@dimen/gps_status_image_size"
+                n1:layout_centerVertical="true"
+                n1:layout_toEndOf="@id/text_drone" />
+        </RelativeLayout>
+        <RelativeLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_marginRight="@dimen/gps_status_separator_margin"
+            n1:layout_weight="1.0">
+            <TextView
+                n1:textSize="@dimen/gps_status_title_text_size"
+                n1:textColor="@color/white"
+                n1:gravity="center|right"
+                n1:id="@id/text_controller"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent"
+                n1:layout_marginRight="@dimen/gps_status_title_margin"
+                n1:text="@string/controller_settings_short_title" />
+            <ImageView
+                n1:layout_width="@dimen/gps_status_image_size"
+                n1:layout_height="@dimen/gps_status_image_size"
+                n1:src="@drawable/settings_signal"
+                n1:layout_centerVertical="true"
+                n1:alpha="0.3"
+                n1:layout_toEndOf="@id/text_controller" />
+            <ImageView
+                n1:id="@id/image_gps_controller_status"
+                n1:layout_width="@dimen/gps_status_image_size"
+                n1:layout_height="@dimen/gps_status_image_size"
+                n1:layout_centerVertical="true"
+                n1:layout_toEndOf="@id/text_controller" />
+        </RelativeLayout>
+        <RelativeLayout
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="1.0">
+            <TextView
+                n1:textSize="@dimen/gps_status_title_text_size"
+                n1:textColor="@color/white"
+                n1:gravity="center_vertical"
+                n1:id="@id/text_home_position"
+                n1:layout_width="90.0dip"
+                n1:layout_height="fill_parent"
+                n1:layout_marginRight="@dimen/gps_status_title_margin"
+                n1:text="@string/piloting_settings_home_position" />
+            <ImageView
+                n1:id="@id/image_home_position_status"
+                n1:layout_width="@dimen/gps_status_image_size"
+                n1:layout_height="@dimen/gps_status_image_size"
+                n1:src="@drawable/common_icn_check"
+                n1:layout_centerVertical="true"
+                n1:layout_toEndOf="@id/text_home_position" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

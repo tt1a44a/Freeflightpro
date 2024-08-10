@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <GridView
+        n1:gravity="center"
+        n1:id="@id/gridview_my_flights_medias"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:horizontalSpacing="1.0dip"
+        n1:verticalSpacing="1.0dip"
+        n1:stretchMode="columnWidth"
+        n1:columnWidth="@dimen/my_flights_details_media_thumbnail_size"
+        n1:numColumns="auto_fit" />
+</LinearLayout>

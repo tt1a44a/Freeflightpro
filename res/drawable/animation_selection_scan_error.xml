@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list>
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/selection_scan_62"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item
+        n2:duration="50"
+        n2:drawable="@drawable/selection_scan_63"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item
+        n3:duration="50"
+        n3:drawable="@drawable/selection_scan_64"
+        xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item
+        n4:duration="50"
+        n4:drawable="@drawable/selection_scan_65"
+        xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item
+        n5:duration="50"
+        n5:drawable="@drawable/selection_scan_66"
+        xmlns:n5="http://schemas.android.com/apk/res/android" />
+    <item
+        n6:duration="50"
+        n6:drawable="@drawable/selection_scan_67"
+        xmlns:n6="http://schemas.android.com/apk/res/android" />
+    <item
+        n7:duration="50"
+        n7:drawable="@drawable/selection_scan_68"
+        xmlns:n7="http://schemas.android.com/apk/res/android" />
+    <item
+        n8:duration="50"
+        n8:drawable="@drawable/selection_scan_69"
+        xmlns:n8="http://schemas.android.com/apk/res/android" />
+    <item
+        n9:duration="50"
+        n9:drawable="@drawable/selection_scan_70"
+        xmlns:n9="http://schemas.android.com/apk/res/android" />
+    <item
+        n10:duration="50"
+        n10:drawable="@drawable/selection_scan_71"
+        xmlns:n10="http://schemas.android.com/apk/res/android" />
+    <item
+        n11:duration="50"
+        n11:drawable="@drawable/selection_scan_72"
+        xmlns:n11="http://schemas.android.com/apk/res/android" />
+    <item
+        n12:duration="50"
+        n12:drawable="@drawable/selection_scan_73"
+        xmlns:n12="http://schemas.android.com/apk/res/android" />
+    <item
+        n13:duration="50"
+        n13:drawable="@drawable/selection_scan_74"
+        xmlns:n13="http://schemas.android.com/apk/res/android" />
+    <item
+        n14:duration="50"
+        n14:drawable="@drawable/selection_scan_75"
+        xmlns:n14="http://schemas.android.com/apk/res/android" />
+</animation-list>

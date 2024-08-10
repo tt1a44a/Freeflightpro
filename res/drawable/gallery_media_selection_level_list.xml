@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list>
+    <item
+        n1:drawable="@drawable/ripple_effect"
+        n1:maxLevel="0"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item
+        n2:maxLevel="1"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n2:state_selected="false"
+                n2:drawable="@drawable/ripple_effect" />
+            <item
+                n2:state_selected="true">
+                <shape>
+                    <solid
+                        n2:color="@color/transparent_light_green" />
+                    <stroke
+                        n2:width="1.0dip"
+                        n2:color="@color/green" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item
+        n3:maxLevel="2"
+        xmlns:n3="http://schemas.android.com/apk/res/android">
+        <selector>
+            <item
+                n3:state_selected="false"
+                n3:drawable="@drawable/ripple_effect" />
+            <item
+                n3:state_selected="true">
+                <shape>
+                    <solid
+                        n3:color="@color/transparent_light_red" />
+                    <stroke
+                        n3:width="1.0dip"
+                        n3:color="@color/red" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</level-list>

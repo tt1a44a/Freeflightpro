@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="horizontal"
+    n1:background="@drawable/item_background_selector"
+    n1:paddingLeft="@dimen/settings_padding_row"
+    n1:paddingRight="@dimen/settings_padding_row"
+    n1:layout_width="fill_parent"
+    n1:layout_height="@dimen/settings_row_height"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="@dimen/settings_title_size"
+        n1:textColor="@color/white"
+        n1:layout_gravity="center|left"
+        n1:id="@id/text_name"
+        n1:layout_width="@dimen/settings_name_width"
+        n1:layout_height="wrap_content"
+        n1:layout_marginRight="@dimen/settings_name_right_margin" />
+    <ImageView
+        n1:id="@id/image_value"
+        n1:padding="@dimen/settings_space_between_widget"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        n1:layout_marginRight="@dimen/settings_space_between_widget"
+        n1:adjustViewBounds="true" />
+    <TextView
+        n1:textSize="@dimen/settings_text_size"
+        n1:textStyle="bold"
+        n1:textColor="@color/product_main_color"
+        n1:gravity="center_vertical"
+        n1:layout_gravity="center_vertical"
+        n1:id="@id/text_value"
+        n1:layout_width="wrap_content"
+        n1:layout_height="@dimen/settings_buttons_height"
+        n1:layout_marginLeft="@dimen/settings_space_between_widget" />
+</LinearLayout>

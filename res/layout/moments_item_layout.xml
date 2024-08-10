@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:clickable="true"
+    n1:clipChildren="true"
+    n1:layout_width="wrap_content"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:id="@id/moments_view"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:contentDescription="@null" />
+    <ImageView
+        n1:id="@id/moments_heart_left"
+        n1:visibility="invisible"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:src="@drawable/ic_add_moment_added"
+        n1:layout_centerVertical="true"
+        n1:contentDescription="@null"
+        n1:layout_alignParentStart="true" />
+    <ImageView
+        n1:id="@id/moments_heart_right"
+        n1:visibility="invisible"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:src="@drawable/ic_add_moment_added"
+        n1:layout_centerVertical="true"
+        n1:contentDescription="@null"
+        n1:layout_alignParentEnd="true" />
+    <LinearLayout
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+        <View
+            n1:id="@id/moments_layer_left_edge"
+            n1:layout_width="100.0dip"
+            n1:layout_height="fill_parent" />
+        <View
+            n1:background="@color/transparent_black"
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="1.0" />
+        <View
+            n1:id="@id/moments_layer_right_edge"
+            n1:layout_width="100.0dip"
+            n1:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:paddingTop="@dimen/gallery_header_vertical_padding"
+    n1:paddingBottom="@dimen/gallery_header_vertical_padding"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView
+        n1:textSize="@dimen/my_flights_title_text_size"
+        n1:textColor="@color/white"
+        n1:gravity="center"
+        n1:id="@id/media_header_label"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerVertical="true" />
+    <TextView
+        n1:gravity="center"
+        n1:id="@id/media_videos_count"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/my_gallery_gallery_media_label"
+        n1:layout_centerVertical="true"
+        n1:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    n1:shape="rectangle"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <solid
+        n1:color="@color/piloting_recording_switch_background_color" />
+    <corners
+        n1:radius="14.0dip" />
+    <size
+        n1:height="28.0dip"
+        n1:width="28.0dip" />
+</shape>

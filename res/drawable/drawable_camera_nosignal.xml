@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list>
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/camera_nosignal_1"
+        xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item
+        n2:duration="50"
+        n2:drawable="@drawable/camera_nosignal_2"
+        xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item
+        n3:duration="50"
+        n3:drawable="@drawable/camera_nosignal_3"
+        xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item
+        n4:duration="50"
+        n4:drawable="@drawable/camera_nosignal_4"
+        xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item
+        n5:duration="50"
+        n5:drawable="@drawable/camera_nosignal_5"
+        xmlns:n5="http://schemas.android.com/apk/res/android" />
+    <item
+        n6:duration="50"
+        n6:drawable="@drawable/camera_nosignal_6"
+        xmlns:n6="http://schemas.android.com/apk/res/android" />
+    <item
+        n7:duration="50"
+        n7:drawable="@drawable/camera_nosignal_7"
+        xmlns:n7="http://schemas.android.com/apk/res/android" />
+    <item
+        n8:duration="50"
+        n8:drawable="@drawable/camera_nosignal_8"
+        xmlns:n8="http://schemas.android.com/apk/res/android" />
+    <item
+        n9:duration="50"
+        n9:drawable="@drawable/camera_nosignal_9"
+        xmlns:n9="http://schemas.android.com/apk/res/android" />
+    <item
+        n10:duration="50"
+        n10:drawable="@drawable/camera_nosignal_10"
+        xmlns:n10="http://schemas.android.com/apk/res/android" />
+</animation-list>

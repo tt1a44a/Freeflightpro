@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:id="@id/layout_about_root"
+    n1:background="@drawable/background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:src="@drawable/my_parrot_background"
+        n1:scaleType="centerCrop" />
+    <RelativeLayout
+        n1:id="@id/layout_fake_toolbar"
+        n1:background="@android:color/transparent"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?actionBarSize"
+        n1:layout_alignParentTop="true">
+        <ImageButton
+            n1:id="@id/button_back"
+            n1:background="@drawable/circular_button_background"
+            n1:layout_width="@dimen/piloting_button_size"
+            n1:layout_height="@dimen/piloting_button_size"
+            n1:src="@drawable/drawable_hud_back"
+            n1:scaleType="centerInside"
+            n1:layout_centerVertical="true"
+            n1:contentDescription="@string/cd_back"
+            n1:layout_marginStart="@dimen/piloting_buttons_margin" />
+        <TextView
+            n1:textSize="@dimen/toolbar_text_size"
+            n1:textColor="@color/white"
+            n1:id="@id/text_title_connect"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/my_parrot_connect_title"
+            n1:layout_centerHorizontal="true"
+            n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout
+        n1:gravity="center"
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_below="@id/layout_fake_toolbar"
+        n1:layout_centerVertical="true">
+        <LinearLayout
+            n1:layout_gravity="center"
+            n1:orientation="vertical"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content">
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/image_logo"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginBottom="@dimen/my_parrot_connect_logo_vertical_margin"
+                n1:src="@drawable/my_parrot_logo"
+                n1:layout_marginStart="@dimen/my_parrot_connect_logo_horizontal_margin"
+                n1:layout_marginEnd="@dimen/my_parrot_connect_logo_horizontal_margin" />
+            <Button
+                n1:textSize="@dimen/my_parrot_connect_button_text_size"
+                n1:layout_gravity="center_horizontal"
+                n1:id="@id/button_connect_now"
+                n1:background="@drawable/button_connect_now_selector"
+                n1:layout_width="wrap_content"
+                n1:layout_height="@dimen/my_parrot_connect_button_height"
+                n1:text="@string/my_parrot_connect_now_button"
+                n1:paddingStart="@dimen/my_parrot_connect_button_vertical_padding"
+                n1:paddingEnd="@dimen/my_parrot_connect_button_vertical_padding" />
+        </LinearLayout>
+        <ScrollView
+            n1:layout_gravity="center"
+            n1:id="@id/scrollView2"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_margin="@dimen/my_parrot_connect_reason_margin">
+            <LinearLayout
+                n1:orientation="vertical"
+                n1:id="@id/linearLayout"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content">
+                <TextView
+                    n1:textSize="@dimen/my_parrot_connect_reason_text_size"
+                    n1:id="@id/text_why_register_reason_1"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="@dimen/about_item_vertical_margin"
+                    n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+                    n1:text="@string/my_parrot_reason_1"
+                    n1:drawablePadding="@dimen/my_parrot_connect_reason_dot_padding"
+                    n1:drawableStart="@drawable/green_dot" />
+                <TextView
+                    n1:textSize="@dimen/my_parrot_connect_reason_text_size"
+                    n1:id="@id/text_why_register_reason_2"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="@dimen/about_item_vertical_margin"
+                    n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+                    n1:text="@string/my_parrot_reason_2"
+                    n1:drawablePadding="@dimen/my_parrot_connect_reason_dot_padding"
+                    n1:drawableStart="@drawable/green_dot" />
+                <TextView
+                    n1:textSize="@dimen/my_parrot_connect_reason_text_size"
+                    n1:id="@id/text_why_register_reason_3"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="@dimen/about_item_vertical_margin"
+                    n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+                    n1:text="@string/my_parrot_reason_3"
+                    n1:drawablePadding="@dimen/my_parrot_connect_reason_dot_padding"
+                    n1:drawableStart="@drawable/green_dot" />
+                <TextView
+                    n1:textSize="@dimen/my_parrot_connect_reason_text_size"
+                    n1:id="@id/text_why_register_reason_4"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="@dimen/about_item_vertical_margin"
+                    n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+                    n1:text="@string/my_parrot_reason_4"
+                    n1:drawablePadding="@dimen/my_parrot_connect_reason_dot_padding"
+                    n1:drawableStart="@drawable/green_dot" />
+                <TextView
+                    n1:textSize="@dimen/my_parrot_connect_reason_text_size"
+                    n1:id="@id/text_why_register_reason_5"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="@dimen/about_item_vertical_margin"
+                    n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+                    n1:text="@string/my_parrot_reason_5"
+                    n1:drawablePadding="@dimen/my_parrot_connect_reason_dot_padding"
+                    n1:drawableStart="@drawable/green_dot" />
+                <TextView
+                    n1:textSize="@dimen/my_parrot_connect_reason_text_size"
+                    n1:id="@id/text_why_register_reason_6"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="@dimen/about_item_vertical_margin"
+                    n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+                    n1:text="@string/my_parrot_reason_6"
+                    n1:drawablePadding="@dimen/my_parrot_connect_reason_dot_padding"
+                    n1:drawableStart="@drawable/green_dot" />
+                <TextView
+                    n1:textSize="@dimen/my_parrot_connect_reason_text_size"
+                    n1:id="@id/text_why_register_reason_7"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginTop="@dimen/about_item_vertical_margin"
+                    n1:layout_marginBottom="@dimen/about_item_vertical_margin"
+                    n1:text="@string/my_parrot_reason_7"
+                    n1:drawablePadding="@dimen/my_parrot_connect_reason_dot_padding"
+                    n1:drawableStart="@drawable/green_dot" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

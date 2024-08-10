@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list>
+    <item
+        n1:maxLevel="0"
+        xmlns:n1="http://schemas.android.com/apk/res/android">
+        <bitmap
+            n1:src="@drawable/common_icn_flight_plan_play"
+            n1:tint="@color/circular_button_image_color_state_list" />
+    </item>
+    <item
+        n2:maxLevel="1"
+        xmlns:n2="http://schemas.android.com/apk/res/android">
+        <bitmap
+            n2:src="@drawable/common_icn_pause"
+            n2:tint="@color/circular_button_image_color_state_list" />
+    </item>
+</level-list>

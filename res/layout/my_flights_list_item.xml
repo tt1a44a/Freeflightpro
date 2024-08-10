@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <Button
+        n1:textStyle="bold"
+        n1:textColor="@drawable/text_color_selector"
+        n1:gravity="center"
+        n1:id="@id/button_delete_flight"
+        n1:background="@drawable/button_selector"
+        n1:visibility="gone"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:text="@string/delete"
+        n1:layout_centerVertical="true"
+        n1:textAllCaps="true"
+        n1:layout_marginEnd="@dimen/my_flights_list_item_delete_button_margin"
+        n1:layout_alignParentEnd="true"
+        style="@style/SettingsButton" />
+    <RelativeLayout
+        n1:id="@id/layout_item"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/my_flights_list_item_height">
+        <RelativeLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="@dimen/list_row_height"
+            n1:layout_centerVertical="true">
+            <ImageView
+                n1:layout_gravity="center"
+                n1:id="@id/imageview_icon_piloting_type"
+                n1:layout_width="@dimen/list_row_height"
+                n1:layout_height="@dimen/list_row_height"
+                n1:layout_centerVertical="true"
+                n1:layout_marginStart="@dimen/list_row_main_icon_margin" />
+            <RelativeLayout
+                n1:id="@id/layout_flight_top_line"
+                n1:layout_width="wrap_content"
+                n1:layout_height="@dimen/half_list_row_height"
+                n1:layout_alignParentTop="true"
+                n1:layout_centerVertical="true"
+                n1:layout_marginStart="@dimen/list_row_main_icon_margin"
+                n1:layout_toEndOf="@id/imageview_icon_piloting_type">
+                <ImageView
+                    n1:id="@id/imageview_flight_product_icon"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:adjustViewBounds="true"
+                    n1:layout_centerVertical="true"
+                    n1:layout_alignParentStart="true" />
+                <TextView
+                    n1:textSize="@dimen/list_row_text_size_primary"
+                    n1:textColor="@color/white"
+                    n1:id="@id/textview_flight_date"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_alignParentTop="false"
+                    n1:layout_centerVertical="true"
+                    n1:contentDescription="@string/my_flights_date_content_description"
+                    n1:textAllCaps="true"
+                    n1:layout_marginStart="@dimen/flight_internal_item_horizontal_margin"
+                    n1:layout_toEndOf="@id/imageview_flight_product_icon" />
+                <TextView
+                    n1:textSize="@dimen/list_row_text_size_primary"
+                    n1:textColor="@color/light_gray"
+                    n1:gravity="center"
+                    n1:id="@id/textview_flight_time"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_alignTop="@id/textview_flight_date"
+                    n1:layout_alignBottom="@id/textview_flight_date"
+                    n1:layout_centerVertical="true"
+                    n1:contentDescription="@string/my_flights_time_content_description"
+                    n1:textAllCaps="true"
+                    n1:layout_marginStart="@dimen/flight_external_item_horizontal_margin"
+                    n1:layout_toEndOf="@id/textview_flight_date" />
+            </RelativeLayout>
+            <RelativeLayout
+                n1:layout_width="wrap_content"
+                n1:layout_height="@dimen/half_list_row_height"
+                n1:layout_below="@id/layout_flight_top_line"
+                n1:layout_alignParentBottom="true"
+                n1:layout_centerVertical="true"
+                n1:layout_marginStart="@dimen/list_row_main_icon_margin"
+                n1:layout_toEndOf="@id/imageview_icon_piloting_type">
+                <ImageView
+                    n1:id="@id/imageview_flight_duration"
+                    n1:layout_width="@dimen/list_row_secondary_icon_size"
+                    n1:layout_height="@dimen/list_row_secondary_icon_size"
+                    n1:src="@drawable/common_icn_duration"
+                    n1:layout_centerVertical="true"
+                    n1:contentDescription="@null"
+                    n1:layout_alignParentStart="true" />
+                <TextView
+                    n1:textSize="@dimen/list_row_text_size_secondary"
+                    n1:textColor="@color/white"
+                    n1:id="@id/textview_flight_duration"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerVertical="true"
+                    n1:contentDescription="@string/my_flights_duration_content_description"
+                    n1:layout_marginStart="@dimen/flight_internal_item_horizontal_margin"
+                    n1:layout_toEndOf="@id/imageview_flight_duration" />
+                <ImageView
+                    n1:id="@id/imageview_flight_crashes"
+                    n1:layout_width="@dimen/list_row_secondary_icon_size"
+                    n1:layout_height="@dimen/list_row_secondary_icon_size"
+                    n1:src="@drawable/academy_icn_crash"
+                    n1:layout_centerVertical="true"
+                    n1:contentDescription="@null"
+                    n1:layout_marginStart="@dimen/flight_external_item_horizontal_margin"
+                    n1:layout_toEndOf="@id/textview_flight_duration" />
+                <TextView
+                    n1:textSize="@dimen/list_row_text_size_secondary"
+                    n1:textColor="@color/white"
+                    n1:id="@id/textview_flight_crashes"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerVertical="true"
+                    n1:contentDescription="@string/my_flights_crashes_content_description"
+                    n1:layout_marginStart="@dimen/flight_internal_item_horizontal_margin"
+                    n1:layout_toEndOf="@id/imageview_flight_crashes" />
+                <ImageView
+                    n1:id="@id/imageview_flight_captures"
+                    n1:layout_width="@dimen/list_row_secondary_icon_size"
+                    n1:layout_height="@dimen/list_row_secondary_icon_size"
+                    n1:src="@drawable/common_icn_photo"
+                    n1:layout_centerVertical="true"
+                    n1:contentDescription="@null"
+                    n1:layout_marginStart="@dimen/flight_external_item_horizontal_margin"
+                    n1:layout_toEndOf="@id/textview_flight_crashes" />
+                <TextView
+                    n1:textSize="@dimen/list_row_text_size_secondary"
+                    n1:textColor="@color/white"
+                    n1:id="@id/textview_flight_captures"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerVertical="true"
+                    n1:contentDescription="@string/my_flights_captures_content_description"
+                    n1:layout_marginStart="@dimen/flight_internal_item_horizontal_margin"
+                    n1:layout_toEndOf="@id/imageview_flight_captures" />
+                <ImageView
+                    n1:id="@id/imageview_flight_videos"
+                    n1:layout_width="@dimen/list_row_secondary_icon_size"
+                    n1:layout_height="@dimen/list_row_secondary_icon_size"
+                    n1:src="@drawable/common_icn_video"
+                    n1:layout_centerVertical="true"
+                    n1:contentDescription="@null"
+                    n1:layout_marginStart="@dimen/flight_external_item_horizontal_margin"
+                    n1:layout_toEndOf="@id/textview_flight_captures" />
+                <TextView
+                    n1:textSize="@dimen/list_row_text_size_secondary"
+                    n1:textColor="@color/white"
+                    n1:id="@id/textview_flight_videos"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerVertical="true"
+                    n1:contentDescription="@string/my_flights_videos_content_description"
+                    n1:layout_marginStart="@dimen/flight_internal_item_horizontal_margin"
+                    n1:layout_toEndOf="@id/imageview_flight_videos" />
+                <ImageView
+                    n1:id="@id/imageview_flight_gps"
+                    n1:layout_width="@dimen/list_row_secondary_icon_size"
+                    n1:layout_height="@dimen/list_row_secondary_icon_size"
+                    n1:src="@drawable/aracademy_icn_gps"
+                    n1:layout_centerVertical="true"
+                    n1:contentDescription="@null"
+                    n1:layout_marginStart="@dimen/flight_external_item_horizontal_margin"
+                    n1:layout_toEndOf="@id/textview_flight_videos" />
+            </RelativeLayout>
+            <RatingBar
+                n1:id="@id/ratingbar_my_flights_details_note"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:numStars="5"
+                n1:stepSize="1.0"
+                n1:isIndicator="true"
+                n1:layout_centerVertical="true"
+                n1:layout_marginEnd="@dimen/list_row_main_icon_margin"
+                n1:layout_alignParentEnd="true"
+                style="@style/RatingBar" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

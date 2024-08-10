@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    n1:oneshot="false"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00000" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00001" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00002" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00003" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00004" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00005" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00006" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00007" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00008" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00009" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00010" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00011" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00012" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00013" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00014" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00015" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00016" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00017" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00018" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00019" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00020" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00021" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00022" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00023" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00024" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00025" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00026" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00027" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00028" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00029" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00030" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00031" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00032" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00033" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00034" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00035" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00036" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00037" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00038" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00039" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00040" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00041" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00042" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00043" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00044" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00045" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00046" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00047" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00048" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00049" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00050" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00051" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00052" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00053" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00054" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00055" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00056" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00057" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00058" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00059" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00060" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00061" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00062" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00063" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00064" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00065" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00066" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00067" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00068" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00069" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00070" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00071" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00072" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00073" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00074" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00075" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00076" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00077" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00078" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00079" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00080" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00081" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00082" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00083" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00084" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00085" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00086" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00087" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00088" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00089" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00090" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00091" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00092" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00093" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00094" />
+    <item
+        n1:duration="50"
+        n1:drawable="@drawable/follow_me_selection_00095" />
+</animation-list>

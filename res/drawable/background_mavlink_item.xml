@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    n1:shape="rectangle"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item
+        n1:state_pressed="true">
+        <shape
+            n1:shape="rectangle">
+            <solid
+                n1:color="@color/mavlink_pressed_green" />
+        </shape>
+    </item>
+    <item
+        n1:state_selected="true">
+        <shape
+            n1:shape="rectangle">
+            <solid
+                n1:color="@color/mavlink_pressed_green" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            n1:shape="rectangle">
+            <solid
+                n1:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>

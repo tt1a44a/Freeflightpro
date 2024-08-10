@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:background="@android:color/transparent"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.parrot.freeflight.piloting.widget.RoundedCornerLayout
+        n1:id="@id/layout_my_flights_header"
+        n1:layout_width="fill_parent"
+        n1:layout_height="@dimen/homepage_status_bar_height"
+        n1:layout_margin="@dimen/piloting_buttons_small_margin"
+        n2:outerBackgroundColor="?android:colorBackground"
+        xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <android.support.percent.PercentRelativeLayout
+            n1:id="@id/layout_flight_details_status_bar"
+            n1:background="@color/transparent_light_grey"
+            n1:duplicateParentState="true"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+            <RadioGroup
+                n1:orientation="horizontal"
+                n1:id="@id/radiogroup_my_flights_details_run_type"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_centerVertical="true"
+                n1:layout_alignParentStart="true"
+                n2:layout_marginStartPercent="@fraction/my_flights_details_summary_title_horizontal_margin"
+                n2:layout_widthPercent="@fraction/my_flights_details_summary_title_buttons_width">
+                <RadioButton
+                    n1:textColor="@drawable/text_color_selector"
+                    n1:gravity="center"
+                    n1:id="@id/radiogroup_my_flights_details_run_type_public"
+                    n1:background="@drawable/radio_button_left_selector"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent"
+                    n1:button="@android:color/transparent"
+                    n1:text="@string/my_flights_details_run_type_public"
+                    n1:layout_weight="1.0" />
+                <RadioButton
+                    n1:textColor="@drawable/text_color_selector"
+                    n1:gravity="center"
+                    n1:id="@id/radiogroup_my_flights_details_run_type_private"
+                    n1:background="@drawable/radio_button_right_selector"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="fill_parent"
+                    n1:button="@android:color/transparent"
+                    n1:text="@string/my_flights_details_run_type_private"
+                    n1:layout_weight="1.0" />
+            </RadioGroup>
+            <RatingBar
+                n1:id="@id/ratingbar_my_flights_details_note"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:numStars="5"
+                n1:stepSize="1.0"
+                n1:isIndicator="false"
+                n1:layout_centerVertical="true"
+                n1:layout_alignParentEnd="true"
+                n2:layout_marginEndPercent="@fraction/my_flights_details_summary_title_horizontal_margin"
+                style="@style/RatingBar" />
+        </android.support.percent.PercentRelativeLayout>
+    </com.parrot.freeflight.piloting.widget.RoundedCornerLayout>
+    <LinearLayout
+        n1:orientation="vertical"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_margin="@dimen/my_flights_details_content_margin">
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="1.0">
+            <ImageView
+                n1:id="@id/image_my_flights_details_location"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent"
+                n1:src="@drawable/academy_icn_location"
+                n1:scaleType="centerInside" />
+            <TextView
+                n1:gravity="center_vertical"
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/text_my_flights_details_location"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="1.0">
+            <ImageView
+                n1:id="@id/image_my_flights_details_time"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent"
+                n1:src="@drawable/common_icn_duration"
+                n1:scaleType="centerInside" />
+            <TextView
+                n1:gravity="center_vertical"
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/text_my_flights_details_time"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="1.0">
+            <ImageView
+                n1:id="@id/image_my_flights_details_drone_type"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent"
+                n1:scaleType="centerInside" />
+            <TextView
+                n1:gravity="center_vertical"
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/text_my_flights_details_drone_type"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="1.0">
+            <ImageView
+                n1:id="@id/image_my_flights_details_battery"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent"
+                n1:src="@drawable/academy_icn_battery"
+                n1:scaleType="centerInside" />
+            <TextView
+                n1:gravity="center_vertical"
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/text_my_flights_details_battery"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="1.0">
+            <ImageView
+                n1:id="@id/image_my_flights_details_crash"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent"
+                n1:src="@drawable/academy_icn_crash"
+                n1:scaleType="centerInside" />
+            <TextView
+                n1:gravity="center_vertical"
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/text_my_flights_details_crash"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            n1:orientation="horizontal"
+            n1:layout_width="wrap_content"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="1.0">
+            <ImageView
+                n1:id="@id/image_my_flights_details_device"
+                n1:layout_width="wrap_content"
+                n1:layout_height="fill_parent"
+                n1:src="@drawable/common_icn_device"
+                n1:scaleType="centerInside" />
+            <TextView
+                n1:gravity="center_vertical"
+                n1:layout_gravity="center_vertical"
+                n1:id="@id/text_my_flights_details_device"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

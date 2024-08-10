@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    n1:orientation="vertical"
+    n1:padding="@dimen/settings_padding_row"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content">
+        <TextView
+            n1:textSize="@dimen/settings_title_size"
+            n1:textColor="@color/white"
+            n1:id="@id/text_view_name"
+            n1:layout_width="@dimen/settings_name_width"
+            n1:layout_height="wrap_content"
+            n1:layout_marginEnd="@dimen/settings_name_right_margin" />
+        <RadioGroup
+            n1:orientation="horizontal"
+            n1:id="@id/radio_group"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content">
+            <RadioButton
+                n1:textSize="@dimen/settings_text_size"
+                n1:textColor="@drawable/settings_text_color_selector"
+                n1:gravity="center"
+                n1:id="@id/radio_button_left"
+                n1:background="@drawable/radio_button_left_selector"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:button="@android:color/transparent"
+                n1:layout_weight="1.0"
+                n1:textAllCaps="true" />
+            <RadioButton
+                n1:textSize="@dimen/settings_text_size"
+                n1:textColor="@drawable/settings_text_color_selector"
+                n1:gravity="center"
+                n1:id="@id/radio_button_right"
+                n1:background="@drawable/radio_button_right_selector"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:button="@android:color/transparent"
+                n1:layout_weight="1.0"
+                n1:textAllCaps="true" />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        n1:textSize="@dimen/settings_text_size"
+        n1:textColor="@color/colorText"
+        n1:id="@id/text_description"
+        n1:visibility="gone"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="@dimen/settings_padding"
+        n1:paddingStart="@dimen/settings_name_right_margin"
+        n1:layout_marginStart="@dimen/settings_name_width" />
+</LinearLayout>
